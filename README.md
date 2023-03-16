@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# GreenPath 🌲
 
 `Análise e Desenvolvimento de Sistemas`
 
@@ -6,7 +6,7 @@
 
 `Eixo 2 - 2023/1`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Criação de um ambiente de internet, gerenciador de vagas de trabalho, específico para as pessoas e empresas preocupadas e ativas em promover iniciativa social, econômica-sustentável e ecológica. Focado na ampliação do engajamento das empresas nos problemas ambientais e sociais do mundo de hoje e um maior esclarecimento para os trabalhadores sobre as empresas que efetivamente atuam nestas questões, possibilitando ao trabalhador comprar benefícios indiretos, como: responsabilidade social, ambiental e/ou de sustentabilidade.
 
 ## Integrantes
 
