@@ -2,8 +2,6 @@
 
 Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
 
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
-
 ## Personas
 
 
@@ -21,6 +19,7 @@ Partindo das informações que as Personas apresentaram, chegou-se à conclusão
 |Antonio Gomes da Empresa AG&F.  | Alcançar os melhores profissionais do mercado e que estes profissionais tenham engajamento com os valores da empresa.  | Reduzir custos relativos à alta rotatividade de profissionais (processos seletivos, desligamentos, contratações e treinamentos).  |
 |Suzana Silva da Empresa Natur.  | Alcançar posição dentro do Top-5 das melhores empresas na opinião dos funcionários e ex-funcionários. | Acredita que o crescimento sustentável de uma empresa depende da satisfação e engajamento do seu corpo funcional. Por isto, projeta o modelo de negócios centralizado na satisfação do funcionário.             |
 |Suzana Silva da Empresa Natur.  | Garantir a preservação da natureza e o uso sustentável de recursos naturais necessários para as linhas de produção dos produtos de sua empresa. | Necessita de equilíbrio sustentável na extração de elementos naturais do meio ambiente para a produção contínua de seus produtos.           
+
 
 ## Requisitos
 
@@ -52,25 +51,19 @@ A tabela a seguir apresenta a lista de requisitos funcionais deste projeto, orde
 
 ### Requisitos não Funcionais
 
+“A forma como o sistema fará para executar um requisito funcional”, esta é normalmente a definição de requisito não funcional. De forma mais ampla, os requisitos não funcionais são funcionalidades que não podem ser atendidas por requisitos funcionais.
+
+A tabela a seguir apresenta a lista de requisitos não funcionais deste projeto, pontuando sua prioridade.
+
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| O site deverá ser responsivo, permitindo a visualização em diversos dispositivos de forma adequada. | ALTA | 
+|RNF-002| O site deve impossibilitar que as senhas dos usuários sejam visíveis a1 atores maliciosos. |  MÉDIA |
+|RNF-003| O Site deve atender à Lei de proteção de dados. | MÉDIA | 
+|RNF-004| O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge). |  ALTA |
+|RNF-005| O site deve ser de fácil navegação entre suas telas. | MÉDIA | 
+|RNF-006| O site deverá ser de código aberto. |  MÉDIA |
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
