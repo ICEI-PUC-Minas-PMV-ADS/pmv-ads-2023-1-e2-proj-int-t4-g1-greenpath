@@ -24,21 +24,17 @@ Lembre-se que você deve ser enumerar e descrever precisamente e personalizada t
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+Partindo das informações que as Personas apresentaram, chegou-se à conclusão das seguintes histórias de usuário relevantes ao problema identificado.
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+|Anderson Rodrigues  | Encontrar com facilidade empresas que oferecem vagas na área profissional que eu atuo. | Ingressar no mercado de trabalho.               |
+|Fernanda Vasconcelos  | Ter um perfil de usuário que permite anexar Carta de Recomendação e CV em formatos padrão. Pode ser um formato personalizado ou formato padrão internacional (Ex: Europeu, Canadense, EUA, Carta de Apresentação, etc..).           | Aumentar as chances de uma empresa internacional analisar corretamente meu CV. Aumentar as chances de "robôs" de busca usados por HeadHunters alcançarem meu CV.               |
+|Abilio Junior  | Encontrar com facilidade empresas que oferecem vagas na área profissional que eu atuo e que estejam alinhadas com valores socioambientais que eu tenho.         | Aumentar o engajamento com a empresa e melhorar as chances de um longo plano de carreira.               |
+|Raquel Campos  | Ter maior credibilidade nas informações publicadas sobre uma empresa e avaliações reais de funcionários, tudo em um mesmo ambiente de internet.         | Dedicar-se e engajar-se a longo prazo com um plano de carreira em uma empresa sólida e coerente com os valores sociais e ambientais.               |
+|Antonio Gomes da Empresa AG&F.  | Alcançar os melhores profissionais do mercado e que estes profissionais tenham engajamento com os valores da empresa.  | Reduzir custos relativos à alta rotatividade de profissionais (processos seletivos, desligamentos, contratações e treinamentos).  |
+|Suzana Silva da Empresa Natur.  | Alcançar posição dentro do Top-5 das melhores empresas na opinião dos funcionários e ex-funcionários. | Acredita que o crescimento sustentável de uma empresa depende da satisfação e engajamento do seu corpo funcional. Por isto, projeta o modelo de negócios centralizado na satisfação do funcionário.             |
+|Suzana Silva da Empresa Natur.  | Garantir a preservação da natureza e o uso sustentável de recursos naturais necessários para as linhas de produção dos produtos de sua empresa. | Necessita de equilíbrio sustentável na extração de elementos naturais do meio ambiente para a produção contínua de seus produtos.           
 
 ## Requisitos
 
