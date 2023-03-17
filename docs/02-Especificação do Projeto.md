@@ -10,28 +10,84 @@ Definição do problema e ideia de solução a partir da perspectiva do usuário
 
 	+ **Idade**: 34 anos
 
-  + **Situação Atual**:
-  Desempregada
+  	+ **Situação Atual**:
+  	Desempregada
 
 	+ **Ocupação**:  
 	Engenheira de Minas e Energia, ex-funcionária da empresa Samarco.
 
 	+ **Aplicativos**:  
-Linkedin; Glassdoor; Gupy
+	Linkedin; Glassdoor; Gupy
 
 	+ **Motivações**:  
 		+ Aplicar os conhecimentos técnicos que adquiriu na vida na construção sustentável de empresas que se responsabilizam pela sociedade e pelo meio ambiente.
 
 	+ **Frustrações**:  
 		+ Trabalhava na empresa Samarco quando houve o rompimento das barragens em Mariana e Bento Rodrigues.
-    + Sente-se parcialmente responsável pelo rompimento das barragens, apesar de não ter tido acesso a informações específicas.
+    		+ Sente-se parcialmente responsável pelo rompimento das barragens, apesar de não ter tido acesso a informações específicas.
 
 	+ **Hobbies, História**:  
 		+ Ambientalista
-    + Gosta de trilhas e de acampar na natureza
-    + Ativista do grupo WWF - Word Wide Fund for Nature
+    		+ Gosta de trilhas e de acampar na natureza
+    		+ Ativista do grupo WWF - Word Wide Fund for Nature
 
 
++ ### Abilio Junior
+	![Foto Representativa](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/31f1dea86a5623d94129ce4dffbc2442e682d63d/docs/img/Persona_02_PQ.jpg)
+	
+
+	+ **Idade**: 42 anos
+
+  	+ **Situação Atual**:
+  	Empregado.
+
+	+ **Ocupação**:  
+	Gerente Comercial de Empresa Multinacional do ramo têxtil.
+	
+	+ **Aplicativos**:  
+	Linkedin
+
+	+ **Motivações**:  
+		+ Tem 5 filhos e acredita que todos devem fazer a sua parte para que no futuro todos possam viver em um mundo melhor.
+
+	+ **Frustrações**:  
+		+ Sente-se obrigado a trabalhar para empresas que são pouco transparentes sobre a responsabilidade socioambiental.
+
+	+ **Hobbies, História**:  
+		+ Doador constante de projetos e iniciativas como: Médicos sem Fronteiras; WWF, GreenPeace, entre outras.
+    		
+    
+    + ### Antonio Gomes
+	![Foto Representativa](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/31f1dea86a5623d94129ce4dffbc2442e682d63d/docs/img/Persona_05_PQ.jpg)
+	
+
+	+ **Idade**: 65 anos
+
+  	+ **Situação Atual**:
+  	Sócio-proprietário.
+
+	+ **Ocupação**:  
+	Empresa de Publicidade AG&F.
+	
+	+ **Aplicativos**:  
+	Linkedin
+
+	+ **Motivações**:  
+		+ Acredita nos valores da sua empresa.
+		+ Quer que sua empresa tenha um crescimento sustentável e orgânico com foco nos funcionários.
+		+ Acredita que um bom ambiente de trabalho traz melhores resultados aos funcionários.
+
+	+ **Frustrações**:  
+		+ Tem baixa aderência de funcionários / Alta rotatividade.
+		+ Recebe pedidos dos funcionários para melhores condições de trabalho e não consegue atender.
+		+ Quer reduzir custos desnecessários da empresa para poder investir em melhores condições de trabalho para seus funcionários.
+
+	+ **Hobbies, História**:  
+		+ Livros
+		+ Viagens
+		+ Família
+
+    
 
 
 ## Histórias de Usuários
