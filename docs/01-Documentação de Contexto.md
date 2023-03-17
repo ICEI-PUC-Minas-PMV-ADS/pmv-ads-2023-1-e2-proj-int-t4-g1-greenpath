@@ -47,16 +47,8 @@ Neste viés é necessário criar estratégias e ferramentas que facilitem o aces
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+Estabeleceu-se como público-alvo desta solução: todos os jovens e adultos, trabalhadores ativos, e empresas. Assim como, todas as pessoas e empresas interessadas pelas áreas: socioambientais, sustentabilidade empresarial, sustentabilidade ambiental.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
 
 
 [^1]: Disponível em: https://fastcompanybrasil.com/esg/e-hora-de-as-empresas-pagarem-pelos-danos-causados-pela-mudanca-climatica/
