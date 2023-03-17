@@ -1,6 +1,6 @@
 # Introdução
 
-Organizações como a ONU e muitos Governos reúnem-se desde a ECO95 no Rio de Janeiro, passando ações como o Protocolo de Kyoto; ou políticas de neutralização de carbono; e atualmente políticas de descarbonização (carbono zero), como um esforço massivo na tentativa de reverter danos ambientais gerados em todo o mundo. Contudo, questões financeiras fazem muitas empresas esquivarem-se de responsabilidades sociais, ambientais, e/ou práticas de sustentabilidade em seus processos de produção.
+Organizações como a ONU e muitos Governos reúnem-se desde a Eco-95 no Rio de Janeiro, passando ações como o Protocolo de Kyoto; ou políticas de neutralização de carbono; e atualmente políticas de descarbonização (carbono zero), como um esforço massivo na tentativa de reverter danos ambientais gerados em todo o mundo. Contudo, questões financeiras fazem muitas empresas esquivarem-se de responsabilidades sociais, ambientais, e/ou práticas de sustentabilidade em seus processos de produção.
 No atual mundo dinâmico e conectado que vivemos, as empresas não podem mais apenas considerar o lucro nos negócios, mas também o impacto social e ambiental de suas operações. As empresas têm um impacto significativo nas comunidades onde operam e no meio ambiente em que existem.
 
 Entende-se que a melhor alternativa hoje é ampliar cada vez mais o engajamento e a participação ativa das empresas e da sociedade em iniciativas socioambientais.
