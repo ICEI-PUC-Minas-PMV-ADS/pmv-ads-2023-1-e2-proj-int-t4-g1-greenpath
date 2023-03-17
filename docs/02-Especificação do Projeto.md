@@ -5,7 +5,8 @@ Definição do problema e ideia de solução a partir da perspectiva do usuário
 ## Personas
 
 + ### Raquel Campos
-	![Foto representativa]([docs/img/Persona_01.jpg](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/89ba4c5a0d69d57e0b95a7a99489d2b7df1f3f61/docs/img/Persona_01.jpg)
+	![Foto Representativa] https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/5f587c126966a7578e48f7646f324b57e500e75e/docs/img/Persona_01.jpg
+	
 
 	+ **Idade**: 34 anos
 
