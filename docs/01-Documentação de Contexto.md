@@ -27,18 +27,23 @@ O objetivo geral deste trabalho é a criação de um site de busca de empregos e
 Como objetivos específicos, podemos salientar:
 
 ● Fornecer funcionalidade que permita cadastramento somente de empresas que atendam um ou mais requisitos especificados na Norma Internacional ISO 26000, Selo Verde nacional, e/ou políticas ativas de ESG, responsabilidade ambiental e social;
+
 ● Fornecer funcionalidade que possibilite o bloqueio ou exclusão de empresa que atue na “contramão” do foco principal deste projeto, por exemplo, empresas que investem no desmatamento ilegal; empresas poluentes que não tem nenhuma política ambiental ou de destinação correta de resíduos; empresas com índice péssimo de avaliação feita pelos funcionários e ex-funcionários; etc..
 
 Planos Futuros: Como objetivo futuro entende-se a possibilidade de posicionar a marca criada para este site de busca de empregos de tal forma a transformar-se num selo próprio de caracterização de empresas que seguem estes conceitos ativamente no mercado.
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+Conforme o Artigo: Capitalismo Consciente e Sustentabilidade – Parte do PFCC – Programa de Formação e Certificação de Conselheiros da Board Academy Br, com a professora Francine Pena Póvoa, Board Club, “Capitalismo Consciente é um modelo de negócios que busca equilibrar a busca pelo lucro com um propósito maior, que inclui a preocupação com os impactos sociais, ambientais e econômicos da empresa. 
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+O termo foi cunhado por John Mackey, co-fundador da Whole Foods Market, e Raj Sisodia, professor de marketing na Babson College, em um livro publicado em 2013 intitulado "Conscious Capitalism: Liberating the Heroic Spirit of Business”.
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Esta prática propõe que as empresas adotem uma abordagem mais holística, considerando não apenas os interesses dos acionistas, mas também os interesses dos funcionários, clientes, fornecedores, comunidade e meio ambiente. 
+
+Ela pode levar a uma maior lealdade dos funcionários, maior satisfação dos clientes e maior engajamento da comunidade, podendo, por sua vez, levar a um desempenho financeiro melhor e mais sustentável no longo prazo.”
+
+Neste viés é necessário criar estratégias e ferramentas que facilitem o acesso da sociedade a informações e ações relevantes no cenário da responsabilidade socioambiental empresarial e fomentar cada vez mais o engajamento de empresas e sociedade nesta fórmula. Espera-se inclusive que um ambiente como este reduza a alta rotatividade de funcionários; reduza custos nas empresas, resultado da redução de desligamentos e processos seletivos nas empresas; maior e melhor entrosamento entre os times, como resultado de pensamento coletivo comum, já comprovado em grupos de trabalho voluntário; entre muitos outros benefícios para as empresas e sociedade.
+
 
 ## Público-Alvo
 
