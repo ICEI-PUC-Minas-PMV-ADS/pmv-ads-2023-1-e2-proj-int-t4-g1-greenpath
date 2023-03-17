@@ -88,6 +88,66 @@ Definição do problema e ideia de solução a partir da perspectiva do usuário
 		+ Família
 
     
+    + ### Anderson Rodrigues
+	![Foto Representativa](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/f0a1bd763dfea7e2eceaf4dbde014332c463ebc6/docs/img/Persona_06_PQ.jpg)
+	
+
+	+ **Idade**: 22 anos
+
+  	+ **Situação Atual**:
+  	Desempregado.
+
+	+ **Ocupação**:  
+	Graduado em Ciência da Computação com Menção Honrosa entre os 5 melhores alunos da turma, entre diversos outros prêmios conquistados.
+	
+	+ **Aplicativos**:  
+	GitHub; Linkedin; Gupy
+
+	+ **Motivações**:  
+		+ Quer dedicar seu conhecimento e potencial em causas importantes e projetos interessantes para si mesmo e para a sociedade.
+
+	+ **Frustrações**:  
+		+ Está sempre a receber propostas de trabalho de empresas e perde muito tempo a pesquisar dados sobre a atuação da empresa no mercado e avaliações reais da empresa.
+
+	+ **Hobbies, História**:  
+		+ Dedica-se muito aos estudos e ao desenvolvimento pessoal.
+		+ Hackathon
+		+ Clube de Xadrez
+
+
+    + ### Suzana Silva
+	![Foto Representativa](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/f0a1bd763dfea7e2eceaf4dbde014332c463ebc6/docs/img/Persona_07_PQ.jpg)
+	
+
+	+ **Idade**: 30 anos
+
+  	+ **Situação Atual**:
+  	Sócia-fundadora.
+
+	+ **Ocupação**:  
+	Empresa Natur de cosméticos naturais.
+	
+	+ **Aplicativos**:  
+	Catho; Linkedin; Gupy; Glassdoor
+
+	+ **Motivações**:  
+		+ Desenvolver linhas de produtos naturais;
+		+ Colaborar com a preservação da natureza
+		+ Responsabilidade social 
+		+ Utilizar recursos naturais de maneira sustentável
+		+ Levar conhecimento técnico e tecnológico de sustentabilidade para sociedades dos locais de extração natural.
+
+	+ **Frustrações**:  
+		+ Quer ter mais evidência no sentido socioambiental;
+		+ Quer estar entre as empresas melhor avaliadas pelos funcionários;
+		+ Quer colaborar para a manutenção sustentável do meio ambiente.
+		+ Comunicação horizontal com funcionários e pessoas interessadas em trabalhar na empresa
+
+	+ **Hobbies, História**:  
+		+ Percebe a importância da comunicação e da transparência das informações para o crescimento sólido de uma sociedade.
+		+ Quer que os valores que aplica em sua própria vida sejam possíveis de serem aplicados também no seu modelo de negócios.
+
+
 
 
 ## Histórias de Usuários
