@@ -4,6 +4,33 @@ Definição do problema e ideia de solução a partir da perspectiva do usuário
 
 ## Personas
 
++ ### Raquel Campos
+	![Foto representativa]([docs/img/Persona_01.jpg](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/89ba4c5a0d69d57e0b95a7a99489d2b7df1f3f61/docs/img/Persona_01.jpg)
+
+	+ **Idade**: 34 anos
+
+  + **Situação Atual**:
+  Desempregada
+
+	+ **Ocupação**:  
+	Engenheira de Minas e Energia, ex-funcionária da empresa Samarco.
+
+	+ **Aplicativos**:  
+Linkedin; Glassdoor; Gupy
+
+	+ **Motivações**:  
+		+ Aplicar os conhecimentos técnicos que adquiriu na vida na construção sustentável de empresas que se responsabilizam pela sociedade e pelo meio ambiente.
+
+	+ **Frustrações**:  
+		+ Trabalhava na empresa Samarco quando houve o rompimento das barragens em Mariana e Bento Rodrigues.
+    + Sente-se parcialmente responsável pelo rompimento das barragens, apesar de não ter tido acesso a informações específicas.
+
+	+ **Hobbies, História**:  
+		+ Ambientalista
+    + Gosta de trilhas e de acampar na natureza
+    + Ativista do grupo WWF - Word Wide Fund for Nature
+
+
 
 
 ## Histórias de Usuários
