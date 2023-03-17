@@ -1,26 +1,12 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
-
 Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
 
 Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
-
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
 
 ## Histórias de Usuários
 
@@ -38,14 +24,31 @@ Partindo das informações que as Personas apresentaram, chegou-se à conclusão
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
+Os requisitos de um projeto são suas pretensões e necessidades. De maneira geral, os requisitos de um projeto são propriedades que refletem as utilidades e funcionalidades do projeto, expectativas de seus criadores e buscam atender a necessidade de seus futuros usuários. Os requisitos são parte fundamental na estruturação de um projeto de software, são utilizados como abstrações de recursos e aplicabilidades, ajudando na formação de um projeto sólido criando propósitos bem definidos e objetivos claros. 
 
 ### Requisitos Funcionais
 
+A ideia de requisito funcional vem de requisitos que atendem funcionalidades. Os requisitos funcionais são ações apresentadas pelo projeto criadas para atenderem seus requisitos.
+
+A tabela a seguir apresenta a lista de requisitos funcionais deste projeto, ordenando-os por prioridade:
+
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| O Sistema permite que o usuário crie um perfil. | ALTA | 
+|RF-002| O Sistema Permite o login ao usuário.   | ALTA |
+|RF-003| O Sistema Permite que o usuário anexe arquivos pdf (cv e cartas de recomendação, intenção). | MÉDIA | 
+|RF-004| O Sistema permite que o usuário demonstre interesse por uma vaga de trabalho publicada.  | ALTA |
+|RF-005| O Sistema permite que o usuário demonstre interesse por uma empresa. | MÉDIA | 
+|RF-006| O Sistema permite que a empresa crie um perfil.   | ALTA |
+|RF-007| O Sistema permite o login da empresa. | ALTA | 
+|RF-008| O Sistema permite que a empresa possa publicar vagas de trabalho.   | ALTA |
+|RF-009| O Sistema permite comunicação entre empresa e usuário. | MÉDIA | 
+|RF-010| O Sistema permite que o usuários compartilhe informações sobre o andamento de um processo seletivo de uma vaga de trabalho publicada.   | MÉDIA |
+|RF-011| O Sistema exibe vagas de trabalho disponíveis. | ALTA | 
+|RF-012| O Sistema filtra as vagas disponíveis por segmento profissional, ranking, avaliação de usuário, senioridade de responsabilidade social/sustentabilidade.  | ALTA |
+|RF-013| O Sistema filtra empresas por segmento profissional, ranking, avaliação de usuário, senioridade de responsabilidade social/sustentabilidade. | ALTA | 
+|RF-014| O Sistema permite que o usuário faça a avaliação e ranking de uma empresa.   | ALTA |
+|RF-015| O Sistema conta com um mecanismo de selos, onde é possível a empresa ter selos em seu perfil representando quais comprovações de responsabilidade social, ambiental e/ou sustentabilidade, ela possui. | MÉDIA | 
 
 ### Requisitos não Funcionais
 
