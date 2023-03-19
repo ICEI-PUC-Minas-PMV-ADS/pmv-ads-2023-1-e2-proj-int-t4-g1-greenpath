@@ -4,148 +4,61 @@ Definição do problema e ideia de solução a partir da perspectiva do usuário
 
 ## Personas
 
-+ ### Raquel Campos
-	![Foto Representativa](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/9a1a6eac45e5baa2c2879c7501ea2f8e1099c0fe/docs/img/Persona_01_PQ.jpg)
-	
-
-	+ **Idade**: 34 anos
-
-  	+ **Situação Atual**:
-  	Desempregada
-
-	+ **Ocupação**:  
-	Engenheira de Minas e Energia, ex-funcionária da empresa Samarco.
-
-	+ **Aplicativos**:  
-	Linkedin; Glassdoor; Gupy
-
-	+ **Motivações**:  
-		+ Aplicar os conhecimentos técnicos que adquiriu na vida na construção sustentável de empresas que se responsabilizam pela sociedade e pelo meio ambiente.
-
-	+ **Frustrações**:  
-		+ Trabalhava na empresa Samarco quando houve o rompimento das barragens em Mariana e Bento Rodrigues.
-    		+ Sente-se parcialmente responsável pelo rompimento das barragens, apesar de não ter tido acesso a informações específicas.
-
-	+ **Hobbies, História**:  
-		+ Ambientalista
-    		+ Gosta de trilhas e de acampar na natureza
-    		+ Ativista do grupo WWF - Word Wide Fund for Nature
+|                                                                                                                                                                                       | <h2>Raquel Campos                                                                                                                                                                                                            |                                                                                                           |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+|                                                                                                                                                                                       | <strong>Idade:</strong> 34 anos.                                                                                                                                                                                                                |                                                                                                           |
+| <img width=250px heigth=250px src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/9a1a6eac45e5baa2c2879c7501ea2f8e1099c0fe/docs/img/Persona_01_PQ.jpg">| <strong>Ocupação:</strong>  <li>Desempregada <li>Engenheira de Minas e Energia, ex-funcionária da empresa Samarco.                                                                                                                                      | <strong>Aplicativos:</strong>  <li>Linkedin; <li>Glassdoor;  <li>Gupy                                                                  |
+| <strong>Motivações                                                                                                                                                                            | <strong>Frustrações                                                                                                                                                                                                                    | <strong>Hobbies, História:                                                                                        |
+| <li>Aplicar os conhecimentos técnicos que adquiriu na vida na construção sustentável de empresas que se responsabilizam pela sociedade e pelo meio ambiente.                              | <li>Trabalhava na empresa Samarco quando houve o rompimento das barragens em Mariana e Bento Rodrigues.  <li>Sente-se parcialmente responsável pelo rompimento das barragens, apesar de não ter tido acesso a informações específicas. | <li>Ambientalista <li>Gosta de trilhas e de acampar na natureza <li>Ativista do grupo WWF - Word Wide Fund for Nature |
 
 
-+ ### Abilio Junior
-	![Foto Representativa](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/31f1dea86a5623d94129ce4dffbc2442e682d63d/docs/img/Persona_02_PQ.jpg)
-	
 
-	+ **Idade**: 42 anos
 
-  	+ **Situação Atual**:
-  	Empregado.
 
-	+ **Ocupação**:  
-	Gerente Comercial de Empresa Multinacional do ramo têxtil.
-	
-	+ **Aplicativos**:  
-	Linkedin
 
-	+ **Motivações**:  
-		+ Tem 5 filhos e acredita que todos devem fazer a sua parte para que no futuro todos possam viver em um mundo melhor.
+|                                                                                                                                                                                       | <h2>Abilio Junior |                                                                                                           |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+|                                                                                                                                                                                       | <strong>Idade:</strong> 42 anos.                                                                                                                                                                                                                |                                                                                                           |
+| <img width=250px heigth=250px src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/raw/31f1dea86a5623d94129ce4dffbc2442e682d63d/docs/img/Persona_02_PQ.jpg">| <strong>Ocupação:</strong>  <li>Empregado <li>Gerente Comercial de Empresa Multinacional do ramo têxtil.                                                                                                                                      | <strong>Aplicativos:</strong>  <li>Linkedin |
+| <strong>Motivações                                                                                                                                                                            | <strong>Frustrações                                                                                                                                                                                                                    | <strong>Hobbies, História:                                                                                        |
+| <li>Tem 5 filhos e acredita que todos devem fazer a sua parte para que no futuro todos possam viver em um mundo melhor. | <li>Sente-se obrigado a trabalhar para empresas que são pouco transparentes sobre a responsabilidade socioambiental | <li>Doador constante de projetos e iniciativas como: Médicos sem Fronteiras; WWF, GreenPeace, entre outras. |
 
-	+ **Frustrações**:  
-		+ Sente-se obrigado a trabalhar para empresas que são pouco transparentes sobre a responsabilidade socioambiental.
 
-	+ **Hobbies, História**:  
-		+ Doador constante de projetos e iniciativas como: Médicos sem Fronteiras; WWF, GreenPeace, entre outras.
+
+
     		
     
-    + ### Antonio Gomes
-	![Foto Representativa](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/31f1dea86a5623d94129ce4dffbc2442e682d63d/docs/img/Persona_05_PQ.jpg)
-	
+|                                                                                                                                                                                       | <h2>Antonio Gomes |                                                                                                           |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+|                                                                                                                                                                                       | <strong>Idade:</strong> 65 anos.                                                                                                                                                                                                                |                                                                                                           |
+| <img width=250px heigth=250px src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/31f1dea86a5623d94129ce4dffbc2442e682d63d/docs/img/Persona_05_PQ.jpg">| <strong>Ocupação:</strong>  <li>Sócio-proprietário. <li>Empresa de Publicidade AG&F. | <strong>Aplicativos:</strong>  <li>Linkedin |
+| <strong>Motivações                                                                                                                                                                            | <strong>Frustrações                                                                                                                                                                                                                    | <strong>Hobbies, História:                                                                                        |
+| <li>Acredita nos valores da sua empresa.<li>Quer que sua empresa tenha um crescimento sustentável e orgânico com foco nos funcionários.<li>Acredita que um bom ambiente de trabalho traz melhores resultados aos funcionários. | <li>Tem baixa aderência de funcionários / Alta rotatividade.<li>Recebe pedidos dos funcionários para melhores condições de trabalho e não consegue atender.<li>Quer reduzir custos desnecessários da empresa para poder investir em melhores condições de trabalho para seus funcionários. | <li>Livros<li>Viagens<li>Família|
 
-	+ **Idade**: 65 anos
 
-  	+ **Situação Atual**:
-  	Sócio-proprietário.
 
-	+ **Ocupação**:  
-	Empresa de Publicidade AG&F.
-	
-	+ **Aplicativos**:  
-	Linkedin
-
-	+ **Motivações**:  
-		+ Acredita nos valores da sua empresa.
-		+ Quer que sua empresa tenha um crescimento sustentável e orgânico com foco nos funcionários.
-		+ Acredita que um bom ambiente de trabalho traz melhores resultados aos funcionários.
-
-	+ **Frustrações**:  
-		+ Tem baixa aderência de funcionários / Alta rotatividade.
-		+ Recebe pedidos dos funcionários para melhores condições de trabalho e não consegue atender.
-		+ Quer reduzir custos desnecessários da empresa para poder investir em melhores condições de trabalho para seus funcionários.
-
-	+ **Hobbies, História**:  
-		+ Livros
-		+ Viagens
-		+ Família
 
     
-    + ### Anderson Rodrigues
-	![Foto Representativa](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/f0a1bd763dfea7e2eceaf4dbde014332c463ebc6/docs/img/Persona_06_PQ.jpg)
-	
-
-	+ **Idade**: 22 anos
-
-  	+ **Situação Atual**:
-  	Desempregado.
-
-	+ **Ocupação**:  
-	Graduado em Ciência da Computação com Menção Honrosa entre os 5 melhores alunos da turma, entre diversos outros prêmios conquistados.
-	
-	+ **Aplicativos**:  
-	GitHub; Linkedin; Gupy
-
-	+ **Motivações**:  
-		+ Quer dedicar seu conhecimento e potencial em causas importantes e projetos interessantes para si mesmo e para a sociedade.
-
-	+ **Frustrações**:  
-		+ Está sempre a receber propostas de trabalho de empresas e perde muito tempo a pesquisar dados sobre a atuação da empresa no mercado e avaliações reais da empresa.
-
-	+ **Hobbies, História**:  
-		+ Dedica-se muito aos estudos e ao desenvolvimento pessoal.
-		+ Hackathon
-		+ Clube de Xadrez
+|                                                                                                                                                                                       | <h2>Anderson Rodrigues |                                                                                                           |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+|                                                                                                                                                                                       | <strong>Idade:</strong> 22 anos.                                                                                                                                                                                                                |                                                                                                           |
+| <img width=250px heigth=250px src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/f0a1bd763dfea7e2eceaf4dbde014332c463ebc6/docs/img/Persona_06_PQ.jpg">| <strong>Ocupação:</strong>  <li>Desempregado. <li>Graduado em Ciência da Computação com Menção Honrosa entre os 5 melhores alunos da turma, entre diversos outros prêmios conquistados. | <strong>Aplicativos:</strong>  <li>Linkedin<li>GitHub<li>Gupy |
+| <strong>Motivações                                                                                                                                                                            | <strong>Frustrações                                                                                                                                                                                                                    | <strong>Hobbies, História:                                                                                        |
+| <li>Quer dedicar seu conhecimento e potencial em causas importantes e projetos interessantes para si mesmo e para a sociedade. | <li>Está sempre a receber propostas de trabalho de empresas e perde muito tempo a pesquisar dados sobre a atuação da empresa no mercado e avaliações reais da empresa. | <li>Dedica-se muito aos estudos e ao desenvolvimento pessoal.<li>Hackathon<li>Clube de Xadrez|
 
 
-    + ### Suzana Silva
-	![Foto Representativa](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/f0a1bd763dfea7e2eceaf4dbde014332c463ebc6/docs/img/Persona_07_PQ.jpg)
-	
 
-	+ **Idade**: 30 anos
 
-  	+ **Situação Atual**:
-  	Sócia-fundadora.
 
-	+ **Ocupação**:  
-	Empresa Natur de cosméticos naturais.
-	
-	+ **Aplicativos**:  
-	Catho; Linkedin; Gupy; Glassdoor
+|                                                                                                                                                                                       | <h2>Suzana Silva |                                                                                                           |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+|                                                                                                                                                                                       | <strong>Idade:</strong> 30 anos.                                                                                                                                                                                                                |                                                                                                           |
+| <img width=250px heigth=250px src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/f0a1bd763dfea7e2eceaf4dbde014332c463ebc6/docs/img/Persona_07_PQ.jpg">| <strong>Ocupação:</strong>  <li>Sócia-fundadora. <li>Empresa Natur de cosméticos naturais. | <strong>Aplicativos:</strong>  <li>Catho<li>Linkedin<li>Gupy<li>Glassdoor |
+| <strong>Motivações                                                                                                                                                                            | <strong>Frustrações                                                                                                                                                                                                                    | <strong>Hobbies, História:                                                                                        |
+| <li>Desenvolver linhas de produtos naturais;<li>Colaborar com a preservação da natureza<li>Responsabilidade social <li>Utilizar recursos naturais de maneira sustentável<li>Levar conhecimento técnico e tecnológico de sustentabilidade para sociedades dos locais de extração natural. | <li>Quer ter mais evidência no sentido socioambiental.<li>Quer estar entre as empresas melhor avaliadas pelos funcionários.<li>Quer colaborar para a manutenção sustentável do meio ambiente.<li>Comunicação horizontal com funcionários e pessoas interessadas em trabalhar na empresa. | <li>Percebe a importância da comunicação e da transparência das informações para o crescimento sólido de uma sociedade.<li>Quer que os valores que aplica em sua própria vida sejam possíveis de serem aplicados também no seu modelo de negócios.
 
-	+ **Motivações**:  
-		+ Desenvolver linhas de produtos naturais;
-		+ Colaborar com a preservação da natureza
-		+ Responsabilidade social 
-		+ Utilizar recursos naturais de maneira sustentável
-		+ Levar conhecimento técnico e tecnológico de sustentabilidade para sociedades dos locais de extração natural.
 
-	+ **Frustrações**:  
-		+ Quer ter mais evidência no sentido socioambiental;
-		+ Quer estar entre as empresas melhor avaliadas pelos funcionários;
-		+ Quer colaborar para a manutenção sustentável do meio ambiente.
-		+ Comunicação horizontal com funcionários e pessoas interessadas em trabalhar na empresa
 
-	+ **Hobbies, História**:  
-		+ Percebe a importância da comunicação e da transparência das informações para o crescimento sólido de uma sociedade.
-		+ Quer que os valores que aplica em sua própria vida sejam possíveis de serem aplicados também no seu modelo de negócios.
 
 
 
@@ -162,7 +75,7 @@ Partindo das informações que as Personas apresentaram, chegou-se à conclusão
 |Raquel Campos  | Ter maior credibilidade nas informações publicadas sobre uma empresa e avaliações reais de funcionários, tudo em um mesmo ambiente de internet.         | Dedicar-se e engajar-se a longo prazo com um plano de carreira em uma empresa sólida e coerente com os valores sociais e ambientais.               |
 |Antonio Gomes da Empresa AG&F.  | Alcançar os melhores profissionais do mercado e que estes profissionais tenham engajamento com os valores da empresa.  | Reduzir custos relativos à alta rotatividade de profissionais (processos seletivos, desligamentos, contratações e treinamentos).  |
 |Suzana Silva da Empresa Natur.  | Alcançar posição dentro do Top-5 das melhores empresas na opinião dos funcionários e ex-funcionários. | Acredita que o crescimento sustentável de uma empresa depende da satisfação e engajamento do seu corpo funcional. Por isto, projeta o modelo de negócios centralizado na satisfação do funcionário.             |
-|Suzana Silva da Empresa Natur.  | Garantir a preservação da natureza e o uso sustentável de recursos naturais necessários para as linhas de produção dos produtos de sua empresa. | Necessita de equilíbrio sustentável na extração de elementos naturais do meio ambiente para a produção contínua de seus produtos.           
+|Suzana Silva da Empresa Natur.  | Garantir a preservação da natureza e o uso sustentável de recursos naturais necessários para as linhas de produção dos produtos de sua empresa. | Necessita de equilíbrio sustentável na extração de elementos naturais do meio ambiente para a produção contínua de seus produtos.
 
 
 ## Requisitos
