@@ -145,7 +145,39 @@ Descrição dodo diagrama de casos de usos:
      
 *![descricao do diagrama do caso de uso](https://user-images.githubusercontent.com/69819769/226189879-addc3496-bf69-4915-a6e5-10af13dafefe.png)*
 
+## Casos de Uso:
+### Entrada:
+ - Criar conta e perfil de usuário com portfólio / CV (profissional que procura vaga)
+ - Criar conta de empresa com histórico e área para cadastrar vaga
+ - Realizar login na conta
+ - Cadastrar-se em uma vaga disponível
+ - Empresa demonstrar interesse por um usuário cadastrado
 
+### Saída:
+ - Campo de busca com filtros para usuários procurarem vagas de acordo com características da vaga ou da empresa;
+ - Campo de busca com filtros para as empresas poderem procurar perfis de usuários interessantes para a empresa de acordo com a experiência, skills e/ou formação;
+ - Visualizar todas as vagas disponíveis
+ - Visualizar todas as empresas cadastradas
+
+### Regra de Negócio:
+ - Empresas devem ter “Selo Verde” (Sebrae) para poderem ser cadastradas em área específica para “Empresas Sustentáveis”;
+ - Empresas devem ser ranqueadas “Diversity & Inclusion” no Glassdoor para serem cadastradas em área específica para “Empresas com Responsabilidade Social”;
+ - Empresas devem ser ranqueadas “work / life balance” no glassdoor para serem cadastradas em área específica para “Empresas que valorizam o funcionário”;
+
+## Referências:
+#### É hora de as empresas pagarem pelos danos causados pela mudança climática
+https://fastcompanybrasil.com/esg/e-hora-de-as-empresas-pagarem-pelos-danos-causados-pela-mudanca-climatica/ Adele Peters, redatora da Fast Company. 
+
+#### RSE - Responsabilidade Social Empresarial e Norma Internacional ISO 26000
+https://www.dgae.gov.pt/servicos/sustentabilidade-empresarial/responsabilidade-social-das-empresas.aspx
+
+#### Selo Verde SEBRAE
+https://www.sebrae.com.br/sites/PortalSebrae/artigos/voce-sabe-o-que-e-selo-verde,a031949fca8e4810VgnVCM100000d701210aRCRD#:~:text=O%20selo%20verde%20%C3%A9%20uma%20certifica%C3%A7%C3%A3o%20para%20produtos%2C,tamb%C3%A9m%20%C3%A9%20conhecido%20como%20certifica%C3%A7%C3%A3o%20verde%20ou%20ecosselo.
+
+Artigo: Capitalismo Consciente e Sustentabilidade – Parte do PFCC – Programa de Formação e Certificação de Conselheiros da Board Academy Br, com a professora Francine Pena Póvoa, Board Club;
+O termo foi cunhado por John Mackey, co-fundador da Whole Foods Market, e 
+Raj Sisodia, professor de marketing na Babson College, em um livro publicado em 2013 intitulado "Conscious Capitalism: Liberating the Heroic Spirit of Business”.
+    
 > **Links Úteis**:
 > - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
 > - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
