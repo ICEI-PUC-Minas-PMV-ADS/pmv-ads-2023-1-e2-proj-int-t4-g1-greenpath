@@ -223,11 +223,14 @@ Restrições são obrigações claras e objetivas do projeto. A tabela a seguir 
 
 ## Diagrama de Casos de Uso
 
-O diagrama de caso de uso descreve a funcionalidade proposta para um novo sistema que será projetado
+O diagrama de caso de uso descreve a funcionalidade proposta para um novo sistema que será projetado.
 
 ![Diagrama caso de uso](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/main/docs/img/diagrama%20caso%20de%20uso.png?raw=true)
 
-![image](https://user-images.githubusercontent.com/69819769/226189879-addc3496-bf69-4915-a6e5-10af13dafefe.png)
+Descrição dodo diagrama de casos de usos:
+
+     
+*![descricao do diagrama do caso de uso](https://user-images.githubusercontent.com/69819769/226189879-addc3496-bf69-4915-a6e5-10af13dafefe.png)*
 
 
 > **Links Úteis**:
