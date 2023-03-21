@@ -1,7 +1,7 @@
 
 # Metodologia
 
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
+A metodologia contempla as definições de ferramentas utilizadas pela equipe tanto para a manutenção dos códigos e demais artefatos quanto para a organização do time na execução das tarefas do projeto.
 
 ## Ambientes de Trabalho & Ferramentas
 A documentação do Projeto em formatação ABNT será desenvolvida e disponibilizada no Google Drive para atender ao formato academico. Para organização da equipe e das tarefas serão utilizados os gerenciadores Trello e Notion, assim como para comunicação sobre o gerenciamento e atualização de status das tarefas e fases do Projeto. Os diagramas, projetos de interface e wireframes e protótipo serão desenvolvidos no ambiente da aplicação Marvel. O centro de organização de todos os arquivos, documentação e código fonte será concentrado no repositório GitHub. A tabela abaixo apresenta links para os ambientes e ferramentas citados.
@@ -49,7 +49,25 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 ### Divisão de Papéis
 
-Apresente a divisão de papéis entre os membros do grupo.
+A organização da equipe se dá da seguinte forma:
+
++ Scrum Master: Álvaro Emanuel
++ Product Owner: Vitor Silva
+
++ Equipe de Desenvolvimento:
+	- Carlos Reinis 
+	- Breno Morais
+	- Álvaro Emanuel
+	- Vitor Silva
+	- Florisvaldo Alves
+
+
++ Equipe de Design UX/UI:
+	- Carlos Reinis
+	- Vítor Silva
+	- Breno Morais
+	- Álvaro Emanuel
+	- Florisvaldo Alves
 
 > **Links Úteis**:
 > - [11 Passos Essenciais para Implantar Scrum no seu 
