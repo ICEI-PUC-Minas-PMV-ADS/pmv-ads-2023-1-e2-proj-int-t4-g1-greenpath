@@ -88,18 +88,23 @@ Coloque  informações sobre detalhes da implementação do Scrum seguido pelo g
 
 As ferramentas empregadas no projeto são:
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
+- Visual Studio Code;
+- Microsoft Teams;
+- Canvas PUC;
+- Marvel;
+- GitHub;
+- Git;
+- Diagrams;
+- Trello;
+- Notion.
 
-O editor de código foi escolhido porque ele possui uma integração com o
-sistema de versão. As ferramentas de comunicação utilizadas possuem
-integração semelhante e por isso foram selecionadas. Por fim, para criar
-diagramas utilizamos essa ferramenta por melhor captar as
-necessidades da nossa solução.
 
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
- 
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
+- Editor de código: **Visual Studio Code**
+- Ferramentas de comunicação: **Microsoft Teams**
+- Ferramentas de desenho de tela (wireframing e diagramas): **Marvel & Diagrams**
+- Ferramenta de Controle de Versões e Repositório: **Git & GitHu**
+- Ferramentas de Gerenciamento de Tarefas: **Trello & Notion**
+
+O Visual Studio Code foi escolhido porque ele possui uma integração com o sistema de versão. O Microsoft Teams, ferramentas de comunicação, foi adotada pois possui
+integração semelhante e por isso foi selecionada. Para criar diagramas, wireframes e prototipação utilizamos as ferramentas Marvel & Diagrams por melhor captarem as
+necessidades da nossa solução. O Git e GitHub para controle de verões e repositório do projeto. Por fim, as ferramentas de gerenciamento de tarefas Trello e Notion por apresentarem interface simples e intuitiva compatíveis com a metodologia ágil adotada.
