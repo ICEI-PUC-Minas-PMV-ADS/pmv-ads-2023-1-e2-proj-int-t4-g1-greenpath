@@ -14,6 +14,7 @@ A documentação do Projeto em formatação ABNT será desenvolvida e disponibil
 | Diagramas			     | Diagrams.net |  https://www.diagrams.net/                             |
 |      Gerenciamento do Projeto      |    Trello    | https://trello.com/b/79Q3om0J/gest%C3%A3o-projeto-vagas    |
 |      Gerenciamento e Comunicação   |    Notion    | https://www.notion.so/3269f41eb5b94271ae7eab13beb46af1?v=c5862e99a7ef444db9568f69dd822752   |
+|      Comunicação Reunião Semanal   |    Teams     | https://teams.microsoft.com/l/channel/19%3ac68cdb3308c446b98f630883d31794d2%40thread.tacv2/Projeto%2520Grupo%252001?groupId=9614b4c1-ecab-432a-b588-8c62e5bd5113&tenantId=14cbd5a7-ec94-46ba-b314-cc0fc972a161   |
 
 
 ## Controle de Versão
@@ -65,13 +66,29 @@ A organização da equipe se dá da seguinte forma:
 
 ### Processo
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
+A plataforma Trello foi escolhida como centro de gerenciamento de tarefas estando alinhada às necessidades de metodologías ágeis como a adotada para esta Projeto. Nesta plataforma é possível criar Listas, Cartões, Etiquetas, Botões personalizados com ações automáticas, entre outras funcionalidades.
+
+Organização:
+
+- `Recursos para Projetos`: Lista os links de principal acesso para a equipe, como: Google Drive, GitHub, MarvelApp, reunião semanal com a orientadora, e possíveis avisos importantes.
+
+- `Backlog`: Lista os Requisitos Funcionais a serem desenvolvidos pela equipe de desenvolvimento. 
+
+- `A fazer`: Recebe todas tarefas a serem executadas na etapa atual de desenvolvimento do projeto. Informações especificas podem ser incorporadas a cada tarefa.
+
+- `Em desenvolvimento`: Lista as tarefas que estão em desenvolvimento por um ou mais membros da equipe, as tarefas podem ser desenvolvidas individualmente ou coletivamente. Quando um membro da equipe pega uma tarefa da lista A Fazer esta tarefa é automaticamente alocada na lista Em Desenvolvimento, até que o desenvolvedor altere o status da tarefa em questão.
+
+- `Concluído`: Quando o desenvolvedor finaliza uma tarefa e altera o status da mesma para Concluida o cartão desta tarefa é migrado para esta lista. O desenvolvedor pode ainda solicitar a outros membros da equipe revisão ou teste da tarefa.
+
+- `Em Teste`: Lista dedicada a tarefas relativas aos códigos fonte do projeto que devem ser testados por outros membros da equipe a fim de garantir a qualidade do software e atendendo às especificações da metodologia adotada. 
+
+O ambiente de gerenciamento de tarefas Trello deste Projeto pode ser acessado em: 
+https://trello.com/b/79Q3om0J/gest%C3%A3o-projeto-vagas
+
+A Figura abaixo ilustra o gerenciador de tarefas criado: 
  
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+ ![Foto representativa](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/35f758bc38132d55242e7065bedd60bab018632a/docs/img/Processo_Trello_screenshot.png)
+ 
 
 ### Ferramentas
 
@@ -87,6 +104,7 @@ As ferramentas empregadas no projeto são:
 - Trello;
 - Notion.
 
+Descritivos:
 
 - Editor de código: **Visual Studio Code**
 - Ferramentas de comunicação: **Microsoft Teams**
