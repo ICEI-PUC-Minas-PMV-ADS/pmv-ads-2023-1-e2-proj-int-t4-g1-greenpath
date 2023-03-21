@@ -70,17 +70,23 @@ A plataforma Trello foi escolhida como centro de gerenciamento de tarefas estand
 
 Organização:
 
-- `Recursos para Projetos`: Lista os links de principal acesso para a equipe, como: Google Drive, GitHub, MarvelApp, reunião semanal com a orientadora, e possíveis avisos importantes.
+- `Recursos para Projetos`: 
+	Lista os links de principal acesso para a equipe, como: Google Drive, GitHub, MarvelApp, reunião semanal com a orientadora, e possíveis avisos importantes.
 
-- `Backlog`: Lista os Requisitos Funcionais a serem desenvolvidos pela equipe de desenvolvimento. 
+- `Backlog`: 
+	Lista os Requisitos Funcionais a serem desenvolvidos pela equipe de desenvolvimento. 
 
-- `A fazer`: Recebe todas tarefas a serem executadas na etapa atual de desenvolvimento do projeto. Informações especificas podem ser incorporadas a cada tarefa.
+- `A fazer`: 
+	Recebe todas tarefas a serem executadas na etapa atual de desenvolvimento do projeto. Informações especificas podem ser incorporadas a cada tarefa.
 
-- `Em desenvolvimento`: Lista as tarefas que estão em desenvolvimento por um ou mais membros da equipe, as tarefas podem ser desenvolvidas individualmente ou coletivamente. Quando um membro da equipe pega uma tarefa da lista A Fazer esta tarefa é automaticamente alocada na lista Em Desenvolvimento, até que o desenvolvedor altere o status da tarefa em questão.
+- `Em desenvolvimento`: 
+	Lista as tarefas que estão em desenvolvimento por um ou mais membros da equipe, as tarefas podem ser desenvolvidas individualmente ou coletivamente. Quando um membro da equipe pega uma tarefa da lista A Fazer esta tarefa é automaticamente alocada na lista Em Desenvolvimento, até que o desenvolvedor altere o status da tarefa em questão.
 
-- `Concluído`: Quando o desenvolvedor finaliza uma tarefa e altera o status da mesma para Concluida o cartão desta tarefa é migrado para esta lista. O desenvolvedor pode ainda solicitar a outros membros da equipe revisão ou teste da tarefa.
+- `Concluído`: 
+	Quando o desenvolvedor finaliza uma tarefa e altera o status da mesma para Concluida o cartão desta tarefa é migrado para esta lista. O desenvolvedor pode ainda solicitar a outros membros da equipe revisão ou teste da tarefa.
 
-- `Em Teste`: Lista dedicada a tarefas relativas aos códigos fonte do projeto que devem ser testados por outros membros da equipe a fim de garantir a qualidade do software e atendendo às especificações da metodologia adotada. 
+- `Em Teste`: 
+	Lista dedicada a tarefas relativas aos códigos fonte do projeto que devem ser testados por outros membros da equipe a fim de garantir a qualidade do software e atendendo às especificações da metodologia adotada. 
 
 O ambiente de gerenciamento de tarefas Trello deste Projeto pode ser acessado em: 
 https://trello.com/b/79Q3om0J/gest%C3%A3o-projeto-vagas
