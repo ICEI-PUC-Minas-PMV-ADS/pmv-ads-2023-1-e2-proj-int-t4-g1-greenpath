@@ -4,7 +4,7 @@
 A metodologia contempla as definições de ferramentas utilizadas pela equipe tanto para a manutenção dos códigos e demais artefatos quanto para a organização do time na execução das tarefas do projeto.
 
 ## Ambientes de Trabalho & Ferramentas
-A documentação do Projeto em formatação ABNT será desenvolvida e disponibilizada no Google Drive para atender ao formato academico. Para organização da equipe e das tarefas serão utilizados os gerenciadores Trello e Notion, assim como para comunicação sobre o gerenciamento e atualização de status das tarefas e fases do Projeto. Os diagramas, projetos de interface e wireframes e protótipo serão desenvolvidos no ambiente da aplicação Marvel. O centro de organização de todos os arquivos, documentação e código fonte será concentrado no repositório GitHub. A tabela abaixo apresenta links para os ambientes e ferramentas citados.
+A documentação do Projeto em formatação ABNT será desenvolvida e disponibilizada no Google Drive para atender ao formato acadêmico. Para organização da equipe e das tarefas serão utilizados os gerenciadores Trello e Notion, assim como para comunicação sobre o gerenciamento e atualização de status das tarefas e fases do Projeto. Os diagramas, projetos de interface e wireframes e protótipo serão desenvolvidos no ambiente da aplicação Marvel. O centro de organização de todos os arquivos, documentação e código fonte será concentrado no repositório GitHub. A tabela abaixo apresenta links para os ambientes e ferramentas citados.
 
 |              Ambiente              |  Plataforma  |                                    Link de Acesso                                    |
 |:----------------------------------:|:------------:|:------------------------------------------------------------------------------------:|
@@ -66,7 +66,7 @@ A organização da equipe se dá da seguinte forma:
 
 ### Processo
 
-A plataforma Trello foi escolhida como centro de gerenciamento de tarefas estando alinhada às necessidades de metodologías ágeis como a adotada para esta Projeto. Nesta plataforma é possível criar Listas, Cartões, Etiquetas, Botões personalizados com ações automáticas, entre outras funcionalidades.
+A plataforma Trello foi escolhida como centro de gerenciamento de tarefas estando alinhada às necessidades de metodologias ágeis como a adotada para esta Projeto. Nesta plataforma é possível criar Listas, Cartões, Etiquetas, Botões personalizados com ações automáticas, entre outras funcionalidades.
 
 Organização:
 
@@ -83,7 +83,7 @@ Organização:
 	Lista as tarefas que estão em desenvolvimento por um ou mais membros da equipe, as tarefas podem ser desenvolvidas individualmente ou coletivamente. Quando um membro da equipe pega uma tarefa da lista A Fazer esta tarefa é automaticamente alocada na lista Em Desenvolvimento, até que o desenvolvedor altere o status da tarefa em questão.
 
 - `Concluído`: 
-	Quando o desenvolvedor finaliza uma tarefa e altera o status da mesma para Concluida o cartão desta tarefa é migrado para esta lista. O desenvolvedor pode ainda solicitar a outros membros da equipe revisão ou teste da tarefa.
+	Quando o desenvolvedor finaliza uma tarefa e altera o status da mesma para Concluída o cartão desta tarefa é migrado para esta lista. O desenvolvedor pode ainda solicitar a outros membros da equipe revisão ou teste da tarefa.
 
 - `Em Teste`: 
 	Lista dedicada a tarefas relativas aos códigos fonte do projeto que devem ser testados por outros membros da equipe a fim de garantir a qualidade do software e atendendo às especificações da metodologia adotada. 
@@ -115,7 +115,7 @@ Descritivos:
 - Editor de código: **Visual Studio Code**
 - Ferramentas de comunicação: **Microsoft Teams**
 - Ferramentas de desenho de tela (wireframing e diagramas): **Marvel & Diagrams**
-- Ferramenta de Controle de Versões e Repositório: **Git & GitHu**
+- Ferramenta de Controle de Versões e Repositório: **Git & GitHub**
 - Ferramentas de Gerenciamento de Tarefas: **Trello & Notion**
 
 O Visual Studio Code foi escolhido porque ele possui uma integração com o sistema de versão. O Microsoft Teams, ferramentas de comunicação, foi adotada pois possui
