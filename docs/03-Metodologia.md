@@ -42,6 +42,13 @@ etiquetas:
 ## Gerenciamento de Projeto
 
 ### Divisão de Papéis
+Foi adotada a metodologias ágeil Scrum para definir com funcionará o processo de desenvolvimento, onde um membro da equipe fica responsável por exercer uma, ou mais, tarefas atribuídas a ele por si próprio a cada estágio do projeto, com o suporte do gerenciador de tarefas Trello. 
+
+Com o Scrum serão feitas reuniões semanais com a equipe a fim de verificar o que cada integrante desenvolveu na semana anterior e programar o desenvolvimento para a semana que segue. Foi atribuida a data desta reunião em mesmo dia da reunião com o Orientador do Projeto em horário sequêncial, assim, entende-se poder tornar o método ainda mais ágil e consistente.
+
+A divisão dos papéis individuais dos integrantes da equipe esta apresentado à seguir. Entende-se que para o melhor aprendizado de todos os integrantes é atribuído a todos a participação tanto no desenvolvimento, quanto no design da solução e da aplicação final do Projeto.
+
+### Divisão de Papéis
 
 A organização da equipe se dá da seguinte forma:
 
