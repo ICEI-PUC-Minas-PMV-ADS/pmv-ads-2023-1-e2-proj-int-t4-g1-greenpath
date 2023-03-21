@@ -11,6 +11,7 @@ A documentação do Projeto em formatação ABNT será desenvolvida e disponibil
 |     Repositório de código fonte    |    GitHub    | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath      |
 |        Documentos do projeto       | Google Drive | https://docs.google.com/document/d/1uc6b8LRVHBuaD88rMBI-533YmR_1Cb9UQd9YCEISguw/edit# |
 | Projeto de Interface e  Wireframes |   MarvelApp  |  https://marvelapp.com/                              |
+| Diagramas			     | Diagrams.net |  https://www.diagrams.net/                             |
 |      Gerenciamento do Projeto      |    Trello    | https://trello.com/b/79Q3om0J/gest%C3%A3o-projeto-vagas    |
 |      Gerenciamento e Comunicação   |    Notion    | https://www.notion.so/3269f41eb5b94271ae7eab13beb46af1?v=c5862e99a7ef444db9568f69dd822752   |
 
