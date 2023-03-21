@@ -1,9 +1,19 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
-
 Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
+
+## Ambientes de Trabalho & Ferramentas
+Toda ferramenta tem seu propósito; a tabela seguinte irá explicar em que ambiente, e para que, a equipe fez uso delas.
+
+|              Ambiente              |  Plataforma  |                                    Link de Acesso                                    |
+|:----------------------------------:|:------------:|:------------------------------------------------------------------------------------:|
+|     Repositório de código fonte    |    GitHub    | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath      |
+|        Documentos do projeto       | Google Drive | https://docs.google.com/document/d/1uc6b8LRVHBuaD88rMBI-533YmR_1Cb9UQd9YCEISguw/edit# |
+| Projeto de Interface e  Wireframes |   MarvelApp  |                                |
+|      Gerenciamento do Projeto      |    Trello    | https://trello.com/b/79Q3om0J/gest%C3%A3o-projeto-vagas    |
+|      Gerenciamento e Comunicação   |    Notion    | https://www.notion.so/3269f41eb5b94271ae7eab13beb46af1?v=c5862e99a7ef444db9568f69dd822752   |
+
 
 ## Controle de Versão
 
