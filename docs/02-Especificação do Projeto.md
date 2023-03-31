@@ -90,12 +90,12 @@ A tabela a seguir apresenta a lista de requisitos funcionais deste projeto, orde
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| O Sistema permite que o usuário crie um perfil. | ALTA | 
+|RF-001| O Sistema permite que o usuário crie o seu perfil. | ALTA | 
 |RF-002| O Sistema Permite o login ao usuário.   | ALTA |
 |RF-003| O Sistema Permite que o usuário anexe arquivos pdf (cv e cartas de recomendação, intenção). | MÉDIA | 
 |RF-004| O Sistema permite que o usuário demonstre interesse por uma vaga de trabalho publicada.  | ALTA |
 |RF-005| O Sistema permite que o usuário demonstre interesse por uma empresa. | MÉDIA | 
-|RF-006| O Sistema permite que a empresa crie um perfil.   | ALTA |
+|RF-006| O Sistema permite que a empresa crie o seu perfil.   | ALTA |
 |RF-007| O Sistema permite o login da empresa. | ALTA | 
 |RF-008| O Sistema permite que a empresa possa publicar vagas de trabalho.   | ALTA |
 |RF-009| O Sistema permite comunicação entre empresa e usuário. | MÉDIA | 
@@ -120,7 +120,9 @@ A tabela a seguir apresenta a lista de requisitos não funcionais deste projeto,
 |RNF-004| O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge). |  ALTA |
 |RNF-005| O site deve ser de fácil navegação entre suas telas. | MÉDIA | 
 |RNF-006| O site deverá ser de código aberto. |  MÉDIA |
-
+|RNF-007| O projeto deve usar um único banco de dados. |  MÉDIA |
+|RNF-008| O projeto vai adotar o MySQL para o banco de dados |  MÉDIA |
+|RNF-009| O projeto será desenvolvido na linguagem C# (asp.net) |  MÉDIA |
 
 ## Restrições
 
@@ -130,8 +132,7 @@ Restrições são obrigações claras e objetivas do projeto. A tabela a seguir 
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do primeiro semestre de 2023. |
 |02| A equipe não pode subcontratar o desenvolvimento do trabalho.        |
-|03| O projeto deve usar um único banco de dados. |
-|04| O site não poderá ser utilizado para fins lucrativos durante, ou após o seu desenvolvimento.        |
+|03| O site não poderá ser utilizado para fins lucrativos durante, ou após o seu desenvolvimento.        |
 
 
 ## Diagrama de Casos de Uso
