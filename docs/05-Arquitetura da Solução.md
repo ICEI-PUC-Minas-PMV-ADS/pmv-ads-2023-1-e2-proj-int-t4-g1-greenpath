@@ -30,4 +30,3 @@ Outras tecnologias:
 
 - HTML: Linguagem de marcação utilizada para a construção das páginas web.
 - CSS: Linguagem de folhas de estilos utilizada para aplicar estilos nos elementos HTML.
-- Razor: Sintaxe de marcação que permite inserir código baseado em .NET em páginas web junto ao HTML.
