@@ -5,7 +5,7 @@ Um projeto de interface é um processo fundamental na criação de um site ou ap
 
 ## Diagrama de Fluxo
 
-![Exemplo de Diagrama de Fluxo](img/diagramafluxo2.jpg)
+![Fluxograma_-_greenpath drawio](https://user-images.githubusercontent.com/69819769/230793555-31d1c4bf-9f4e-498d-990f-fd1f28b49ebb.png)
 
 ## Wireframes
 
