@@ -1,0 +1,259 @@
+@* @model IEnumerable<GreenPath.Models.PessoaFisicaModel> *@
+@model GreenPath.Models.PessoaFisicaModel
+
+<section class="profile-background p-5 position-relative">
+    <label class="btn btn-primary position-absolute" style="top: 0;" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">
+        <i class="fa-solid fa-pen-to-square" style="bottom: 5px; right: 5px"></i>
+        Editar Dados
+    </label>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                    <input style="display: none;" type="file" id="input-picture">
+                    <label id="input-pic-label" for="input-picture"
+                        style="cursor: pointer; position: relative; transition: 0.3s ease-out;">
+                        <img src="https://media.licdn.com/dms/image/D4D03AQGB-jUfsKFe9w/profile-displayphoto-shrink_200_200/0/1671222381839?e=1687996800&v=beta&t=2JYuf4pFXYu2ZT1bII_-1TiJZJdpVfeDpHR5t42vq7Q"
+                            alt="avatar" class="rounded-circle img-fluid"
+                            style="width: 150px; border: 1px solid #9c9c9c; aspect-ratio: 1/1; ">
+                        <i class="fa-solid fa-pen-to-square position-absolute" style="bottom: 5px; right: 5px"></i>
+                    </label>
+                    <h5 class="my-3">@Model.Nome</h5>
+                    <p class="text-muted mb-1">Full Stack Developer</p>
+                    <p class="text-muted mb-4">Belo Horizonte, Minas Gerais</p>
+                    <div class="d-flex justify-content-center mb-2">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4 mb-lg-0">
+                <div class="card-body p-0">
+                    <ul class="list-group list-group-flush rounded-3">
+                        <li class="list-group-item d-flex justify-content-evenly align-items-center p-3">
+                            <i class="fa-brands fa-instagram" style="color: rgb(255, 25, 0);"></i>
+                            <a href="#" class="mb-0 social-media-link">Instagram</a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-evenly align-items-center p-3">
+                            <i class="fa-brands fa-facebook " style="color: #488dff;"></i>
+                            <a href="#" class="mb-0 social-media-link">Facebook</a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-evenly align-items-center p-3">
+                            <i class="fa-brands fa-github"></i>
+                            <a href="#" class="mb-0 social-media-link">Github</a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-evenly align-items-center p-3">
+                            <i class="fa-brands fa-pinterest" style="color: #ff0202;"></i>
+                            <a href="#" class="mb-0 social-media-link">Pinterest</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-8">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <p class="mb-0">Nome</p>
+                        </div>
+                        <div class="col-sm-9">
+                            <p class="text-muted mb-0">Vitor Silva Oliveira</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <p class="mb-0">Email</p>
+                        </div>
+                        <div class="col-sm-9">
+                            <p class="text-muted mb-0">vitor@gmail.com</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <p class="mb-0">Celular</p>
+                        </div>
+                        <div class="col-sm-9">
+                            <p class="text-muted mb-0">(31) 98575-4257</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <p class="mb-0">Endereço</p>
+                        </div>
+                        <div class="col-sm-9">
+                            <p class="text-muted mb-0">Belo Horizonte, Minas Gerais</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <div class="col-sm-3">
+                            <p class="mb-0 p-1">Currículo</p>
+                        </div>
+                        <div class="col-sm-9">
+                            <label class="btn btn-primary" for="input-curriculum">
+                                <i class="fa-solid fa-upload"></i>
+                                <span class="p-1">Currículo</span>
+                            </label>
+                            <input type="file" id="input-curriculum" style="display: none;">
+                            <label class="btn btn-primary">
+                                <i class="fa-solid fa-download"></i>
+                                <span class="p-1">Currículo</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-4 mb-md-0">
+                        <div class="card-body">
+                            <p class="mb-4"><span class="text-primary font-italic me-1">habilidades</span> Pessoais
+                            </p>
+                            <p class="mb-1" style="font-size: .77rem;">Web Design</p>
+                            <div class="progress rounded" style="height: 5px;">
+                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="mt-4 mb-1" style="font-size: .77rem;">Website Markup</p>
+                            <div class="progress rounded" style="height: 5px;">
+                                <div class="progress-bar" role="progressbar" style="width: 72%" aria-valuenow="72"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="mt-4 mb-1" style="font-size: .77rem;">One Page</p>
+                            <div class="progress rounded" style="height: 5px;">
+                                <div class="progress-bar" role="progressbar" style="width: 89%" aria-valuenow="89"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="mt-4 mb-1" style="font-size: .77rem;">Mobile Template</p>
+                            <div class="progress rounded" style="height: 5px;">
+                                <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="55"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="mt-4 mb-1" style="font-size: .77rem;">Backend API</p>
+                            <div class="progress rounded mb-2" style="height: 5px;">
+                                <div class="progress-bar" role="progressbar" style="width: 66%" aria-valuenow="66"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card mb-4 mb-md-0">
+                        <div class="card-body">
+                            <p class="mb-4"><span class="text-primary font-italic me-1">habilidades</span> Técnicas
+                            </p>
+                            <p class="mb-1" style="font-size: .77rem;">Web Design</p>
+                            <div class="progress rounded" style="height: 5px;">
+                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="mt-4 mb-1" style="font-size: .77rem;">Website Markup</p>
+                            <div class="progress rounded" style="height: 5px;">
+                                <div class="progress-bar" role="progressbar" style="width: 72%" aria-valuenow="72"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="mt-4 mb-1" style="font-size: .77rem;">One Page</p>
+                            <div class="progress rounded" style="height: 5px;">
+                                <div class="progress-bar" role="progressbar" style="width: 89%" aria-valuenow="89"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="mt-4 mb-1" style="font-size: .77rem;">Mobile Template</p>
+                            <div class="progress rounded" style="height: 5px;">
+                                <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="55"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="mt-4 mb-1" style="font-size: .77rem;">Backend API</p>
+                            <div class="progress rounded mb-2" style="height: 5px;">
+                                <div class="progress-bar" role="progressbar" style="width: 66%" aria-valuenow="66"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Atualize seus dados</h5>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label pt-3">
+                            <i class="fa-solid fa-child"></i>
+                            Nome Completo:
+                        </label>
+                        <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label pt-3">
+                            <i class="fa-regular fa-envelope"></i>
+                            Email:
+                        </label>
+                        <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label pt-3">
+                            <i class="fa-solid fa-phone"></i>
+                            Celular:
+                        </label>
+                        <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label pt-3">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Endereço:
+                        </label>
+                        <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label pt-3">
+                            <i class="fa-brands fa-instagram"></i>
+                            Instagram:
+                        </label>
+                        <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label pt-3">
+                            <i class="fa-brands fa-facebook"></i>
+                            Facebook:
+                        </label>
+                        <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label pt-3">
+                             <i class="fa-brands fa-github"></i>
+                            Github:
+                        </label>
+                        <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label pt-3">
+                            <i class="fa-brands fa-pinterest"></i>
+                            Pinterest:
+                        </label>
+                        <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary">Atualizar</button>
+            </div>
+        </div>
+    </div>
+</div>
