@@ -7,66 +7,73 @@ Um plano de teste de usabilidade deverá conter: o detalhamento dos objetivos (e
 Para cada voluntário do teste, é fundamental coletar e apresentar todos os dados/métricas previamente definidos, mas não se esqueça: atendendo à LGPD (Lei Geral de Proteção de Dados), nenhum dado sensível, que permita identificar o voluntário, deverá ser apresentado).
 
 
-| Plano de Testes de Usabilidade                                                                                                                                                                                                                                                         |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                                                                                                                                                                                                                                                                        |
-| Este teste busca verificar como será a experiencia do usuario com a  nossa aplicação em um primeiro acesso.                                                                                                                                                                            |
-|                                                                                                                                                                                                                                                                                        |
-| Formato do Teste:                                                                                                                                                                                                                                                                      |
-|                                                                                                                                                                                                                                                                                        |
-| 1. Contextualizar o objetivo do site e suas funções aos participantes selecionados.                                                                                                                                                                                                    |
-|                                                                                                                                                                                                                                                                                        |
-| 2. Após os mesmos terem sua primeira experiência com a aplicação, será coletado um feedback dos mesmos através do Formulário.                                                                                                                                                          |
-|                                                                                                                                                                                                                                                                                        |
-| 3. Com o resultado da avaliação dos usuarios testados, a equipe de desenvolvimento terá uma reunião afim de corrigir os erros e considerar possiveis modificações da aplicação.                                                                                                        |
-|                                                                                                                                                                                                                                                                                        |
-|                                                                                                                                                                                                                                                                                        |
-|                                                                                                                                                                                                                                                                                        |
-| Requisitos para realização do teste:                                                                                                                                                                                                                                                   |
-|                                                                                                                                                                                                                                                                                        |
-| Conexão com a internet via dados móveis ou cabo Computador disponível                                                                                                                                                                                                                  |
-|                                                                                                                                                                                                                                                                                        |
-| Funcionalidades a serem testadas pelos participantes                                                                                                                                                                                                                                   |
-|                                                                                                                                                                                                                                                                                        |
-| 1. Acessar a Landing Page                                                                                                                                                                                                                                                              |
-|                                                                                                                                                                                                                                                                                        |
-| 2. Cadastramento do usuario                                                                                                                                                                                                                                                            |
-|                                                                                                                                                                                                                                                                                        |
-| 3. Realizar Login                                                                                                                                                                                                                                                                      |
-|                                                                                                                                                                                                                                                                                        |
-| 4. Solicitar Alteração de senha                                                                                                                                                                                                                                                        |
-|                                                                                                                                                                                                                                                                                        |
-| 5. Inserir os dados pessoais                                                                                                                                                                                                                                                           |
-|                                                                                                                                                                                                                                                                                        |
-| 6. Procurar / aplicar as vagas desejadas                                                                                                                                                                                                                                               |
-|                                                                                                                                                                                                                                                                                        |
-| 7 .Comunicação entre o cadidato e a empresa                                                                                                                                                                                                                                            |
-|                                                                                                                                                                                                                                                                                        |
-| 8. Acompanhamento da candidatura sobre a vaga                                                                                                                                                                                                                                          |
-|                                                                                                                                                                                                                                                                                        |
-|                                                                                                                                                                                                                                                                                        |
-|                                                                                                                                                                                                                                                                                        |
-| O que será avaliado após a realização do teste:                                                                                                                                                                                                                                        |
-|                                                                                                                                                                                                                                                                                        |
-|                                                                                                                                                                                                                                                                                        |
-|                                                                                                                                                                                                                                                                                        |
-| 1. O quão simples e intuitiva se dá a interação plataforma x usuário                                                                                                                                                                                                                   |
-|                                                                                                                                                                                                                                                                                        |
-| 2. Escala de dificuldade na utilização das funcionalidades da plataforma                                                                                                                                                                                                               |
-|                                                                                                                                                                                                                                                                                        |
-| 3. Tempo de transição entre as páginas                                                                                                                                                                                                                                                 |
-|                                                                                                                                                                                                                                                                                        |
-| 4. Tempo da utilização de cada funcionalidades                                                                                                                                                                                                                                         |
-|                                                                                                                                                                                                                                                                                        |
-| 5. Pesquisa de satisfação com os testadores                                                                                                                                                                                                                                            |
-|                                                                                                                                                                                                                                                                                        |
-| 6. Sugestões dos candidatos que testaram a plataforma                                                                                                                                                                                                                                  |
-|                                                                                                                                                                                                                                                                                        |
-| 7. Dificuldades encontradas  sobre a navegação da plataforma                                                                                                                                                                                                                           |
-|                                                                                                                                                                                                                                                                                        |
-| Conclusão                                                                                                                                                                                                                                                                              |
-|                                                                                                                                                                                                                                                                                        |
-| Buscamos as correções e aprimoramentos no site com base nas opiniões dos participantes do teste. Durante o processo, serão avaliados tanto o desempenho do site quanto a interação com os usuários, além da facilidade e clareza no uso das funcionalidades oferecidas pela aplicação. |
+
+
+
+
+## **Segue tabela com cada caso de teste**:
+#
+
+
+| Caso de teste 01     |  CT 01 - Cadastro (Usuario/Empresa)                                                                    | 
+| ------- | ------------------------------------------------------------------------------------------------------------ | 
+| Objetivo do teste | Verificar sa função de cadrasto esta funcionando corretamente            | 
+| Ações esperadas | 1- acessar a area de cadastro. 2-colocar os dados para criaçao de conta. 3- salvar informaçoes.      |
+| Critérios de êxito | Uma nova conta sera criada.                                                                       |
+<br>
+
+| Caso de teste 02     |  CT 02 - Login (Usuario/Empresa)                                                                  | 
+| ------- | ------------------------------------------------------------------------------------------------------------ | 
+| Objetivo do teste | Verificar sa função de realizar o login esta funcionando corretamente            | 
+| Ações esperadas |  1- Acessar o site. 2- Ir em Login. 3- Ter acesso a conta     |
+| Critérios de êxito | Entrar na conta com sucesso                                                           |
+<br>
+
+| Caso de teste 04    |  CT 04 - Adicionar ou Editar informações no perfil (Usuario/Empresa)                                                                   | 
+| ------- | ------------------------------------------------------------------------------------------------------------ | 
+| Objetivo do teste | Verificar se o usuário/empresa consegue Acrescentar ou alterar informações no perfil.          | 
+| Ações esperadas | 1-  acessar a plataforma 2- ir em perfil 3- Adicionar e alterar alguma informação.     |
+| Critérios de êxito |  Adição e alteração de informação realizada corretamente                                                  |
+<br>
+
+| Caso de teste 05     |  CT 05 - Anexar Arquivos (Usuario)                                                                   | 
+| ------- | ------------------------------------------------------------------------------------------------------------ | 
+| Objetivo do teste | Verificar se o a funcionalidade anexar está funcionando corretamente.          | 
+| Ações esperadas | 1 - Acessar a plataforma. 2- ir em Perfil 3- clicar na opção de anexar arquivos     |
+| Critérios de êxito | Os arquivos serão anexados com sucesso.                                                  |
+<br>
+
+| Caso de teste 06    |  CT 06 - Publicar vagas (Empresa)                                                                     | 
+| ------- | ------------------------------------------------------------------------------------------------------------ | 
+| Objetivo do teste | Verificar se o a funcionalidade de publicação de vaga está funcionando corretamente                   | 
+| Ações esperadas | 1- entrar na plataforma. 2- ir em Perfil 3- Ir em adicionar vaga 4- inserir todas as informações sobre a vaga 5- Clicar em publicar.                       |
+| Critérios de êxito | A publicação será feita com sucesso e ficará disponivel para os candidatos.                                                      |
+<b>
+
+| Caso de teste 07    |  CT 07 -    Realizar candidatura (Usuario)                                                                  | 
+| ------- | ------------------------------------------------------------------------------------------------------------ | 
+| Objetivo do teste | Verificar se o Usuario consegue aplicar-se para vaga.    | 
+| Ações esperadas | 1- acessar a plataforma  2- Pesquisar vaga de interesse 3- Candidatar-se     |
+| Critérios de êxito | O usuario terá sua candidatura feita com sucesso.                                                       |
+<br>
+
+| Caso de teste 07     |  CT 07 - Envio de Mensagem                                                          | 
+| ------- | ------------------------------------------------------------------------------------------------------------ | 
+| Objetivo do teste | Verificar se o a função de enviar mensagem esta funcionando corretamente                   | 
+| Ações esperadas | 1- entrar na plataforma 2- ir em Perfil  3- Ir em candidatos (Empresa) 4- Selecionar o candidato que passou pelo processo seletivo e entrar em contato.                    |
+| Critérios de êxito | O candadito receberá e responderá as mensagens da empresa.|
+  
+## O que será avaliado após a realização do teste:
+1. O quão simples e intuitiva se dá a interação plataforma x usuário
+2. Escala de dificuldade na utilização das funcionalidades da plataforma
+3. Tempo de transição entre as páginas
+4. Tempo da utilização de cada funcionalidades
+5. Pesquisa de satisfação com os testadores
+6. Sugestões dos candidatos que testaram a plataforma
+7. Dificuldades encontradas  sobre a navegação da plataforma
+
+Conclusão:
+Buscamos as correções e aprimoramentos no site com base nas opiniões dos participantes do teste. Durante o processo, serão avaliados tanto o desempenho do site quanto a interação com os usuários, além da facilidade e clareza no uso das funcionalidades oferecidas pela aplicação. |
 
 As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Testes de Usabilidade".
 
