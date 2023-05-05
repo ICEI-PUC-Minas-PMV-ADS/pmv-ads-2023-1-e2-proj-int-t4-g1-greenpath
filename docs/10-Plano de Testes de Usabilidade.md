@@ -18,49 +18,49 @@ Para cada voluntário do teste, é fundamental coletar e apresentar todos os dad
 | Caso de teste 01     |  CT 01 - Cadastro (Usuario/Empresa)                                                                    | 
 | ------- | ------------------------------------------------------------------------------------------------------------ | 
 | Objetivo do teste | Verificar sa função de cadrasto esta funcionando corretamente            | 
-| Ações esperadas | 1- acessar a area de cadastro. 2-colocar os dados para criaçao de conta. 3- salvar informaçoes.      |
+| Ações esperadas | 1- acessar a area de cadastro.<br> 2-colocar os dados para criaçao de conta.<br> 3- salvar informaçoes.      |
 | Critérios de êxito | Uma nova conta sera criada.                                                                       |
 <br>
 
 | Caso de teste 02     |  CT 02 - Login (Usuario/Empresa)                                                                  | 
 | ------- | ------------------------------------------------------------------------------------------------------------ | 
 | Objetivo do teste | Verificar sa função de realizar o login esta funcionando corretamente            | 
-| Ações esperadas |  1- Acessar o site. 2- Ir em Login. 3- Ter acesso a conta     |
+| Ações esperadas |  1- Acessar o site.<br> 2- Ir em Login.<br> 3- Ter acesso a conta     |
 | Critérios de êxito | Entrar na conta com sucesso                                                           |
 <br>
 
-| Caso de teste 04    |  CT 04 - Adicionar ou Editar informações no perfil (Usuario/Empresa)                                                                   | 
+| Caso de teste 03    |  CT 03 - Adicionar ou Editar informações no perfil (Usuario/Empresa)                                                                   | 
 | ------- | ------------------------------------------------------------------------------------------------------------ | 
 | Objetivo do teste | Verificar se o usuário/empresa consegue Acrescentar ou alterar informações no perfil.          | 
-| Ações esperadas | 1-  acessar a plataforma 2- ir em perfil 3- Adicionar e alterar alguma informação.     |
+| Ações esperadas | 1-  acessar a plataforma<br> 2- ir em perfil<br> 3- Adicionar e alterar alguma informação.     |
 | Critérios de êxito |  Adição e alteração de informação realizada corretamente                                                  |
 <br>
 
-| Caso de teste 05     |  CT 05 - Anexar Arquivos (Usuario)                                                                   | 
+| Caso de teste 04     |  CT 04 - Anexar Arquivos (Usuario)                                                                   | 
 | ------- | ------------------------------------------------------------------------------------------------------------ | 
 | Objetivo do teste | Verificar se o a funcionalidade anexar está funcionando corretamente.          | 
-| Ações esperadas | 1 - Acessar a plataforma. 2- ir em Perfil 3- clicar na opção de anexar arquivos     |
+| Ações esperadas | 1 - Acessar a plataforma.<br> 2- ir em Perfil<br> 3- clicar na opção de anexar arquivos     |
 | Critérios de êxito | Os arquivos serão anexados com sucesso.                                                  |
 <br>
 
-| Caso de teste 06    |  CT 06 - Publicar vagas (Empresa)                                                                     | 
+| Caso de teste 05    |  CT 05 - Publicar vagas (Empresa)                                                                     | 
 | ------- | ------------------------------------------------------------------------------------------------------------ | 
 | Objetivo do teste | Verificar se o a funcionalidade de publicação de vaga está funcionando corretamente                   | 
-| Ações esperadas | 1- entrar na plataforma. 2- ir em Perfil 3- Ir em adicionar vaga 4- inserir todas as informações sobre a vaga 5- Clicar em publicar.                       |
+| Ações esperadas | 1- entrar na plataforma. <br> 2- ir em Perfil<br> 3- Ir em adicionar vaga <br> 4- inserir todas as informações sobre a vaga <br> 5- Clicar em publicar.                       |
 | Critérios de êxito | A publicação será feita com sucesso e ficará disponivel para os candidatos.                                                      |
 <b>
 
-| Caso de teste 07    |  CT 07 -    Realizar candidatura (Usuario)                                                                  | 
+| Caso de teste 06    |  CT 06 -    Realizar candidatura (Usuario)                                                                  | 
 | ------- | ------------------------------------------------------------------------------------------------------------ | 
 | Objetivo do teste | Verificar se o Usuario consegue aplicar-se para vaga.    | 
-| Ações esperadas | 1- acessar a plataforma  2- Pesquisar vaga de interesse 3- Candidatar-se     |
+| Ações esperadas | 1- acessar a plataforma  <br>2- Pesquisar vaga de interesse<br> 3- Candidatar-se     |
 | Critérios de êxito | O usuario terá sua candidatura feita com sucesso.                                                       |
 <br>
 
 | Caso de teste 07     |  CT 07 - Envio de Mensagem                                                          | 
 | ------- | ------------------------------------------------------------------------------------------------------------ | 
 | Objetivo do teste | Verificar se o a função de enviar mensagem esta funcionando corretamente                   | 
-| Ações esperadas | 1- entrar na plataforma 2- ir em Perfil  3- Ir em candidatos (Empresa) 4- Selecionar o candidato que passou pelo processo seletivo e entrar em contato.                    |
+| Ações esperadas | 1- entrar na plataforma <br>2- ir em Perfil <br> 3- Ir em candidatos (Empresa) <br> 4- Selecionar o candidato que passou pelo processo seletivo e entrar em contato.                    |
 | Critérios de êxito | O candadito receberá e responderá as mensagens da empresa.|
   
 ## O que será avaliado após a realização do teste:
