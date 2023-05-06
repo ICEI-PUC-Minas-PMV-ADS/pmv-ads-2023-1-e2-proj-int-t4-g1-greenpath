@@ -1,0 +1,64 @@
+﻿@using GP23.ViewModels
+@model HomeUserCreateViewModel
+
+@{
+    ViewData["Title"] = "Register Page";
+}
+
+<section class="bg-dark space-lg" data-jarallax data-speed="0.2">
+    <img alt="Image" src="docs/img/Logo_01_PQ_ copy.jpg" class="bg-image position-absolute opacity-20" />
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-12 col-md-6 col-lg-5 section-intro">
+                <h1 class="display-3">Encontre uma vaga ou empresa.</h1>
+                <span class="lead">
+                    Uma comunidade de profissionais engajados com causas sustentáveis, proteção do meio-ambiente e praticas de responsabilidade social. Você esta pronto para entrar para este grupo?
+                </span>
+            </div>
+           
+            <div class="col-12 col-md-6 col-lg-5">
+                <div class="card">
+                    <div class="card-body">
+
+                        @if (TempData["Error"] != null)
+                        {
+                            <div class="col-md-12 alert alert-danger">
+                                <span><b>Sorry!</b> - @TempData["Error"] </span>
+                            </div>
+                        }
+
+                        <form asp-action="Register">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="form-group">
+                                <label asp-for="UserName">Username</label>
+                                <input asp-for="UserName" class="form-control form-control-lg" placeholder="Escolha um nome">
+                                <span asp-validation-for="UserName" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Email">Email address</label>
+                                <input asp-for="Email" class="form-control form-control-lg" placeholder="Endereço de email">
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                                <small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Password">Password</label>
+                                <input asp-for="Password" class="form-control form-control-lg" placeholder="Senha">
+                                <span asp-validation-for="Password" class="text-danger"></span>
+                            </div>
+                            <div class="mb-3">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" value="agree" name="agree-terms" id="check-agree">
+                                    <label class="custom-control-label text-small" for="check-agree">
+                                        Eu concordo com os <a href="#">Termos &amp; Condições</a>
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-lg btn-success btn-block">Entrar para GreenPath</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
