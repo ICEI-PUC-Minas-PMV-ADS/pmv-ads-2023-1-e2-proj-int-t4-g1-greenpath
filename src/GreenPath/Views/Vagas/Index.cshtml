@@ -1,0 +1,16 @@
+@{
+    List<int> lista = new List<int>();
+    lista.Add(1);
+    lista.Add(2);
+    lista.Add(3);
+    lista.Add(4);
+
+    TempData["lista"] = lista;
+}
+
+<div>
+    @foreach (var item in lista)
+    {
+        <h2>@item</h2>
+    }
+</div>
