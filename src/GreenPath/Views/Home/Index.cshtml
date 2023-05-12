@@ -1,124 +1,167 @@
 ﻿@model HomeModel
 @{
-    ViewData["Title"] = "Home Page";
+	ViewData["Title"] = "Home Page";
 }
 
 
-    <div class="container my-5">
-        <div>
-            <h1 class="display-4" data-aos="fade-up">Green Path</h1>
-            <p class="lead"  data-aos="fade-right" data-aos-delay="200">Contribua para um mundo melhor enquanto desenvolve sua carreira profissional</p>
-            <hr class="my-4">
-        </div>
-    </div>
+<style>
+	.carousel-inner {
+		box-shadow: 6px 6px 11px #828282, -6px -6px 11px #ffffff;
+	}
 
-<div class="row container my-5">
-  <div class="row">
-<div class="col-lg-8">
-  <h2>Destques</h2>
-    <div id="carouselDestaque" class="carousel carousel-vertical slide my-2">
-        <div class="carousel-inner">
+	a {
+		background-image: linear-gradient( to right, green, green 50%, #000 50% );
+		background-size: 200% 100%;
+		background-position: -100%;
+		display: inline-block;
+		padding: 5px 0;
+		position: relative;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		transition: all 0.3s ease-in-out;
+		text-decoration: none;
+	}
 
-          <div class="carousel-item active">
-            <div class="card">
-              <img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Noticia+1" alt="Card image cap">
-            </div>
-          </div>
+		a:before {
+			content: '';
+			background: green;
+			display: block;
+			position: absolute;
+			bottom: -3px;
+			left: 0;
+			width: 0px;
+			height: 3px;
+			transition: all 0.3s ease-in-out;
+		}
 
-          <div class="carousel-item">
-            <div class="card">
-              <img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Noticia+2" alt="Card image cap">
-            </div>
-          </div>
+		a:hover {
+			background-position: 0;
+		}
 
-          <div class="carousel-item">
-            <div class="card">
-              <img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Noticia+3" alt="Card image cap">
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card">
-              <img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Noticia+4" alt="Card image cap">
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestaque" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselDestaque" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-    <div class="col">
-      <h2>Últimas Noticias</h2>
-      <div id="carouselOne" class="carousel carousel-vertical slide my-2" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="card">
-              <img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Noticia+1" alt="Card image cap">
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card">
-              <img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Noticia+2" alt="Card image cap">
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card">
-              <img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Noticia+3" alt="Card image cap">
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card">
-              <img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Noticia+4" alt="Card image cap">
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselOne" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselOne" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+			a:hover::before {
+				width: 100%;
+			}
+</style>
 
-      <div id="carouselTwo" class="carousel carousel-vertical slide my-2" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="card">
-              <img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Noticia+5" alt="Card image cap">
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card">
-              <img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Noticia+6" alt="Card image cap">
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card">
-              <img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Noticia+7" alt="Card image cap">
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card">
-              <img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Noticia+8" alt="Card image cap">
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTwo" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselTwo" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-  </div>
+<div class="container my-5">
+	<div>
+		<h1 class="display-4" data-aos="fade-up">Green Path</h1>
+		<p class="lead" data-aos="fade-right" data-aos-delay="200">Contribua para um mundo melhor enquanto desenvolve sua carreira profissional</p>
+		<hr class="my-4">
+	</div>
+</div>
+
+<div class="row container my-5 mb-5">
+	<div class="row">
+		<div class="col-lg-8">
+			<h2>Destaques</h2>
+			<div id="carouselDestaque" class="carousel carousel-vertical slide my-2" data-bs-ride="carousel">
+				<div class="carousel-inner">
+
+					<div class="carousel-item active">
+						<div class="card">
+							<img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Vaga+1" alt="Card image cap">
+						</div>
+					</div>
+
+					<div class="carousel-item">
+						<div class="card">
+							<img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Vaga+2" alt="Card image cap">
+						</div>
+					</div>
+
+					<div class="carousel-item">
+						<div class="card">
+							<img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Vaga+3" alt="Card image cap">
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="card">
+							<img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Vaga+4" alt="Card image cap">
+						</div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselDestaque" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselDestaque" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+		<div class="col">
+			<h2>Notícias</h2>
+			<div id="carouselOne" class="carousel carousel-vertical slide my-2" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="card">
+							<img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Noticia+1" alt="Card image cap">
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="card">
+							<img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Noticia+2" alt="Card image cap">
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="card">
+							<img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Noticia+3" alt="Card image cap">
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="card">
+							<img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Noticia+4" alt="Card image cap">
+						</div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselOne" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselOne" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+
+			<div id="carouselTwo" class="carousel carousel-vertical slide my-2" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="card">
+							<img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Noticia+5" alt="Card image cap">
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="card">
+							<img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Noticia+6" alt="Card image cap">
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="card">
+							<img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Noticia+7" alt="Card image cap">
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="card">
+							<img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Noticia+8" alt="Card image cap">
+						</div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselTwo" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselTwo" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container p-5">
+	<h1 class="display-2 text-center" data-aos="fade-right">Siga por um caminho mais <a class="center-title" href="#">Verde</a></h1>
 </div>
