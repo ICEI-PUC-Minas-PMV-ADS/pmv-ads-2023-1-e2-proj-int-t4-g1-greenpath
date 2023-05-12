@@ -5,16 +5,19 @@ namespace GreenPath.ViewModels
 {
 	public class RegisterViewModel
     {
-        [Display(Name = "Email address")]
-        [Required(ErrorMessage = "Email address is required")]
+        [Display(Name = "Email")]
+        [Required(ErrorMessage = "O campo de email é obrigatório")]
         public string EmailAddress { get; set; }
-        [Required]
+
+        [Display(Name = "Senha")]
+        [Required(ErrorMessage = "O campo de senha é obrigatória")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
-        [Display(Name = "Confirm password")]
-        [Required(ErrorMessage = "Confirm password is required")]
+
+        [Display(Name = "Confirmar Senha")]
+        [Required(ErrorMessage = "O campo de confirmar Senha é obrigatório")]
         [DataType(DataType.Password)]
-        [Compare("Password", ErrorMessage = "Password do not match")]
+        [Compare("Password", ErrorMessage = "As senhas são diferentes")]
         public string ConfirmPassword { get; set; }
     }
 }

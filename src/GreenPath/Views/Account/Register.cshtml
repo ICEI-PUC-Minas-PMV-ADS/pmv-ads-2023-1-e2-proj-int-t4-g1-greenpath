@@ -6,9 +6,9 @@
 }
 
 <div class="row">
-    <div class="col-md-6 offset-3">
+    <div class="col-md-6 offset-3 ">
         <p>
-            <h4>Crie sua nova conta.</h4>
+            <h4 class="text-center">Crie sua nova conta.</h4>
         </p>
 
         @if (TempData["Error"] != null)
@@ -28,20 +28,20 @@
                         <input asp-for="EmailAddress" class="form-control" />
                         <span asp-validation-for="EmailAddress" class="text-danger"></span>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group my-3">
                         <label asp-for="Password" class="control-label"></label>
                         <input asp-for="Password" class="form-control" />
                         <span asp-validation-for="Password" class="text-danger"></span>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group my-3">
                         <label asp-for="ConfirmPassword" class="control-label"></label>
                         <input asp-for="ConfirmPassword" class="form-control" />
                         <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
                     </div>
 
                     <div class="form-group">
-                        <input class="btn btn-outline-success float-right" type="submit" value="Sign up" />
-                        <a class="btn btn-outline-secondary" asp-controller="Home" asp-action="Index">Cancel</a>
+                        <input class="btn btn-outline-success float-right" type="submit" value="Cadastrar" />
+                        <a class="btn btn-outline-secondary" asp-controller="Home" asp-action="Index">Cancelar</a>
                     </div>
                 </form>
             </div>

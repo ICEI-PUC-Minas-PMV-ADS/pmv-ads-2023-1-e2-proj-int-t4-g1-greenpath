@@ -5,10 +5,12 @@ namespace GreenPath.ViewModels
 {
 	public class LoginViewModel
     {
-        [Display(Name = "Email Address")]
-        [Required(ErrorMessage = "Email address is required")]
+        [Display(Name = "Email")]
+        [Required(ErrorMessage = "O campo email é obrigatório")]
         public string EmailAddress { get; set; }
-        [Required]
+        
+        [Display(Name = "Senha")]
+        [Required(ErrorMessage = "O campo senha é obrigatório")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
     }
