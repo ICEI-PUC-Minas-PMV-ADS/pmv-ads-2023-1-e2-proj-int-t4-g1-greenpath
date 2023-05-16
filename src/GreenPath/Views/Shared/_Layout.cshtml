@@ -5,7 +5,7 @@
 @inject UserManager<AppUser> UserManager
 
 @{
-    var currentUser = await UserManager.GetUserAsync(User);
+	var currentUser = await UserManager.GetUserAsync(User);
 }
 
 
@@ -13,113 +13,154 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - GreenPath</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"] - GreenPath</title>
 
-    @*Style sheet do bootstrap*@
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/GP23.styles.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/lib/aos/aos.css" asp-append-version="true" />
+	@*Style sheet do bootstrap*@
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/GP23.styles.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/lib/aos/aos.css" asp-append-version="true" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
 
-    @*responsividade do bootstrap*@
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	@*responsividade do bootstrap*@
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 </head>
 
+<style>
+	.nav-item {
+		background-image: linear-gradient( to right, green, green 50%, #000 50% );
+		background-size: 200% 100%;
+		background-position: -100%;
+		display: inline-block;
+		position: relative;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		transition: all 0.3s ease-in-out;
+		text-decoration: none;
+	}
+
+	.navAccount {
+		text-decoration: underline;
+		text-decoration-color: green;
+	}
+
+	.nav-item:before {
+		content: '';
+		background: green;
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0px;
+		height: 3px;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.nav-item:hover {
+		background-position: 0;
+	}
+
+		.nav-item:hover::before {
+			width: 100%;
+		}
+</style>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 px-5">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">GreenPath</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Início</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Empresa" asp-action="Index">Empresas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Candidatos"
-                                asp-action="Index">Candidatos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Vagas" asp-action="Index">Vagas</a>
-                        </li>
-                        @if (SignInManager.IsSignedIn(User))
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="user" asp-action="Index">
-                                    Encontre Pessoas ?
-                                </a>
-                            </li>
-                        }
-                    </ul>
+	<header>
+		<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 px-5">
+			<div class="container-fluid">
+				<a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">GreenPath</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+						aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+					<ul class="navbar-nav flex-grow-1">
+						<li class="nav-item">
+							<a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Início</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" asp-area="" asp-controller="Empresa" asp-action="Index">Empresas</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" asp-area="" asp-controller="Candidatos"
+							   asp-action="Index">Candidatos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" asp-area="" asp-controller="Vagas" asp-action="Index">Vagas</a>
+						</li>
+						@if (SignInManager.IsSignedIn(User))
+						{
+							<li class="nav-item">
+								<a class="nav-link" asp-area="" asp-controller="user" asp-action="Index">
+									Encontre Pessoas ?
+								</a>
+							</li>
+						}
+					</ul>
 
-                    @*Não consegui achar o erro aqui.. Mas quando logado o logout não aparece, e deveria aparecer..*@
-                    @if (SignInManager.IsSignedIn(User))
-                    {
-                        <div class="dropdown">
-                            <span class="dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                Perfil
-                            </span>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" asp-controller="Profile" asp-action="Index"
-                                    asp-route-id="@currentUser.Id">
-                                    Meu Perfil
-                                </a>
-                                <a class="dropdown-item" asp-area="" asp-controller="Account" asp-action="Logout">
-                                    Sair
-                                </a>
-                            </div>
-                        </div>
-                    }
-                    else
-                    {
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a asp-area="" asp-controller="Account" asp-action="Register">Cadastre-se</a>
-                                <span>&nbsp;or&nbsp;</span>
-                                <a asp-area="" asp-controller="Account" asp-action="Login">Entre</a>
-                            </li>
-                        </ul>
-                    }
+					@*Não consegui achar o erro aqui.. Mas quando logado o logout não aparece, e deveria aparecer..*@
+					@if (SignInManager.IsSignedIn(User))
+					{
+						<div class="dropdown">
+							<span class="dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+								  aria-haspopup="true" aria-expanded="false">
+								Perfil
+							</span>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" asp-controller="Profile" asp-action="Index"
+							   asp-route-id="@currentUser.Id">
+									Meu Perfil
+								</a>
+								<a class="dropdown-item" asp-area="" asp-controller="Account" asp-action="Logout">
+									Sair
+								</a>
+							</div>
+						</div>
+					}
+					else
+					{
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a asp-area="" asp-controller="Account" asp-action="Register" class="navAccount">Cadastre-se</a>
+							</li>
+							<span>&nbsp;&nbsp;ou&nbsp;&nbsp;</span>
+							<li class="nav-item">
+								<a asp-area="" asp-controller="Account" asp-action="Login" class="navAccount">Entre</a>
+							</li>
+						</ul>
+					}
 
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="container">
+		<main role="main" class="pb-3">
+			@RenderBody()
+		</main>
+	</div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - GreenPath - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacidade</a>
-        </div>
-    </footer>
+	<footer class="border-top footer text-muted">
+		<div class="container">
+			&copy; 2023 - GreenPath - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacidade</a>
+		</div>
+	</footer>
 
-    @*jquerys do bootstrap*@
-    <script src="~/lib/aos/aos.js" asp-append-version="true"></script>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    <script src="https://kit.fontawesome.com/1683602241.js" crossorigin="anonymous"></script>
-    
-    @await RenderSectionAsync("Scripts", required: false)
+	@*jquerys do bootstrap*@
+	<script src="~/lib/aos/aos.js" asp-append-version="true"></script>
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="~/js/site.js" asp-append-version="true"></script>
+	<script src="https://kit.fontawesome.com/1683602241.js" crossorigin="anonymous"></script>
+
+	@await RenderSectionAsync("Scripts", required: false)
 </body>
 
 </html>

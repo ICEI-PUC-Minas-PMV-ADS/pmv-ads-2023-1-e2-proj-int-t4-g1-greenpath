@@ -5,51 +5,94 @@
 
 
 <style>
+	.z-index-1 {
+		z-index: 1;
+	}
+
 	.carousel-inner {
 		box-shadow: 6px 6px 11px #828282, -6px -6px 11px #ffffff;
 	}
 
-	a {
-		background-image: linear-gradient( to right, green, green 50%, #000 50% );
-		background-size: 200% 100%;
-		background-position: -100%;
+	.heroTitle {
 		display: inline-block;
-		padding: 5px 0;
 		position: relative;
+		padding: 5px 0;
+		text-decoration: none;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-		transition: all 0.3s ease-in-out;
-		text-decoration: none;
+		background-size: 200% 100%;
+		background-image: linear-gradient(to right, green, green 50%, #000 50%);
+		background-position: -100%;
+		animation: bg-animation 1s ease-in-out forwards;
 	}
 
-		a:before {
+		.heroTitle:before {
 			content: '';
-			background: green;
-			display: block;
 			position: absolute;
 			bottom: -3px;
 			left: 0;
 			width: 0px;
 			height: 3px;
+			background: green;
+			animation: before-bg-animation 1s ease-in-out forwards;
+		}
+
+		.heroTitle:hover::before {
+			width: 100%;
 			transition: all 0.3s ease-in-out;
 		}
 
-		a:hover {
+		.heroTitle:hover {
 			background-position: 0;
+			transition: all 0.3s ease-in-out;
 		}
 
-			a:hover::before {
-				width: 100%;
-			}
+	@@keyframes bg-animation {
+		0% {
+			background-position: 100%;
+		}
+
+		100% {
+			background-position: -100%;
+		}
+	}
+
+	@@keyframes before-bg-animation {
+		0% {
+			width: 0%;
+		}
+
+		100% {
+			width: 100%;
+		}
+	}
+
+	.container{
+		max-width: none;
+		overflow-x: hidden;
+		margin: 0;
+		padding: 0;
+	}
+
 </style>
 
-<div class="container my-5">
-	<div>
-		<h1 class="display-4" data-aos="fade-up">Green Path</h1>
-		<p class="lead" data-aos="fade-right" data-aos-delay="200">Contribua para um mundo melhor enquanto desenvolve sua carreira profissional</p>
-		<hr class="my-4">
+<div class="container position-relative d-flex align-items-center justify-content-center">
+	<div class="container my-5 position-absolute z-index-1">
+		<div class="text-center" style="overflow: hidden">
+			<h1 class="display-4" data-aos="fade-up">Siga por um caminho mais</h1>
+			<a class="display-4 heroTitle" data-aos="fade-up" href="#">Verde</a>
+		</div>
 	</div>
+	<div>
+
+	</div>
+	<img class="img-fluid mx-auto d-block" src="https://images.pexels.com/photos/886521/pexels-photo-886521.jpeg?auto=compress" />
+	<p class="lead position-absolute z-index-1 bottom-0">Contribua para um mundo melhor enquanto desenvolve sua carreira profissional</p>
 </div>
+
+
+
+
 
 <div class="row container my-5 mb-5">
 	<div class="row">
