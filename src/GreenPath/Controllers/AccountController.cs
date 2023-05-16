@@ -128,7 +128,9 @@ namespace GreenPath.Controllers
                 return Json(locationResult);
             }
 
-
+            public IActionResult RegisterPessoaFisica(){
+                return View();
+            }
         }
 
 }
