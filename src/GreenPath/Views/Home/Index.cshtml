@@ -16,78 +16,53 @@
 	.heroTitle {
 		display: inline-block;
 		position: relative;
-		padding: 5px 0;
 		text-decoration: none;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 200% 100%;
-		background-image: linear-gradient(to right, green, green 50%, #000 50%);
-		background-position: -100%;
-		animation: bg-animation 1s ease-in-out forwards;
+		color: green;
+		text-shadow: 2px 2px 2px green;
 	}
 
-		.heroTitle:before {
-			content: '';
-			position: absolute;
-			bottom: -3px;
-			left: 0;
-			width: 0px;
-			height: 3px;
-			background: green;
-			animation: before-bg-animation 1s ease-in-out forwards;
-		}
-
-		.heroTitle:hover::before {
-			width: 100%;
-			transition: all 0.3s ease-in-out;
-		}
-
-		.heroTitle:hover {
-			background-position: 0;
-			transition: all 0.3s ease-in-out;
-		}
-
-	@@keyframes bg-animation {
-		0% {
-			background-position: 100%;
-		}
-
-		100% {
-			background-position: -100%;
-		}
+	.heroTitle:hover{
+		color:green;
 	}
 
-	@@keyframes before-bg-animation {
-		0% {
-			width: 0%;
-		}
-
-		100% {
-			width: 100%;
-		}
+	.heroText{
+		text-shadow: 2px 2px 2px black;
 	}
 
-	.container{
+	.lead{
+		text-shadow: 0.1px 0.1px 0.1px black;
+	}
+
+	.container {
 		max-width: none;
 		overflow-x: hidden;
 		margin: 0;
 		padding: 0;
 	}
 
+	.heroImage{
+		filter: blur(8px);
+		-webkit-filter: blur(8px);
+	}
+
 </style>
 
-<div class="container position-relative d-flex align-items-center justify-content-center">
-	<div class="container my-5 position-absolute z-index-1">
+<div class="container position-relative d-flex align-items-center justify-content-center flex-column">
+	<div class="container position-absolute z-index-1">
 		<div class="text-center" style="overflow: hidden">
-			<h1 class="display-4" data-aos="fade-up">Siga por um caminho mais</h1>
-			<a class="display-4 heroTitle" data-aos="fade-up" href="#">Verde</a>
+			<h1 class="display-4 heroText" data-aos="fade-up" data-aos-duration="1000">Siga por um <a class="heroTitle" data-aos="zoom-in" data-aos-duration="1500">caminho</a> mais <a class="heroTitle" data-aos="zoom-in" data-aos-duration="1500">verde</a></h1>
 		</div>
-	</div>
-	<div>
+
+		<div class="text-center" style="margin-top: 15%">
+			<p class="lead z-index-1">Contribua para um mundo melhor enquanto desenvolve sua carreira profissional</p>
+			<a href="#destaques">
+				<i class="fa-solid fa-chevron-down fa-bounce" style="color: #808080;"></i>
+			</a>
+		</div>
+
 
 	</div>
-	<img class="img-fluid mx-auto d-block" src="https://images.pexels.com/photos/886521/pexels-photo-886521.jpeg?auto=compress" />
-	<p class="lead position-absolute z-index-1 bottom-0">Contribua para um mundo melhor enquanto desenvolve sua carreira profissional</p>
+	<img class="img-fluid mx-auto d-block heroImage" src="https://images.pexels.com/photos/886521/pexels-photo-886521.jpeg?auto=compress" />
 </div>
 
 
@@ -96,8 +71,8 @@
 
 <div class="row container my-5 mb-5">
 	<div class="row">
-		<div class="col-lg-8">
-			<h2>Destaques</h2>
+		<div class="col-md-5">
+			<h2 id="destaques">Destaques</h2>
 			<div id="carouselDestaque" class="carousel carousel-vertical slide my-2" data-bs-ride="carousel">
 				<div class="carousel-inner">
 
@@ -129,74 +104,6 @@
 					<span class="visually-hidden">Previous</span>
 				</button>
 				<button class="carousel-control-next" type="button" data-bs-target="#carouselDestaque" data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
-			</div>
-		</div>
-		<div class="col">
-			<h2>Notícias</h2>
-			<div id="carouselOne" class="carousel carousel-vertical slide my-2" data-bs-ride="carousel">
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<div class="card">
-							<img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Noticia+1" alt="Card image cap">
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="card">
-							<img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Noticia+2" alt="Card image cap">
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="card">
-							<img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Noticia+3" alt="Card image cap">
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="card">
-							<img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Noticia+4" alt="Card image cap">
-						</div>
-					</div>
-				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselOne" data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselOne" data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
-			</div>
-
-			<div id="carouselTwo" class="carousel carousel-vertical slide my-2" data-bs-ride="carousel">
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<div class="card">
-							<img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Noticia+5" alt="Card image cap">
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="card">
-							<img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Noticia+6" alt="Card image cap">
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="card">
-							<img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Noticia+7" alt="Card image cap">
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="card">
-							<img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Noticia+8" alt="Card image cap">
-						</div>
-					</div>
-				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselTwo" data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselTwo" data-bs-slide="next">
 					<span class="carousel-control-next-icon" aria-hidden="true"></span>
 					<span class="visually-hidden">Next</span>
 				</button>
