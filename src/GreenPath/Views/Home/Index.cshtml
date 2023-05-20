@@ -21,9 +21,9 @@
 		text-shadow: 2px 2px 2px green;
 	}
 
-	.heroTitle:hover {
-		color: green;
-	}
+		.heroTitle:hover {
+			color: green;
+		}
 
 	.heroText {
 		text-shadow: 2px 2px 2px black;
@@ -33,7 +33,7 @@
 		text-shadow: 0.1px 0.1px 0.1px black;
 	}
 
-	.container {
+	.container{
 		max-width: none;
 		overflow-x: hidden;
 		margin: 0;
@@ -43,11 +43,32 @@
 	.heroImage {
 		filter: blur(8px);
 		-webkit-filter: blur(8px);
+		width: 100%;
+		height: 100vh;
+		margin-bottom: 5%;
+	}
+
+	.containerDestaques {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		margin-block: 5%;
+	}
+
+	#carouselDestaques {
+		margin-block: 20px;
+		width: 60%;
+	}
+
+	.sobre{
+		max-width: 50vw;
 	}
 </style>
 
-<div class="container position-relative d-flex align-items-center justify-content-center flex-column">
+<div class="containerHero container position-relative d-flex align-items-center justify-content-center flex-column">
 	<div class="container position-absolute z-index-1">
+
 		<div class="text-center" style="overflow: hidden">
 			<h1 class="display-4 heroText" data-aos="fade-up" data-aos-duration="1000">Siga por um <a class="heroTitle"
 					data-aos="zoom-in" data-aos-duration="1500">caminho</a> mais <a class="heroTitle" data-aos="zoom-in"
@@ -61,66 +82,58 @@
 			</a>
 		</div>
 
-
 	</div>
-	<img class="img-fluid mx-auto d-block heroImage"
-		src="https://images.pexels.com/photos/886521/pexels-photo-886521.jpeg?auto=compress" />
+
+	<img class="d-block heroImage" src="https://images.pexels.com/photos/886521/pexels-photo-886521.jpeg?auto=compress" />
+
 </div>
 
-
-
-
-
-<div class="row container my-5 mb-5">
-	<div class="row">
-		<div class="col-md-5">
-			<h2 id="destaques">Destaques</h2>
-			<div id="carouselDestaque" class="carousel carousel-vertical slide my-2" data-bs-ride="carousel">
-				<div class="carousel-inner">
-
-					<div class="carousel-item active">
-						<div class="card">
-							<img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Vaga+1"
-								alt="Card image cap">
-						</div>
-					</div>
-
-					<div class="carousel-item">
-						<div class="card">
-							<img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Vaga+2"
-								alt="Card image cap">
-						</div>
-					</div>
-
-					<div class="carousel-item">
-						<div class="card">
-							<img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Vaga+3"
-								alt="Card image cap">
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="card">
-							<img class="card-img-top" src="https://via.placeholder.com/300x200.png?text=Vaga+4"
-								alt="Card image cap">
-						</div>
-					</div>
-				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselDestaque"
-					data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselDestaque"
-					data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
+<div class="containerDestaques">
+	<h2 id="destaques">Vagas Destaques</h2>
+	<div id="carouselDestaques" class="carousel slide" data-bs-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-bs-target="#carouselDestaques" data-bs-slide-to="0" class="active"></li>
+			<li data-bs-target="#carouselDestaques" data-bs-slide-to="1"></li>
+			<li data-bs-target="#carouselDestaques" data-bs-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img class="d-block w-100" src="https://placeimg.com/1080/500/animals" alt="First slide">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="https://placeimg.com/1080/500/arch" alt="Second slide">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="https://placeimg.com/1080/500/nature" alt="Third slide">
 			</div>
 		</div>
+		<a class="carousel-control-prev" href="#carouselDestaques" role="button" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselDestaques" role="button" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
 	</div>
 </div>
 
-<div class="container p-5">
-	<h1 class="display-2 text-center" data-aos="fade-right">Siga por um caminho mais <a class="center-title"
-			href="#">Verde</a></h1>
+<div class="container sobre d-block mx-auto">
+	<img src="~/images/logo.png" class="d-block mx-auto mb-3" width="113" height="112" alt="Logo" />
+
+	<p>
+		Somos uma equipe comprometida com a promoção da sustentabilidade e da responsabilidade social empresarial. Nosso objetivo é facilitar o acesso dos profissionais do mercado de trabalho a empresas que atuam alinhadas com valores de ESG (Governança Ambiental, Social e Corporativa), responsabilidade social e ambiental.
+	</p>
+
+	<p>
+		Acreditamos que é possível equilibrar a busca pelo lucro com um propósito maior, que inclui a preocupação com os impactossociais, ambientais e econômicos da empresa.
+	</p>
+
+	<p>
+		Nosso site oferece funcionalidades que possibilitam o cadastramento somente de empresas que atendam aos requisitos mencionados e que bloqueiem ou excluam empresas que atuem na "contramão" do foco principal do nosso projeto. Além disso, nosso objetivo futuro é transformar nossa marca em um selo próprio de caracterização de empresas que seguem esses conceitos ativamente no mercado.
+	</p>
+
+	<p>
+		Acreditamos que um ambiente como o nosso pode levar a uma maior lealdade dos funcionários, maior satisfação dos clientes e maior engajamento da comunidade, podendo, por sua vez, levar a um desempenho financeiro melhor e mais sustentável no longo prazo. Nossa equipe está comprometida em promover a conscientização e ações relevantes no cenário da responsabilidade socioambiental empresarial e fomentar cada vez mais o engajamento de empresas e sociedade nessa fórmula.
+	</p>
 </div>

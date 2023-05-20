@@ -45,14 +45,6 @@ Por exemplo:
 | Dados de entrada   |                                                                                                                                                                                                             | 
 | Resultado Obtido   |                                                                                                                                                                                                           | 
 
-| Caso de Teste      | CT-05 - Teste de Usabilidade                                                                                                                                                                 |
-|--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Requisitos Associados  |  RF-01; RF-02; RF-03; RF-04; RF-05; RF-06; RF-07; RF-08; RF-09; RF-010; RF-011; RF-012; RF-013; RF-014; RF-015 -  Consistência da interface: a interface do site deve ser consistente em todo o site, com o uso de cores e fontes consistentes, e uma estrutura de navegação lógica e fácil de seguir.   |
-| Objetivo do Teste      | Garantir uma navegação facil e simples para o usuario.                                                                                                                                               |
-| Passos                     | 1)Acessar o site por um navegador <br> 2)Navegar por todo site <br> 3)Testar todas suas funcionalidades                                                                                              |
-| Critérios de Êxito     |   O funcionamento de todo o site e suas funcionalidades em 100% , sem erros.                                                                                                                         |
-| Dados de entrada   |                                                                                                                                                                                                             | 
-| Resultado Obtido   |                                                                                                                                                                                                           | 
 
 | Caso de Teste      | CT-06 -   Teste de Segurança                                                                                                                                                     |
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
