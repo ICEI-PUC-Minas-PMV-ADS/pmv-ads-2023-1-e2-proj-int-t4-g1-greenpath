@@ -20,6 +20,7 @@ namespace GreenPath.Data
         public DbSet<State> States { get; set; }
         public DbSet<City> Cities { get; set; }
         public DbSet<VagasModel> Vagas { get; set; }
+        public DbSet<PessoaFisicaModel> PessoaFisica { get; set; }
 
     }
 }

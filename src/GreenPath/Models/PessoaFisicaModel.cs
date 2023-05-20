@@ -6,7 +6,7 @@ namespace GreenPath.Models
     public class PessoaFisicaModel
     {
         [Column("pessoa_fisica_id")]
-        public int Id { get; set; }
+        public string? Id { get; set; }
 
         [Column("pessoa_fisica_nome")]
         public string? Nome { get; set; }

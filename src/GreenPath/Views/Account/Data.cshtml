@@ -1,0 +1,204 @@
+@using GreenPath.ViewModels
+@model DataViewModel
+
+<form asp-action="Data" class="container d-flex flex-column justify-content-center py-3">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+
+    @if (TempData["DataError"] != null)
+    {
+        <div class="row alert-danger py-4 px-1">
+             <span><b>Desculpe!</b> - @TempData["DataError"] </span>
+        </div>
+    }
+
+    <div class="row">
+        <div class="d-flex justify-content-center py-4">
+            <input style="display: none;" type="file" id="input-picture">
+            <label id="input-pic-label" for="input-picture" class="d-flex flex-column"
+                style="cursor: pointer; position: relative; transition: 0.3s ease-out;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/1200px-Default_pfp.svg.png"
+                    class="rounded-circle img-fluid"
+                    style="padding: 5px; width: 150px; border: 1px solid #9c9c9c; aspect-ratio: 1/1;">
+            </label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="d-flex flex-column justify-content-center text-center">
+                <div class="d-flex align-items-center py-1">
+                    <i class="icone fa-solid fa-toggle-on fa-xl px-1"></i>
+                    <select style="width: 100%;" id="tipoUsuario" name="tipoUsuario" class="selectpicker p-2"
+                        data-live-search="true" onchange="mostrarCampos()">
+                        <option value="candidato">Candidato</option>
+                        <option value="empresa">Empresa</option>
+                    </select>
+                </div>
+
+                <div id="camposCandidato">
+                    <!-- Campos do candidato -->
+                    <div>
+                        <div class="d-flex align-items-center">
+                            <i class="icone fa-solid fa-pen fa-xl px-1"></i>
+                            <input asp-for="Name" class="form-control my-2" placeholder="Nome" />
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="icone fa-solid fa-marker fa-xl px-1"></i>
+                            <input asp-for="Surname" type="text" class="form-control my-2" placeholder="Sobrenome" />
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="icone fa-solid fa-user-tie fa-xl px-1"></i>
+                            <input asp-for="Profession" type="text" class="form-control my-2" placeholder="Profissão" />
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="icone fa-solid fa-file fa-xl px-1"></i>
+                            <input asp-for="Curriculum" type="text" class="form-control my-2" placeholder="Currículo" />
+                        </div>
+                    </div>
+                </div>
+
+                <div id="camposEmpresa" style="display: none;">
+                    <!-- Campos da empresa -->
+                    <div>
+                        <div class="d-flex align-items-center">
+                            <i class="icone fa-solid fa-pen fa-xl px-1"></i>
+                            <input asp-for="CompanyName" type="text" class="form-control my-2"
+                                placeholder="Razão Social" />
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="icone fa-solid fa-file-code fa-xl px-1"></i>
+                            <input asp-for="CNPJ" type="text" class="form-control my-2" placeholder="CNPJ" />
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="icone fa-solid fa-user-tie fa-xl px-1"></i>
+                            <input asp-for="Area" type="text" class="form-control my-2" placeholder="Área de Atuação" />
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="icone fa-solid fa-stamp fa-xl px-1"></i>
+                            <input asp-for="Certificates" type="text" class="form-control my-2"
+                                placeholder="Certificações" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="d-flex flex-column justify-content-center text-center">
+                <div>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex align-items-center">
+                            <i class="icone fa-solid fa-envelope fa-xl px-1"></i>
+                            <input asp-for="Email" type="text" class="form-control my-2"
+                                placeholder="Email de Contato" />
+                        </div>
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex align-items-center">
+                            <i class="icone fa-solid fa-phone fa-xl px-1"></i>
+                            <input asp-for="Phone" type="text" class="form-control my-2" placeholder="Telefone" />
+                        </div>
+                        <span asp-validation-for="Phone" class="text-danger"></span>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex align-items-center">
+                            <i class="icone fa-solid fa-earth-americas fa-xl px-1"></i>
+                            <input asp-for="Country" type="text" class="form-control my-2" placeholder="País" />
+                        </div>
+                        <span asp-validation-for="Country" class="text-danger"></span>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex align-items-center">
+                            <i class="icone fa-solid fa-flag-usa fa-xl px-1"></i>
+                            <input asp-for="State" type="text" class="form-control my-2" placeholder="Estado" />
+                        </div>
+                        <span asp-validation-for="State" class="text-danger"></span>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex align-items-center">
+                            <i class="icone fa-solid fa-city fa-xl px-1"></i>
+                            <input asp-for="City" type="text" class="form-control my-2" placeholder="Cidade" />
+                        </div>
+                        <span asp-validation-for="City" class="text-danger"></span>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex align-items-center">
+                            <i class="icone fa-solid fa-city fa-xl px-1"></i>
+                            <input asp-for="Street" type="text" class="form-control my-2" placeholder="Rua" />
+                        </div>
+                        <span asp-validation-for="City" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="d-flex flex-column">
+                <div class="d-flex align-items-center">
+                    <i class="icone fa-brands fa-instagram fa-xl px-1" style="color: rgb(255, 25, 0);"></i>
+                    <input asp-for="Instagram" type="text" class="form-control my-2" placeholder="Instagram" />
+                </div>
+                <span asp-validation-for="Instagram" class="text-danger text-center"></span>
+            </div>
+            <div class="d-flex flex-column">
+                <div class="d-flex align-items-center">
+                    <i class="icone fa-brands fa-facebook fa-xl px-1" style="color: #488dff;"></i>
+                    <input asp-for="Facebook" type="text" class="form-control my-2" placeholder="Facebook" />
+                </div>
+                <span asp-validation-for="Facebook" class="text-danger text-center"></span>
+            </div>
+        </div>
+        <div class="col">
+            <div class="d-flex flex-column">
+                <div class="d-flex align-items-center">
+                    <i class="icone fa-brands fa-github fa-xl px-1"></i>
+                    <input asp-for="Github" type="text" class="form-control my-2" placeholder="Github" />
+                </div>
+                <span asp-validation-for="Github" class="text-danger text-center"></span>
+            </div>
+            <div class="d-flex flex-column">
+                <div class="d-flex align-items-center">
+                    <i class="icone fa-brands fa-pinterest fa-xl px-1" style="color: #ff0202;"></i>
+                    <input asp-for="Pinterest" type="text" class="form-control my-2" placeholder="Pinterest" />
+                </div>
+                <span asp-validation-for="Pinterest" class="text-danger text-center"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="d-flex justify-content-center">
+            <a class="btn btn-outline-secondary px-5 m-3" asp-controller="Home" asp-action="Index">Cancelar</a>
+            <input class="btn btn-outline-success float-right px-5 m-3" type="submit" value="Cadastrar" />
+        </div>
+    </div>
+</form>
+
+<style>
+    .icone {
+        width: 50px;
+    }
+</style>
+
+<script>
+    function mostrarCampos() {
+        var tipoUsuario = document.getElementById("tipoUsuario").value;
+        var camposCandidato = document.getElementById("camposCandidato");
+        var camposEmpresa = document.getElementById("camposEmpresa");
+        var form_title = document.getElementById("form-title")
+
+        if (tipoUsuario == "candidato") {
+            camposCandidato.style.display = "block";
+            camposEmpresa.style.display = "none";
+            form_title.innerText = "Dados do Candidato"
+        } else if (tipoUsuario == "empresa") {
+            camposCandidato.style.display = "none";
+            camposEmpresa.style.display = "block";
+            form_title.innerText = "Dados da Empresa"
+        }
+    }
+
+</script>
