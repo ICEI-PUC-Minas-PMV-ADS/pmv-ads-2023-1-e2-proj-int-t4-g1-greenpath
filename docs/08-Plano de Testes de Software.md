@@ -46,7 +46,7 @@ Por exemplo:
 | Resultado Obtido   |                                                                                                                                                                                                           | 
 
 
-| Caso de Teste      | CT-06 -   Teste de Segurança                                                                                                                                                     |
+| Caso de Teste      | CT-05 -   Teste de Segurança                                                                                                                                                     |
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisitos Associados  |  RF-01; RF-02; RF-03; RF-06; RF-015 - Criptografia: Garantir que as informações dos usuários, como senhas e dados pessoais, estejam criptografadas e protegidas de possíveis invasões.                                    |
 | Objetivo do Teste      |  Verificar todas as brechas de possiveis ataques contra o site visando roubar informações dos usuarios.                                                                                  |
@@ -56,7 +56,7 @@ Por exemplo:
 | Resultado Obtido   |                                                                                                                                                                                                           | 
 
 
-| Caso de Teste      | CT-07 -      Teste de Avaliação e Ranking das Empresas                                                                                                                                                |
+| Caso de Teste      | CT-06 -      Teste de Avaliação e Ranking das Empresas                                                                                                                                                |
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisitos Associados  |  RF-014 O site possibilitar a avaliação do Usuario sobre a empresa interessada e a visualização do Ranking da mesma em relação a outras empresas.                                    |
 | Objetivo do Teste      |  Verificar se o Usuario consegue visualizar todas as avaliações de candidatos e contratados no passado da empresa interessada.                                                                                  |
@@ -65,7 +65,7 @@ Por exemplo:
 | Dados de entrada   |                                                                                                                                                                                                             | 
 | Resultado Obtido   |                                                                                                                                                                                                           | 
 
-| Caso de Teste      | CT-08 -      Teste do Processo Seletivo                                                                                                                                                 |
+| Caso de Teste      | CT-07 -      Teste do Processo Seletivo                                                                                                                                                 |
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisitos Associados  |  RF-010 O site deve exibir o andamento do processo seletivo da vaga publicada pela empresa .                                    |
 | Objetivo do Teste      |  Verificar se o Usuario tem acesso ao processo seletivo da vaga aplicada.                                                                                  |
@@ -74,7 +74,7 @@ Por exemplo:
 | Dados de entrada   |                                                                                                                                                                                                             | 
 | Resultado Obtido   |                                                                                                                                                                                                           | 
 
-| Caso de Teste      | CT-09 -      Teste de Login e Cadastramento de Usuarios/Empresa                                                                                                                                                 |
+| Caso de Teste      | CT-08 -      Teste de Login e Cadastramento de Usuarios/Empresa                                                                                                                                                 |
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisitos Associados  |  RF-01; RF-02; RF-03; RF-06; RF-015 -  O site deve exercer a possibilidade de login e cadastro de novos usuarios.                                    |
 | Objetivo do Teste      | Verificar se o login de usuarios/empresa ja cadastrados e se o cadastramento de novos usuarios/empresas estão funcionando corretamente.                                                                                  |
