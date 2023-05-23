@@ -12,6 +12,19 @@ https://www.sebrae.com.br/sites/PortalSebrae/artigos/voce-sabe-o-que-e-selo-verd
 O selo verde é uma certificação para produtos, serviços e empresas que produzem de forma sustentável, ou seja, com ações de menor impacto ambiental e socialmente responsáveis.
 O selo verde também é conhecido como certificação verde ou ecosselo. Seu principal objetivo é chancelar empresas e fabricantes que adotam práticas, medidas e procedimentos socioambientais responsáveis. Ou seja, é uma garantia de que a empresa mantém um sistema de gestão ambiental, que garante a proteção dos recursos naturais e a saúde humana.
 
+#### É hora de as empresas pagarem pelos danos causados pela mudança climática
+https://fastcompanybrasil.com/esg/e-hora-de-as-empresas-pagarem-pelos-danos-causados-pela-mudanca-climatica/ Adele Peters, redatora da Fast Company. 
+
+#### RSE - Responsabilidade Social Empresarial e Norma Internacional ISO 26000
+https://www.dgae.gov.pt/servicos/sustentabilidade-empresarial/responsabilidade-social-das-empresas.aspx
+
+#### Selo Verde SEBRAE
+https://www.sebrae.com.br/sites/PortalSebrae/artigos/voce-sabe-o-que-e-selo-verde,a031949fca8e4810VgnVCM100000d701210aRCRD#:~:text=O%20selo%20verde%20%C3%A9%20uma%20certifica%C3%A7%C3%A3o%20para%20produtos%2C,tamb%C3%A9m%20%C3%A9%20conhecido%20como%20certifica%C3%A7%C3%A3o%20verde%20ou%20ecosselo.
+
+Artigo: Capitalismo Consciente e Sustentabilidade – Parte do PFCC – Programa de Formação e Certificação de Conselheiros da Board Academy Br, com a professora Francine Pena Póvoa, Board Club;
+O termo foi cunhado por John Mackey, co-fundador da Whole Foods Market, e 
+Raj Sisodia, professor de marketing na Babson College, em um livro publicado em 2013 intitulado "Conscious Capitalism: Liberating the Heroic Spirit of Business”.
+
 
 
 > **Links Úteis**:
