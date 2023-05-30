@@ -17,15 +17,11 @@ public class ProfileController : Controller
 
     public async Task<IActionResult> Index()
     {
-        // var person10 = await GetPersonById(1);
+        var person = await _context.Users.FindAsync("414f02e6-d68f-49b8-9222-baea88375cd4");
+
+
+        System.Console.WriteLine(person);
 
         return View();
     }
-
-    // public async Task<GreenPath.Models.PessoaFisicaModel> GetPersonById(int id)
-    // {
-    //     var person = await _context.PessoaFisica.FindAsync(id);
-
-    //     return person;
-    // }
 }

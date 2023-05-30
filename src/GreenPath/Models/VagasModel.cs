@@ -12,7 +12,7 @@ namespace GreenPath.Models
 
         [Column("vaga_empresa_id")]
         [Display(Name = "Nome da empresa")]
-        public int	Empresa { get; set; }
+        public string? Empresa { get; set; }
 
 
 		[Column("vaga_cargo")]

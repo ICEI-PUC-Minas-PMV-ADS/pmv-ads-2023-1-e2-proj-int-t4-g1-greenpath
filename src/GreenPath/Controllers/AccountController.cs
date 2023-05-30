@@ -21,12 +21,12 @@ namespace GreenPath.Controllers
             SignInManager<AppUser> signInManager,
             BancoContexto context,
             ILocationService locationService)
-        {
-            _context = context;
-            _locationService = locationService;
-            _signInManager = signInManager;
-            _userManager = userManager;
-        }
+            {
+                _context = context;
+                _locationService = locationService;
+                _signInManager = signInManager;
+                _userManager = userManager;
+            }
 
         [HttpGet]
         public IActionResult Login()
@@ -80,6 +80,7 @@ namespace GreenPath.Controllers
             else
             {
                 var user = await _userManager.FindByEmailAsync(registerViewModel.EmailAddress);
+                
                 if (user != null)
                 {
                     TempData["Error"] = "Este endereço de e-mail já está cadastrado.";
