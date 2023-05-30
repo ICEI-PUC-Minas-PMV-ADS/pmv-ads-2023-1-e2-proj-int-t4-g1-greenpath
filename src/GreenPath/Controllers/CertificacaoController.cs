@@ -19,7 +19,7 @@ namespace GreenPath.Controllers
         {
             ViewData["Filtro"] = BuscaString;
 
-            var certificacoes = from cert in _context.certificacao select cert;
+            var certificacoes = from cert in _context.Certificacoes select cert;
             if (!String.IsNullOrEmpty(BuscaString))
             {
                 certificacoes = certificacoes.Where(cert => cert.titulo.Contains(BuscaString));
@@ -32,12 +32,12 @@ namespace GreenPath.Controllers
         // GET: Certificacao/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.certificacao == null)
+            if (id == null || _context.Certificacoes == null)
             {
                 return NotFound();
             }
 
-            var certificacaoModel = await _context.certificacao
+            var certificacaoModel = await _context.Certificacoes
                 .FirstOrDefaultAsync(m => m.id == id);
             if (certificacaoModel == null)
             {
@@ -72,12 +72,12 @@ namespace GreenPath.Controllers
         // GET: Certificacao/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.certificacao == null)
+            if (id == null || _context.Certificacoes == null)
             {
                 return NotFound();
             }
 
-            var certificacaoModel = await _context.certificacao.FindAsync(id);
+            var certificacaoModel = await _context.Certificacoes.FindAsync(id);
             if (certificacaoModel == null)
             {
                 return NotFound();
@@ -123,12 +123,12 @@ namespace GreenPath.Controllers
         // GET: Certificacao/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.certificacao == null)
+            if (id == null || _context.Certificacoes == null)
             {
                 return NotFound();
             }
 
-            var certificacaoModel = await _context.certificacao
+            var certificacaoModel = await _context.Certificacoes
                 .FirstOrDefaultAsync(m => m.id == id);
             if (certificacaoModel == null)
             {
@@ -143,14 +143,14 @@ namespace GreenPath.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int? id)
         {
-            if (_context.certificacao == null)
+            if (_context.Certificacoes == null)
             {
                 return Problem("Entity set 'BancoContexto.certificacao'  is null.");
             }
-            var certificacaoModel = await _context.certificacao.FindAsync(id);
+            var certificacaoModel = await _context.Certificacoes.FindAsync(id);
             if (certificacaoModel != null)
             {
-                _context.certificacao.Remove(certificacaoModel);
+                _context.Certificacoes.Remove(certificacaoModel);
             }
 
             await _context.SaveChangesAsync();
@@ -159,7 +159,7 @@ namespace GreenPath.Controllers
 
         private bool CertificacaoModelExists(int? id)
         {
-            return (_context.certificacao?.Any(e => e.id == id)).GetValueOrDefault();
+            return (_context.Certificacoes?.Any(e => e.id == id)).GetValueOrDefault();
         }
     }
 }

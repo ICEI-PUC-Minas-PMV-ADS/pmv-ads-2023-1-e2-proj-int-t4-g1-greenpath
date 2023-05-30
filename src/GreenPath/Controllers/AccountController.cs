@@ -1,9 +1,7 @@
-﻿using System;
-using GreenPath.Data;
+﻿using GreenPath.Data;
 using GreenPath.Interfaces;
 using GreenPath.Models;
 using GreenPath.ViewModels;
-using Microsoft.AspNetCore.Http.Extensions;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -97,9 +95,9 @@ namespace GreenPath.Controllers
         }
 
         [HttpGet]
-        public IActionResult Data()
+        public Task<IActionResult> Data()
         {
-            return View();
+			return Task.FromResult<IActionResult>(View());
         }
 
         [HttpPost]
@@ -122,6 +120,8 @@ namespace GreenPath.Controllers
 
                 if (TempData.ContainsKey("RegisterViewModel"))
                 {
+                    if(string.IsNullOrEmpty(TempData["RegisterViewModel"] as string)){
+
                     var serializedData = TempData["RegisterViewModel"] as string;
                     if (!string.IsNullOrEmpty(serializedData))
                     {
@@ -160,6 +160,9 @@ namespace GreenPath.Controllers
                             return RedirectToAction("Welcome", "Account");
                         }
                     }
+                    }else{
+                        return Problem("Faça registro primeiro !");
+                    }
                 }
             }
 
@@ -178,13 +181,13 @@ namespace GreenPath.Controllers
 
         [HttpGet]
         [Route("Account/Welcome")]
-        public async Task<IActionResult> Welcome(int page = 0)
+        public Task<IActionResult> Welcome(int page = 0)
         {
             if (page == 0)
             {
-                return View();
+                return Task.FromResult<IActionResult>(View());
             }
-            return View();
+            return Task.FromResult<IActionResult>(View());
 
         }
 

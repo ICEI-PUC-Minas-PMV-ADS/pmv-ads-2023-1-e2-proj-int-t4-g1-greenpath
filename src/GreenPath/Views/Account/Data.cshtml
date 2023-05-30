@@ -1,6 +1,15 @@
 @using GreenPath.ViewModels
 @model DataViewModel
 
+<style>
+    .grid-certs{
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+        padding: 2% 0px 0px 10%;
+    }
+</style>
+
+
 <form asp-action="Data" class="container d-flex flex-column justify-content-center py-3">
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
@@ -74,10 +83,69 @@
                             <i class="icone fa-solid fa-user-tie fa-xl px-1"></i>
                             <input asp-for="Area" type="text" class="form-control my-2" placeholder="Área de Atuação" />
                         </div>
-                        <div class="d-flex align-items-center">
                             <i class="icone fa-solid fa-stamp fa-xl px-1"></i>
-                            <input asp-for="Certificates" type="text" class="form-control my-2"
-                                placeholder="Certificações" />
+                            Certificações
+                        <div class="d-grid col-3 text-start grid-certs">
+                            <div>
+                                <input asp-for="Certificates" type="checkbox" id="certificacoes" name="LEED" value="1" />
+                                <label for="LEED">LEED</label>
+                            </div>
+                            <div>
+                                <input asp-for="Certificates" type="checkbox" id="certificacoes" name="BREEAM" value="2" />
+                                <label for="BREEAM">BREEAM</label>
+                            </div>
+                            <div>
+                                <input asp-for="Certificates" type="checkbox" id="certificacoes" name="ISO 14001" value="3" />
+                                <label for="ISO 14001">ISO 14001</label>
+                            </div>
+                            <div>
+                                <input asp-for="Certificates" type="checkbox" id="certificacoes" name="FSC" value="4" />
+                                <label for="FSC">FSC</label>
+                            </div>
+                            <div>
+                                <input asp-for="Certificates" type="checkbox" id="certificacoes" name="Cradle to Cradle" value="5" />
+                                <label for="Cradle to Cradle">Cradle to Cradle</label>
+                            </div>
+                            <div>
+                                <input asp-for="Certificates" type="checkbox" id="certificacoes" name="ENERGY STAR" value="6" />
+                                <label for="ENERGY STAR">ENERGY STAR</label>
+                            </div>
+                            <div>
+                                <input asp-for="Certificates" type="checkbox" id="certificacoes" name="Fairtrade" value="7" />
+                                <label for="Fairtrade">Fairtrade</label>
+                            </div>
+                            <div>
+                                <input asp-for="Certificates" type="checkbox" id="certificacoes" name="LEAF" value="8" />
+                                <label for="LEAF">LEAF</label>
+                            </div>
+                            <div>
+                                <input asp-for="Certificates" type="checkbox" id="certificacoes" name="Green Seal" value="9" />
+                                <label for="Green Seal">Green Seal</label>
+                            </div>
+                            <div>
+                                <input asp-for="Certificates" type="checkbox" id="certificacoes" name="CarbonNeutral" value="10" />
+                                <label for="CarbonNeutral">CarbonNeutral</label>
+                            </div>
+                            <div>
+                                <input asp-for="Certificates" type="checkbox" id="certificacoes" name="Fair for Life" value="11" />
+                                <label for="Fair for Life">Fair for Life</label>
+                            </div>
+                            <div>
+                                <input asp-for="Certificates" type="checkbox" id="certificacoes" name="Green Globe" value="12" />
+                                <label for="Green Globe">Green Globe</label>
+                            </div>
+                            <div>
+                                <input asp-for="Certificates" type="checkbox" id="certificacoes" name="WaterSense" value="13" />
+                                <label for="WaterSense">WaterSense</label>
+                            </div>
+                            <div>
+                                <input asp-for="Certificates" type="checkbox" id="certificacoes" name="RECS" value="14" />
+                                <label for="RECS">RECS</label>
+                            </div>
+                            <div>
+                                <input asp-for="Certificates" type="checkbox" id="certificacoes" name="Green Key" value="15" />
+                                <label for="Green Key">Green Key</label>
+                            </div>
                         </div>
                     </div>
                 </div>
