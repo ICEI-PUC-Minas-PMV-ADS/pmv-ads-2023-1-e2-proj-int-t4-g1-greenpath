@@ -1,11 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\src",
-    "\\src\\GreenPath",
-    "\\src\\GreenPath\\Views",
-    "\\src\\GreenPath\\Views\\Home"
+    ""
   ],
-  "SelectedNode": "\\src\\GreenPath\\Interfaces",
+  "SelectedNode": "\\GreenPath.sln",
   "PreviewInSolutionExplorer": false
 }

@@ -1,10 +1,9 @@
-using System;
 using System.ComponentModel.DataAnnotations;
-
+using GreenPath.Models;
 
 namespace GreenPath.ViewModels
 {
-	public class DataViewModel
+    public class DataViewModel
     {
         // [Display(Name = "Candidato")]
         // [Required]
@@ -82,8 +81,10 @@ namespace GreenPath.ViewModels
         [Url(ErrorMessage = "Insira a URL do seu.")]
         public string? Pinterest { get; set; }
 
-
-        
+        public static implicit operator DataViewModel(List<CertificacaoModel> v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
 
