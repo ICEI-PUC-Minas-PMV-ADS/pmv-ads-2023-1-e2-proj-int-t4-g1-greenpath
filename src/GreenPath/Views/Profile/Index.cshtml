@@ -1,7 +1,8 @@
-@* @model GreenPath.Models.PessoaFisicaModel *@
-@* @model GreenPath.Models.PessoaFisicaModel *@
+@using GreenPath.ViewModels
+@model UserProfileViewModel
 
 <section class="profile-background p-3 ">
+    <div>@(Model.PessoaFisicaData != null ? Model.PessoaFisicaData.Nome : Model.EmpresaData.Razao)</div>
     <label class="btn btn-primary mb-3" style="top: 0;" data-bs-toggle="modal" data-bs-target="#exampleModal">
         <i class="fa-solid fa-pen-to-square" style="bottom: 5px; right: 5px"></i>
         Editar Dados
@@ -18,8 +19,8 @@
                             style="width: 150px; border: 1px solid #9c9c9c; aspect-ratio: 1/1; ">
                         <i class="fa-solid fa-pen-to-square position-absolute" style="bottom: 5px; right: 5px"></i>
                     </label>
-                    <h5 class="my-3">Model.Nome</h5>
-                    <p class="text-muted mb-1">Full Stack Developer</p>
+                    <h5 class="my-3">@(Model.PessoaFisicaData != null ? Model.PessoaFisicaData.Nome : Model.EmpresaData.Razao)</h5>
+                    <p class="text-muted mb-1">@(Model.PessoaFisicaData != null ? Model.PessoaFisicaData.Area : Model.EmpresaData.Area)</p>
                     <p class="text-muted mb-4">Belo Horizonte, Minas Gerais</p>
                     <div class="d-flex justify-content-center mb-2">
                     </div>
@@ -58,7 +59,9 @@
                             <p class="mb-0">Nome</p>
                         </div>
                         <div class="col-sm-9">
-                            <p class="text-muted mb-0">Vitor Silva Oliveira</p>
+                            <p class="text-muted mb-0">
+                                @(Model.PessoaFisicaData != null ? Model.PessoaFisicaData.Nome : Model.EmpresaData.Razao)
+                            </p>
                         </div>
                     </div>
                     <hr>
@@ -91,7 +94,9 @@
                     <hr>
                     <div class="row d-flex align-items-center justify-content-center">
                         <div class="col-sm-3">
-                            <p class="mb-0 p-1">Currículo</p>
+                            <p class="mb-0 p-1">
+                                @(Model.PessoaFisicaData != null ? "Currículo" : "Certificações")
+                            </p>
                         </div>
                         <div class="col-sm-9">
                             <label class="btn btn-primary" for="input-curriculum">

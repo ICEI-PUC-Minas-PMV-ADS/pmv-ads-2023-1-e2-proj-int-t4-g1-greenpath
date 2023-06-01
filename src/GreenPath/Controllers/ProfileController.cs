@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using GreenPath.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Data.SqlClient;
+using GreenPath.Models;
 
 namespace GreenPath.Controllers;
 
@@ -17,11 +18,29 @@ public class ProfileController : Controller
 
     public async Task<IActionResult> Index()
     {
-        var person = await _context.Users.FindAsync("414f02e6-d68f-49b8-9222-baea88375cd4");
+        string id = (string)RouteData.Values["id"];
 
+        PessoaFisicaModel userData = await _context.PessoaFisica.FindAsync(id);
+        EmpresaModel companyData = await _context.Empresas.FindAsync(id);
 
-        System.Console.WriteLine(person);
-
-        return View();
+        if (userData == null && companyData == null) return NotFound("Usuário não encontrado");
+        else if (userData == null)
+        {
+            var viewModel = new UserProfileViewModel
+            {
+                EmpresaData = companyData,
+                PessoaFisicaData = null
+            };
+            return View(viewModel);
+        }
+        else
+        {
+            var viewModel = new UserProfileViewModel
+            {
+                EmpresaData = null,
+                PessoaFisicaData = userData
+            };
+            return View(viewModel);
+        }
     }
 }
