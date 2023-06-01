@@ -10,7 +10,7 @@
 </style>
 
 
-<form asp-action="Data" class="container d-flex flex-column justify-content-center py-3">
+<form asp-action="Data" class="container d-flex flex-column justify-content-center py-3" id="formData">
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
 
@@ -85,68 +85,20 @@
                         </div>
                             <i class="icone fa-solid fa-stamp fa-xl px-1"></i>
                             Certificações
-                        <div class="d-grid col-3 text-start grid-certs">
-                            <div>
-                                <input asp-for="Certificates" type="checkbox" id="certificacoes" name="LEED" value="1" />
-                                <label for="LEED">LEED</label>
+                            
+                            <div class="d-grid col-3 text-start grid-certs">
+                                @for (int i = 0; i < @Model.Certificates.Count(); i++)
+                                {
+                                    <div>
+                                        @* <input asp-for="@Model.Certificates[i].isChecked" type="checkbox" id="certificacoes" name="certificacoes" value=@Model.Certificates[i].id />
+                                        <label>@Model.Certificates[i].titulo</label> *@
+                                        @Html.CheckBoxFor(x => @Model.Certificates[i].isChecked)
+                                        @Model.Certificates[i].titulo
+                                        @Html.HiddenFor(x => @Model.Certificates[i].id)
+                                        @Html.HiddenFor(x => @Model.Certificates[i].titulo)
+                                    </div>
+                                }
                             </div>
-                            <div>
-                                <input asp-for="Certificates" type="checkbox" id="certificacoes" name="BREEAM" value="2" />
-                                <label for="BREEAM">BREEAM</label>
-                            </div>
-                            <div>
-                                <input asp-for="Certificates" type="checkbox" id="certificacoes" name="ISO 14001" value="3" />
-                                <label for="ISO 14001">ISO 14001</label>
-                            </div>
-                            <div>
-                                <input asp-for="Certificates" type="checkbox" id="certificacoes" name="FSC" value="4" />
-                                <label for="FSC">FSC</label>
-                            </div>
-                            <div>
-                                <input asp-for="Certificates" type="checkbox" id="certificacoes" name="Cradle to Cradle" value="5" />
-                                <label for="Cradle to Cradle">Cradle to Cradle</label>
-                            </div>
-                            <div>
-                                <input asp-for="Certificates" type="checkbox" id="certificacoes" name="ENERGY STAR" value="6" />
-                                <label for="ENERGY STAR">ENERGY STAR</label>
-                            </div>
-                            <div>
-                                <input asp-for="Certificates" type="checkbox" id="certificacoes" name="Fairtrade" value="7" />
-                                <label for="Fairtrade">Fairtrade</label>
-                            </div>
-                            <div>
-                                <input asp-for="Certificates" type="checkbox" id="certificacoes" name="LEAF" value="8" />
-                                <label for="LEAF">LEAF</label>
-                            </div>
-                            <div>
-                                <input asp-for="Certificates" type="checkbox" id="certificacoes" name="Green Seal" value="9" />
-                                <label for="Green Seal">Green Seal</label>
-                            </div>
-                            <div>
-                                <input asp-for="Certificates" type="checkbox" id="certificacoes" name="CarbonNeutral" value="10" />
-                                <label for="CarbonNeutral">CarbonNeutral</label>
-                            </div>
-                            <div>
-                                <input asp-for="Certificates" type="checkbox" id="certificacoes" name="Fair for Life" value="11" />
-                                <label for="Fair for Life">Fair for Life</label>
-                            </div>
-                            <div>
-                                <input asp-for="Certificates" type="checkbox" id="certificacoes" name="Green Globe" value="12" />
-                                <label for="Green Globe">Green Globe</label>
-                            </div>
-                            <div>
-                                <input asp-for="Certificates" type="checkbox" id="certificacoes" name="WaterSense" value="13" />
-                                <label for="WaterSense">WaterSense</label>
-                            </div>
-                            <div>
-                                <input asp-for="Certificates" type="checkbox" id="certificacoes" name="RECS" value="14" />
-                                <label for="RECS">RECS</label>
-                            </div>
-                            <div>
-                                <input asp-for="Certificates" type="checkbox" id="certificacoes" name="Green Key" value="15" />
-                                <label for="Green Key">Green Key</label>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -252,6 +204,25 @@
 </style>
 
 <script>
+    function handleSubmit(e) {
+        //e.preventDefault();
+        const formData = new FormData(e.target);
+        const formProps = Object.fromEntries(formData);
+
+        var checkboxes = document.getElementsByName("certificacoes");
+        var checkedCheckboxes = [];
+
+        for (var i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i].checked) {
+                checkedCheckboxes.push(Number(checkboxes[i].value));
+            }
+        }
+
+        formProps.certificacoes = checkedCheckboxes;
+
+        console.log(formProps)
+    }
+
     function mostrarCampos() {
         var tipoUsuario = document.getElementById("tipoUsuario").value;
         var camposCandidato = document.getElementById("camposCandidato");

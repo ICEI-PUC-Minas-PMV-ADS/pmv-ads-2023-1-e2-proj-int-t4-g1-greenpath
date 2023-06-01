@@ -1,0 +1,5 @@
+@model string
+
+<script>
+    alert(@Html.Raw(Json.Serialize(Model)));
+</script>

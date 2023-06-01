@@ -4,7 +4,10 @@ using GreenPath.Models;
 using GreenPath.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
+
 
 namespace GreenPath.Controllers
 {
@@ -25,6 +28,24 @@ namespace GreenPath.Controllers
                 _signInManager = signInManager;
                 _userManager = userManager;
             }
+
+        private void InsertCerts(string JuriId, int CertId)
+        {
+            using (SqlConnection con = new SqlConnection("Server=greenpath.database.windows.net;Initial Catalog=greenpath;Integrated Security=False;User Id=caminhoverde;Password=c6jmeNsmQyzgtLG"))
+            {
+                string query = "INSERT INTO Pessoa_Juri_Certificacao (pessoa_juri_id,cert_id) VALUES (@JuriId, @CertId)";
+                using (SqlCommand cmd = new SqlCommand(query))
+                {
+                    cmd.Connection = con;
+                    cmd.Parameters.AddWithValue("@JuriId", JuriId);
+                    cmd.Parameters.AddWithValue("@CertId", CertId);
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                }
+            }
+        }
+
 
         [HttpGet]
         public IActionResult Login()
@@ -97,16 +118,27 @@ namespace GreenPath.Controllers
         [HttpGet]
         public Task<IActionResult> Data()
         {
-			return Task.FromResult<IActionResult>(View());
+            DataViewModel model = new DataViewModel();
+            List<CertificacaoModel> certs = _context.Certificacoes.AsNoTracking().ToList();
+
+            foreach (var item in certs)
+            {
+                item.isChecked = false;
+            }
+
+            model.Certificates = certs;
+
+            // Console.WriteLine("------------->  "+model.Certificates.Count());
+            
+			return Task.FromResult<IActionResult>(View(model));
         }
 
         [HttpPost]
         public async Task<IActionResult> Data(DataViewModel dataViewModel, string tipoUsuario)
         {
-            if (!ModelState.IsValid)
-            {
-                return View(dataViewModel);
-            }
+            //_context.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
+
+            List<EmpresaModel> empresas = _context.Empresas.AsNoTracking().ToList();
 
             var check = new CheckData(tipoUsuario, dataViewModel);
 
@@ -117,10 +149,16 @@ namespace GreenPath.Controllers
             }
             else
             {
+                foreach (var item in empresas)
+                {
+                    if(!(string.IsNullOrWhiteSpace(item.Cnpj)) && item.Cnpj == dataViewModel.CNPJ){
+                        return PartialView("~/Views/Shared/_AlertMessage.cshtml", "Empresa já cadastrada!");
+                    } 
+                }
 
                 if (TempData.ContainsKey("RegisterViewModel"))
                 {
-                    if(string.IsNullOrEmpty(TempData["RegisterViewModel"] as string)){
+                    if(!string.IsNullOrEmpty(TempData["RegisterViewModel"] as string)){
 
                     var serializedData = TempData["RegisterViewModel"] as string;
                     if (!string.IsNullOrEmpty(serializedData))
@@ -140,33 +178,79 @@ namespace GreenPath.Controllers
 
                             if (newUserResponse.Succeeded)
                             {
-                                await _userManager.AddToRoleAsync(newUser, UserRoles.User);
+                            //    await _userManager.AddToRoleAsync(newUser, UserRoles.User);
 
-                                //Inserir dados
-                                var pessoaFisica = new PessoaFisicaModel
-                                {
-                                    // Defina as propriedades da entidade PessoaFisicaModel
-                                    Id = newUser.Id, // Atribua o Id do usuário encontrado
-                                    Nome = dataViewModel.Name,
-                                    Cpf = "15169348802",
-                                    Sobrenome = dataViewModel.Surname,
-                                    Area = dataViewModel.Profession
-                                };
+                               if(tipoUsuario == "candidato"){
+                                    //Inserir dados
+                                    var pessoaFisica = new PessoaFisicaModel
+                                    {
+                                        // Defina as propriedades da entidade PessoaFisicaModel
+                                        Id = newUser.Id, // Atribua o Id do usuário encontrado
+                                        Nome = dataViewModel.Name,
+                                        Cpf = "15169348802",
+                                        Sobrenome = dataViewModel.Surname,
+                                        Area = dataViewModel.Profession
+                                    };
 
-                                _context.PessoaFisica.Add(pessoaFisica);
-                                await _context.SaveChangesAsync();
+                                    _context.PessoaFisica.Add(pessoaFisica);
+                                    await _context.SaveChangesAsync();
+                               }
+
+                               else{
+                                    var pessoaJuri = new EmpresaModel
+                                    {
+                                        // Defina as propriedades da entidade PessoaFisicaModel
+                                        Id = newUser.Id, // Atribua o Id do usuário encontrado
+                                        Razao = dataViewModel.CompanyName,
+                                        Cnpj = dataViewModel.CNPJ,
+                                        Area = dataViewModel.Area
+                                    };
+
+                                    _context.Empresas.Add(pessoaJuri);
+                                    await _context.SaveChangesAsync();
+
+
+                                    var selectedCertificates = dataViewModel.Certificates.Where(x => x.isChecked).ToList();
+
+                                    foreach (var item in selectedCertificates)
+                                    {
+                                        InsertCerts(pessoaJuri.Id, (int)item.id);
+                                        
+                                    //    var existingEntity = _context.CertificacoesJuri.FirstOrDefault(c => c.Emp_Id == pessoaJuri.Id);
+
+                                    //     if (existingEntity != null)
+                                    //     {
+                                    //         // Se necessário, atualize as propriedades existentes
+                                    //         existingEntity.Cert_Id = item.id;
+                                    //     }
+                                    //     else
+                                    //     {
+                                    //         var certificacoes = new JuriCertsModel
+                                    //         {
+                                    //             Emp_Id = pessoaJuri.Id,
+                                    //             Cert_Id = item.id
+                                    //         };
+
+                                    //         _context.CertificacoesJuri.Add(certificacoes);
+                                    //     }
+                                    //     await _context.SaveChangesAsync();
+                                    }
+                               }
                             }
+
+                            var user = await _userManager.FindByEmailAsync(userAuthenticationData.EmailAddress);
+
+                            var result = await _signInManager.PasswordSignInAsync(user, userAuthenticationData.Password, false, false);
 
                             return RedirectToAction("Welcome", "Account");
                         }
                     }
                     }else{
-                        return Problem("Faça registro primeiro !");
+                        return PartialView("~/Views/Shared/_AlertMessage.cshtml", "Faça o registro primeiro !");
                     }
                 }
             }
-
-
+           
             // Tratar a situação em que ocorre um erro ou os dados são inválidos
             return RedirectToAction("Error", "Home");
         }

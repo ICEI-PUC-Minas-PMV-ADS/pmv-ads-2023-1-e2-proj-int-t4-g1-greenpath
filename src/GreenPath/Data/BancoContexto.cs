@@ -12,12 +12,12 @@ namespace GreenPath.Data
         }
 
         public DbSet<CertificacaoModel> Certificacoes { get; set; }
+        public DbSet<JuriCertsModel> CertificacoesJuri { get; set; }
         public DbSet<EmpresaModel> Empresas { get; set; }
         public DbSet<Address> Addresses { get; set; }
         public DbSet<State> States { get; set; }
         public DbSet<City> Cities { get; set; }
         public DbSet<VagasModel> Vagas { get; set; }
         public DbSet<PessoaFisicaModel> PessoaFisica { get; set; }
-
     }
 }

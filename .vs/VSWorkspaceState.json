@@ -1,7 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\GreenPath",
+    "\\src\\GreenPath\\Controllers",
+    "\\src\\GreenPath\\Data",
+    "\\src\\GreenPath\\Models",
+    "\\src\\GreenPath\\Views",
+    "\\src\\GreenPath\\Views\\Account"
   ],
-  "SelectedNode": "\\GreenPath.sln",
+  "SelectedNode": "\\src\\GreenPath\\Controllers\\AccountController.cs",
   "PreviewInSolutionExplorer": false
 }

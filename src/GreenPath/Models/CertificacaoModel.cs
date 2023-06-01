@@ -1,7 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using ServiceStack.DataAnnotations;
-using ServiceStack.OrmLite;
 using RequiredAttribute = System.ComponentModel.DataAnnotations.RequiredAttribute;
 
 namespace GreenPath.Models
@@ -30,6 +29,9 @@ namespace GreenPath.Models
         [Column("cert_desc")]
         [Display(Name = "Descrição")]
         public string? desc { get; set; }
+
+        [NotMapped]
+        public bool isChecked { get; set; }
 
         //    public List<CertificacaoModel>? Certificados { get; set; }
 

@@ -33,7 +33,7 @@ namespace GreenPath.ViewModels
         public string? Area { get; set; }
 
         [Display(Name = "Certificações")]
-        public string? Certificates { get; set; }
+        public List<CertificacaoModel>? Certificates { get; set; }
 
         //Dados Compartilhados de empresa e candidatos que são OBRIGATÓRIOS
         
