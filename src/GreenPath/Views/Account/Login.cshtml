@@ -4,10 +4,109 @@
 @{
     ViewData["Title"] = "Login";
 }
-<div class="row">
-    <div class="col-md-6 offset-3">
+<style>
+    header,
+    footer{
+        display: none;
+    }
+
+    .btn{
+        background-color: #198754;
+        color:white;
+        transition: all 200ms ease-in-out;
+    }
+
+    .btn:hover{
+        scale: 1.2;
+    }
+
+    .container{
+        width: 100vw !important;
+        height: 100vh !important;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input-container{
+        width: 400px;
+        position: relative;
+        padding: 30px;
+        border-radius: 18px;
+        background: linear-gradient(145deg, #f0f0f0, #e9e9e9);
+        box-shadow:  5px 5px 9px #7d7d7d,
+                    -5px -5px 9px #ffffff;
+    }
+
+    .form-group{
+        position: relative;
+        padding-top: 13px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    input{
+        width: 100%;
+        padding: 5px 5px;
+        display: inline-block;
+        border: 0;
+        border-bottom: 1px solid #16981a;
+        background-color: transparent;
+        outline: none;
+        min-width: 180px;
+        font-size: 16px;
+        transition: all 300ms ease-out;
+        border-radius: 0;
+        color: black;
+    }
+
+    input:focus{
+        border-bottom: 1px solid rgb(0, 255, 0);
+    }
+
+    label{
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 13px;
+        transition: all 300ms ease-out;
+    }
+
+    input:focus + label,
+    input:valid + label{
+        font-size: 13px;
+        margin-bottom: 50px;
+        color: #16981a;
+    }
+
+     input:invalid + label{
+        font-size: 13px;    
+        margin-bottom: 50px;
+        color: #ff0000;
+    }
+
+    .text-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 12px;
+        margin-top: 15%;
+    }
+
+    .text-container a{
+        color: #16981a;
+    }
+
+</style>
+
+<div class="row container">
+    <div class="col-md-6 input-container">
         <p>
-            <h4 class="text-center">Faça Login em sua conta.</h4>
+            <img src="~/images/logo.png" class="d-block mx-auto mb-3" width="150" height="150" alt="Logo" />
+            <h4 class="text-center">Bem-vind@@ de volta</h4>
         </p>
         @if (TempData["Error"] != null)
         {
@@ -20,18 +119,21 @@
                 <form asp-action="Login">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <div class="form-group">
-                        <label asp-for="EmailAddress" class="control-label">Email</label>
-                        <input asp-for="EmailAddress" class="form-control">
+                        <input asp-for="EmailAddress" required />
+                        <label asp-for="EmailAddress" >Email</label>
                         <span asp-validation-for="EmailAddress" class="text-danger"></span>
                     </div>
                     <div class="form-group my-3">
-                        <label asp-for="Password" class="control-label">Senha</label>
-                        <input asp-for="Password" class="form-control" />
+                        <input asp-for="Password" required />
+                        <label asp-for="Password" >Senha</label>
                         <span asp-validation-for="Password" class="text-danger"></span>
                     </div>
                     <div class="form-group">
                         <input class="btn btn-outline-success float right" type="submit" value="Entrar" />
-                        <a class="btn btn-outline-secondary" asp-controller="Account" asp-action="Index">Cancelar</a>
+                    </div>
+                    <div class="text-container">
+                        <p>Ainda não possui uma conta?</p>
+                        <a asp-controller="Account" asp-action="Register">Clique aqui e registre-se</a>
                     </div>
                 </form>
             </div>
