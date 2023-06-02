@@ -10,10 +10,8 @@ namespace GreenPath.Controllers
 
         public IActionResult Index()
         {
-            home.Email = "teste@gmail.com";
-            home.Nome = "Nome qualquer";
-
-            return View(home);
+               
+            return View();
         }
 
         public IActionResult Privacy()

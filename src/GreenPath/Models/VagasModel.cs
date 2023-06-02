@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GreenPath.Models
 {
-    [Table("Vagas")]
+    [Table("Vaga")]
     public class VagasModel
     {
         [Column("vaga_id")]
@@ -22,7 +22,7 @@ namespace GreenPath.Models
 
 		[Column("vaga_salario")]
 		[Display(Name = "Salario oferecido")]
-		public double? Salario { get; set; }
+		public decimal? Salario { get; set; }
 
 
 		[Column("vaga_horas")]
@@ -48,6 +48,10 @@ namespace GreenPath.Models
 		[Column("vaga_fim")]
 		[Display(Name = "Fim")]
 		public DateTime? Fim { get; set; }
+
+		[Column("vaga_local")]
+		[Display(Name = "Local")]
+		public string? Local { get; set; }
 
 	}
 

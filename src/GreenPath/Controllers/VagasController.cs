@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using GreenPath.Models;
 using GreenPath.Data;
@@ -24,13 +19,13 @@ namespace App_Web_GreenPath_BKED.Controllers
         {
             ViewData["Filtro"] = BuscaString;
 
-            var empresas = from emp in _context.Vagas select emp;
+            var vagas = from vaga in _context.Vagas select vaga;
             if (!String.IsNullOrEmpty(BuscaString))
             {
-                empresas = empresas.Where(emp => ( emp.Area.Contains(BuscaString)));
+                vagas = vagas.Where(vaga => (vaga.Cargo.Contains(BuscaString) || vaga.Area.Contains(BuscaString) || vaga.Local.Contains(BuscaString) || vaga.Empresa.Contains(BuscaString)));
             }
 
-            return await Task.FromResult(View(empresas));
+            return await Task.FromResult(View(vagas));
         }
 
         // GET: Vagas/Details/5
