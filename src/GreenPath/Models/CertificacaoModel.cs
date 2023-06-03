@@ -30,6 +30,10 @@ namespace GreenPath.Models
         [Display(Name = "Descrição")]
         public string? desc { get; set; }
 
+        [Column("cert_logo")]
+        [Display(Name = "Logo")]
+        public string? logo { get; set; }
+
         [NotMapped]
         public bool isChecked { get; set; }
 

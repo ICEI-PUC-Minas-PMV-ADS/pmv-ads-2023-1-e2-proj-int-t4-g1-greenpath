@@ -5,7 +5,19 @@
 @inject UserManager<AppUser> UserManager
 
 @{
+
 	var currentUser = await UserManager.GetUserAsync(User);
+
+	if(User.IsInRole("userPJ")){
+		Global.UserRole = "pj";
+	}
+	else if (User.IsInRole("userPF")){
+		Global.UserRole = "pf";
+	}
+	else{
+		Global.UserRole = "anonymous";
+	}
+
 }
 
 

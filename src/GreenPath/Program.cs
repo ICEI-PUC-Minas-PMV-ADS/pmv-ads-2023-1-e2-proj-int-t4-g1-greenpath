@@ -6,9 +6,6 @@ using GreenPath.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using GreenPath.Extensions;
-using GreenPath.Helpers;
-using GreenPath.ViewModels;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -62,3 +59,26 @@ app.MapControllerRoute(
 
 app.Run();
 
+
+public static class Global
+{
+    /// <summary>
+    /// Global variable storing important stuff.
+    /// </summary>
+    static string? _userRole;
+    
+    /// <summary>
+    /// Get or set the static important data.
+    /// </summary>
+    public static string UserRole
+    {
+        get
+        {
+            return _userRole;
+        }
+        set
+        {
+            _userRole = value;
+        }
+    }
+};

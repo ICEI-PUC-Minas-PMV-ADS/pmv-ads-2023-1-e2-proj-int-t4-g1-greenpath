@@ -1,8 +1,5 @@
-using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using GreenPath.Data;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Data.SqlClient;
 using GreenPath.Models;
 
 namespace GreenPath.Controllers;
@@ -23,13 +20,16 @@ public class ProfileController : Controller
         PessoaFisicaModel userData = await _context.PessoaFisica.FindAsync(id);
         EmpresaModel companyData = await _context.Empresas.FindAsync(id);
 
+        var certs = from cert in _context.CertificacoesJuri where cert.Emp_Id == id join certDetails in _context.Certificacoes on cert.Cert_Id equals certDetails.id orderby certDetails.titulo select certDetails;
+
         if (userData == null && companyData == null) return NotFound("Usuário não encontrado");
         else if (userData == null)
         {
             var viewModel = new UserProfileViewModel
             {
                 EmpresaData = companyData,
-                PessoaFisicaData = null
+                PessoaFisicaData = null,
+                Certificates = certs
             };
             return View(viewModel);
         }
@@ -38,7 +38,8 @@ public class ProfileController : Controller
             var viewModel = new UserProfileViewModel
             {
                 EmpresaData = null,
-                PessoaFisicaData = userData
+                PessoaFisicaData = userData,
+                Certificates = null
             };
             return View(viewModel);
         }

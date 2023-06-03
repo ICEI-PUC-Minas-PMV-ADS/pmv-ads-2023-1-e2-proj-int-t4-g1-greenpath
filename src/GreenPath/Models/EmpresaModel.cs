@@ -32,8 +32,14 @@ namespace GreenPath.Models
 		[MinLength(3, ErrorMessage = "Mínimo de 2 caracteres !")]
 		public string? Area { get; set; }
 
-		[Column("pessoa_juri_desc")]
-		[Display(Name = "Descrição")]
-		public string? Desc { get; set; }
+		
+        [Column("pessoa_juri_pais")]
+        public string? Pais { get; set; }
+
+        [Column("pessoa_juri_estado")]
+        public string? Estado { get; set; }
+
+        [Column("pessoa_juri_cidade")]
+        public string? Cidade { get; set; }
 	}
 }

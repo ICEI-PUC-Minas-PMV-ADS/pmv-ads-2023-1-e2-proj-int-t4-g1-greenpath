@@ -19,5 +19,14 @@ namespace GreenPath.Models
 
         [Column("pessoa_fisica_area")]
         public string? Area { get; set; }
+
+        [Column("pessoa_fisica_pais")]
+        public string? Pais { get; set; }
+
+        [Column("pessoa_fisica_estado")]
+        public string? Estado { get; set; }
+
+        [Column("pessoa_fisica_cidade")]
+        public string? Cidade { get; set; }
     }
 }

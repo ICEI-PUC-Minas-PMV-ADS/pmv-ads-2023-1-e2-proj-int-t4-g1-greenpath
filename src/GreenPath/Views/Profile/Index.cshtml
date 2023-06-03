@@ -1,8 +1,40 @@
 @using GreenPath.ViewModels
 @model UserProfileViewModel
 
-<section class="profile-background p-3 ">
-    <div>@(Model.PessoaFisicaData != null ? Model.PessoaFisicaData.Nome : Model.EmpresaData.Razao)</div>
+<style>
+    .text-xxl{
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .cert-card-group{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 20px
+    }
+
+    .cert-card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 20px;
+        box-shadow:  0px 0px 12px #a8a8a8,
+                    -5px -5px 12px #ffffff;
+    }
+
+    .cert-card-text{
+        font-weight: bold;
+    }
+</style>
+
+
+
+@if(Global.UserRole == "userPF"){
+<div class="profile-background p-3 ">
+    <div>@Model.PessoaFisicaData.Nome</div>
     <label class="btn btn-primary mb-3" style="top: 0;" data-bs-toggle="modal" data-bs-target="#exampleModal">
         <i class="fa-solid fa-pen-to-square" style="bottom: 5px; right: 5px"></i>
         Editar Dados
@@ -15,12 +47,12 @@
                     <label id="input-pic-label" for="input-picture"
                         style="cursor: pointer; position: relative; transition: 0.3s ease-out;">
                         <img src="https://media.licdn.com/dms/image/D4D03AQGB-jUfsKFe9w/profile-displayphoto-shrink_200_200/0/1671222381839?e=1687996800&v=beta&t=2JYuf4pFXYu2ZT1bII_-1TiJZJdpVfeDpHR5t42vq7Q"
-                            alt="avatar" class="rounded-circle img-fluid"
+                            alt="avatar" class= img-fluid"
                             style="width: 150px; border: 1px solid #9c9c9c; aspect-ratio: 1/1; ">
                         <i class="fa-solid fa-pen-to-square position-absolute" style="bottom: 5px; right: 5px"></i>
                     </label>
-                    <h5 class="my-3">@(Model.PessoaFisicaData != null ? Model.PessoaFisicaData.Nome : Model.EmpresaData.Razao)</h5>
-                    <p class="text-muted mb-1">@(Model.PessoaFisicaData != null ? Model.PessoaFisicaData.Area : Model.EmpresaData.Area)</p>
+                    <h5 class="my-3">@Model.PessoaFisicaData.Nome</h5>
+                    <p class="text-muted mb-1">@Model.PessoaFisicaData.Area</p>
                     <p class="text-muted mb-4">Belo Horizonte, Minas Gerais</p>
                     <div class="d-flex justify-content-center mb-2">
                     </div>
@@ -60,7 +92,7 @@
                         </div>
                         <div class="col-sm-9">
                             <p class="text-muted mb-0">
-                                @(Model.PessoaFisicaData != null ? Model.PessoaFisicaData.Nome : Model.EmpresaData.Razao)
+                                @Model.PessoaFisicaData.Nome
                             </p>
                         </div>
                     </div>
@@ -95,7 +127,7 @@
                     <div class="row d-flex align-items-center justify-content-center">
                         <div class="col-sm-3">
                             <p class="mb-0 p-1">
-                                @(Model.PessoaFisicaData != null ? "Currículo" : "Certificações")
+                                "Currículo"
                             </p>
                         </div>
                         <div class="col-sm-9">
@@ -184,8 +216,8 @@
             </div>
         </div>
     </div>
-    </div>
-</section>
+
+</div>
 
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
@@ -261,3 +293,103 @@
         </div>
     </div>
 </div>
+}
+else{
+    
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-body text-center">
+        </div>
+        <img style="width: 200px; height: 200px;" class="img-responsive mx-auto img-thumbnail rounded-circle"
+            src="https://hsnt.gr/wp-content/uploads/2020/07/company-logo-placeholder-2.jpg" alt="">
+        <div class="card-body text-center pb-3">
+            <h5 class="card-title text-xxl">@Html.DisplayFor(model => model.EmpresaData.Razao)</h5>
+
+        </div>
+    </div>
+</div>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col">
+            <hr />
+            <dl>
+                <div class="d-flex gap-5 justify-content-around">
+
+                    <div class="d-flex gap-2">
+                        <dt>
+                            @Html.DisplayNameFor(model => model.EmpresaData.Area):
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.EmpresaData.Area)
+                        </dd>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <dt>
+                            Local:
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.EmpresaData.Pais) - @Html.DisplayFor(model =>
+                            model.EmpresaData.Estado), @Html.DisplayFor(model => model.EmpresaData.Cidade)
+                        </dd>
+                    </div>
+
+                    <div class="d-flex gap-2">
+                        <dt>
+                            @Html.DisplayNameFor(model => model.EmpresaData.Cnpj):
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.EmpresaData.Cnpj)
+                        </dd>
+                    </div>
+
+                </div>
+
+            </dl>
+            <hr />
+        </div>
+    </div>
+</div>
+
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title text-center ">Selos</h4>
+            <div class="dflex row justify-content-center">
+
+                <div class="cert-card-group">
+                    @foreach (var item in Model.Certificates)
+                    {
+                    <div class="cert-card">
+                        <img src=@item.logo style="width: 200px; height: 200px; scale: 0.8;" class="card-img-top" />
+                        <p class="cert-card-text">@item.titulo</p>
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title text-center ">Vagas</h4>
+            <div class="dflex row justify-content-center">
+
+                <img style="width: 200px; height: 200px;" class="card-img-top  mx-2"
+                    src="https://via.placeholder.com/200" alt="Imagem 1">
+
+                <img style="width: 200px; height: 200px;" class="card-img-top  mx-2"
+                    src="https://via.placeholder.com/200" alt="Imagem 2">
+
+                <img style="width: 200px; height: 200px;" class="card-img-top  mx-2"
+                    src="https://via.placeholder.com/200" alt="Imagem 3">
+
+                <div class="card-body text-center pb-3">
+                    <button type="button" class="btn btn-primary">Ver mais</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+}

@@ -53,22 +53,6 @@ namespace GreenPath.Controllers
 			return View();
 		}
 
-		// POST: Empresa/Create
-		// To protect from overposting attacks, enable the specific properties you want to bind to.
-		// For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-		[HttpPost]
-		[ValidateAntiForgeryToken]
-		public async Task<IActionResult> Create([Bind("Id,Razao,Cnpj,Area,Desc")] EmpresaModel empresaModel)
-		{
-			if (ModelState.IsValid)
-			{
-				_context.Add(empresaModel);
-				await _context.SaveChangesAsync();
-				return RedirectToAction(nameof(Index));
-			}
-			return View(empresaModel);
-		}
-
 		// GET: Empresa/Edit/5
 		public async Task<IActionResult> Edit(int? id)
 		{
@@ -90,7 +74,7 @@ namespace GreenPath.Controllers
 		// For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public async Task<IActionResult> Edit(string? id, [Bind("Id,Razao,Cnpj,Area,Desc")] EmpresaModel empresaModel)
+		public async Task<IActionResult> Edit(string? id, [Bind("Id,Razao,Cnpj,Area")] EmpresaModel empresaModel)
 		{
 			if (id != empresaModel.Id)
 			{

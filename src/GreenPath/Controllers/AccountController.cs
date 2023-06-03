@@ -178,8 +178,6 @@ namespace GreenPath.Controllers
 
                             if (newUserResponse.Succeeded)
                             {
-                            //    await _userManager.AddToRoleAsync(newUser, UserRoles.User);
-
                                if(tipoUsuario == "candidato"){
                                     //Inserir dados
                                     var pessoaFisica = new PessoaFisicaModel
@@ -187,13 +185,19 @@ namespace GreenPath.Controllers
                                         // Defina as propriedades da entidade PessoaFisicaModel
                                         Id = newUser.Id, // Atribua o Id do usuário encontrado
                                         Nome = dataViewModel.Name,
-                                        Cpf = "15169348802",
+                                        Cpf = "15169348802", // >?????????????????????????????????????????????
                                         Sobrenome = dataViewModel.Surname,
-                                        Area = dataViewModel.Profession
+                                        Area = dataViewModel.Profession,
+                                        Pais = dataViewModel.Country,
+                                        Estado = dataViewModel.State,
+                                        Cidade = dataViewModel.City
                                     };
+                                    
+                                    await _userManager.AddToRoleAsync(newUser, "userPF");
 
                                     _context.PessoaFisica.Add(pessoaFisica);
                                     await _context.SaveChangesAsync();
+
                                }
 
                                else{
@@ -203,8 +207,13 @@ namespace GreenPath.Controllers
                                         Id = newUser.Id, // Atribua o Id do usuário encontrado
                                         Razao = dataViewModel.CompanyName,
                                         Cnpj = dataViewModel.CNPJ,
-                                        Area = dataViewModel.Area
+                                        Area = dataViewModel.Area,
+                                        Pais = dataViewModel.Country,
+                                        Estado = dataViewModel.State,
+                                        Cidade = dataViewModel.City
                                     };
+
+                                    await _userManager.AddToRoleAsync(newUser, "userPJ");
 
                                     _context.Empresas.Add(pessoaJuri);
                                     await _context.SaveChangesAsync();
