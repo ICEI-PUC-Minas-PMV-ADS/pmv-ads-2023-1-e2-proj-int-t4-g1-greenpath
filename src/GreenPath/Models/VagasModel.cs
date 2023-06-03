@@ -52,6 +52,10 @@ namespace GreenPath.Models
 		[Column("vaga_local")]
 		[Display(Name = "Local")]
 		public string? Local { get; set; }
+	
+		[Column("vaga_desc")]
+		[Display(Name = "Descrição")]
+		public string? Descricao { get; set; }
 
 		
         [NotMapped]

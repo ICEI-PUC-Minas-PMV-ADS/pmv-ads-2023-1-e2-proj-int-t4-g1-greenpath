@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using GreenPath.Models;
 using GreenPath.Data;
 using Microsoft.Data.SqlClient;
+using Microsoft.AspNetCore.Authorization;
 
 namespace App_Web_GreenPath_BKED.Controllers
 {
@@ -55,6 +56,7 @@ namespace App_Web_GreenPath_BKED.Controllers
         }
 
         // GET: Vagas/Details/5
+        [Authorize(Roles = "userPF,userPJ")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Vagas == null)
@@ -74,6 +76,7 @@ namespace App_Web_GreenPath_BKED.Controllers
             return View(vagasModel);
         }
 
+        [Authorize(Roles = "userPF,userPJ")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Details(VagasModel vagasModel)
@@ -101,6 +104,7 @@ namespace App_Web_GreenPath_BKED.Controllers
 
 
         // GET: Vagas/Create
+        [Authorize(Roles = "userPJ")]
         public IActionResult Create()
         {
             return View();
@@ -109,6 +113,7 @@ namespace App_Web_GreenPath_BKED.Controllers
         // POST: Vagas/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize(Roles = "userPJ")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Empresa,Cargo,Salario,Horas,Area,Inscricoes,Inicio,Fim")] VagasModel vagasModel)
@@ -125,6 +130,7 @@ namespace App_Web_GreenPath_BKED.Controllers
         }
 
         // GET: Vagas/Edit/5
+        [Authorize(Roles = "userPJ")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Vagas == null)
@@ -143,6 +149,7 @@ namespace App_Web_GreenPath_BKED.Controllers
         // POST: Vagas/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize(Roles = "userPJ")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Empresa,Cargo,Salario,Horas,Area,Inscricoes,Inicio,Fim")] VagasModel vagasModel)
@@ -176,6 +183,7 @@ namespace App_Web_GreenPath_BKED.Controllers
         }
 
         // GET: Vagas/Delete/5
+        [Authorize(Roles = "userPJ")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Vagas == null)
@@ -194,6 +202,7 @@ namespace App_Web_GreenPath_BKED.Controllers
         }
 
         // POST: Vagas/Delete/5
+        [Authorize(Roles = "userPJ")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

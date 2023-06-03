@@ -109,14 +109,6 @@
 						<li class="nav-item">
 							<a class="nav-link" asp-area="" asp-controller="Vagas" asp-action="Index">Vagas</a>
 						</li>
-						@if (SignInManager.IsSignedIn(User))
-						{
-							<li class="nav-item">
-								<a class="nav-link" asp-area="" asp-controller="user" asp-action="Index">
-									Encontre Pessoas ?
-								</a>
-							</li>
-						}
 					</ul>
 
 					@if(Global.UserRole == "pj"){

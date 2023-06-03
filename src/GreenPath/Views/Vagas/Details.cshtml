@@ -82,6 +82,13 @@
         </div>
     </div>
 
+    @if(Model.Descricao != null){
+        <div>
+            <h4>Descrição</h4>
+            <p>@Html.DisplayFor(model => model.Descricao)</p>
+        </div>
+    }
+
 <form asp-action="Details" >
     <input type="submit" value="Candidatar-se" class="btn btn-success btn-candidatar d-block mx-auto"/>
 </form>

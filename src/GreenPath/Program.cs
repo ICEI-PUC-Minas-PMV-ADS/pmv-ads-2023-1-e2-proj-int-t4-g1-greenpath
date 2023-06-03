@@ -57,6 +57,17 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+// Redirecionar usuário quando ele não tem acesso à uma página
+app.UseStatusCodePages(context =>
+{
+    if (context.HttpContext.Response.StatusCode == 403 || context.HttpContext.Response.StatusCode == 404 || context.HttpContext.Response.StatusCode == 401)
+    {
+       context.HttpContext.Response.Redirect("/Home/Index");
+    }
+
+    return Task.CompletedTask;
+});
+
 app.Run();
 
 
