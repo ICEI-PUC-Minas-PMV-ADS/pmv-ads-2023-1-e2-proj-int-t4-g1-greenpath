@@ -9,8 +9,7 @@ namespace GreenPath.Controllers
         HomeModel home = new HomeModel();
 
         public IActionResult Index()
-        {
-               
+        {      
             return View();
         }
 

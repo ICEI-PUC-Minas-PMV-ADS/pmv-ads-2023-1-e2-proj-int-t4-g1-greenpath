@@ -26,6 +26,9 @@ namespace GreenPath.ViewModels
         [Display(Name = "Razão Social")]
         public string? CompanyName { get; set; }
         
+        [Display(Name = "CPF")]
+        public string? CPF { get; set; }
+
         [Display(Name = "CNPJ")]
         public string? CNPJ { get; set; }
         

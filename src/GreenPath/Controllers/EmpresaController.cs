@@ -32,19 +32,23 @@ namespace GreenPath.Controllers
 		// GET: Empresa/Details/5
 		public async Task<IActionResult> Details(string? id)
 		{
-			if (id == null || _context.Empresas == null)
+			EmpresaModel companyData = await _context.Empresas.FindAsync(id);
+
+			if (companyData == null)
 			{
 				return NotFound();
 			}
 
-			var empresaModel = await _context.Empresas
-				.FirstOrDefaultAsync(m => m.Id == id);
-			if (empresaModel == null)
-			{
-				return NotFound();
-			}
+			var certs = from cert in _context.CertificacoesJuri where cert.Emp_Id == id join certDetails in _context.Certificacoes on cert.Cert_Id equals certDetails.id orderby certDetails.titulo select certDetails;
 
-			return View(empresaModel);
+			
+			var viewModel = new EmpresaDetailsViewModel
+			{
+				EmpresaData = companyData,
+				Certificates = certs
+			};
+
+			return View(viewModel);
 		}
 
 		// GET: Empresa/Create

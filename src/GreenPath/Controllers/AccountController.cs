@@ -185,7 +185,7 @@ namespace GreenPath.Controllers
                                         // Defina as propriedades da entidade PessoaFisicaModel
                                         Id = newUser.Id, // Atribua o Id do usuário encontrado
                                         Nome = dataViewModel.Name,
-                                        Cpf = "15169348802", // >?????????????????????????????????????????????
+                                        Cpf = dataViewModel.CPF,
                                         Sobrenome = dataViewModel.Surname,
                                         Area = dataViewModel.Profession,
                                         Pais = dataViewModel.Country,

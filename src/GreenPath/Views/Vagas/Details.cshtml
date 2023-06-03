@@ -4,63 +4,85 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<style>
+    p {
+        margin-bottom: 0 !important;
+        font-size: 20px;
+    }
+
+    h4{
+        margin-bottom: 0;
+    }
+
+    .titulo{
+        margin-top: 3%;
+    }
+
+    .info-grid {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5%;
+    }
+
+    .btn-candidatar{
+        font-size: 18px;
+        transition: all 200ms ease-in-out;
+    }
+
+    .btn-candidatar:hover{
+        scale: 1.1;
+    }
+
+</style>
+
+<h1 class="titulo">@Html.DisplayFor(model => model.Cargo)</h1>
 
 <div>
-    <h4>VagasModel</h4>
+    <div class="d-flex align-items-center gap-2">
+        <i class="fa-solid fa-building"></i>
+        <h4>@Html.DisplayFor(model => model.nomeEmpresa)</h4>
+    </div>
     <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Empresa)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Empresa)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Cargo)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Cargo)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Salario)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Salario)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Horas)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Horas)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Area)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Area)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Inscricoes)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Inscricoes)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Inicio)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Inicio)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Fim)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Fim)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+    <div class="info-grid">
+
+        <div class="d-flex flex-column gap-3">
+            <div class="d-flex gap-2 align-items-center">
+                <i class="fa-solid fa-money-bill"></i>
+                <p>Salário:</p>
+                <p>R$ @Html.DisplayFor(model => model.Salario)</p>
+            </div>
+            <div class="d-flex gap-2 align-items-center">
+                <i class="fa-solid fa-clock"></i>
+                <p>Carga horária:</p>
+                <p>@Html.DisplayFor(model => model.Horas) horas semanais</p>
+            </div>
+            <div class="d-flex gap-2 align-items-center">
+                <i class="fa-solid fa-suitcase"></i>
+                <p>Área:</p>
+                <p>@Html.DisplayFor(model => model.Area)</p>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column gap-3">
+            <div class="d-flex gap-2 align-items-center">
+                <i class="fa-regular fa-calendar-plus"></i>
+                <p>Data Publicação:</p>
+                <p>@Html.DisplayFor(model => model.Inicio)</p>
+            </div>
+            <div class="d-flex gap-2 align-items-center">
+                <i class="fa-regular fa-calendar-xmark"></i>
+                <p>Disponível até:</p>
+                <p>@Html.DisplayFor(model => model.Fim)</p>
+            </div>
+            <div class="d-flex gap-2 align-items-center">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <p>Local:</p>
+                <p>@Html.DisplayFor(model => model.Local)</p>
+            </div>
+        </div>
+    </div>
+
+<form asp-action="Details" >
+    <input type="submit" value="Candidatar-se" class="btn btn-success btn-candidatar d-block mx-auto"/>
+</form>
+

@@ -32,7 +32,7 @@
 
 
 
-@if(Global.UserRole == "userPF"){
+@if(Global.UserRole == "pf"){
 <div class="profile-background p-3 ">
     <div>@Model.PessoaFisicaData.Nome</div>
     <label class="btn btn-primary mb-3" style="top: 0;" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -47,11 +47,11 @@
                     <label id="input-pic-label" for="input-picture"
                         style="cursor: pointer; position: relative; transition: 0.3s ease-out;">
                         <img src="https://media.licdn.com/dms/image/D4D03AQGB-jUfsKFe9w/profile-displayphoto-shrink_200_200/0/1671222381839?e=1687996800&v=beta&t=2JYuf4pFXYu2ZT1bII_-1TiJZJdpVfeDpHR5t42vq7Q"
-                            alt="avatar" class= img-fluid"
+                            alt="avatar" class= "img-fluid"
                             style="width: 150px; border: 1px solid #9c9c9c; aspect-ratio: 1/1; ">
                         <i class="fa-solid fa-pen-to-square position-absolute" style="bottom: 5px; right: 5px"></i>
                     </label>
-                    <h5 class="my-3">@Model.PessoaFisicaData.Nome</h5>
+                    <h5 class="my-3">@Model.PessoaFisicaData.Nome ??</h5>
                     <p class="text-muted mb-1">@Model.PessoaFisicaData.Area</p>
                     <p class="text-muted mb-4">Belo Horizonte, Minas Gerais</p>
                     <div class="d-flex justify-content-center mb-2">

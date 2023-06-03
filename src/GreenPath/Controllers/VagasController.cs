@@ -49,9 +49,8 @@ namespace App_Web_GreenPath_BKED.Controllers
             foreach (var item in vagas)
             {
                 item.nomeEmpresa = getEmpNome(item.Empresa);
-                Console.WriteLine($"------->" + item.nomeEmpresa);
             }
-
+            
             return await Task.FromResult(View(vagas));
         }
 
@@ -70,8 +69,36 @@ namespace App_Web_GreenPath_BKED.Controllers
                 return NotFound();
             }
 
+            vagasModel.nomeEmpresa = getEmpNome(vagasModel.Empresa);
+
             return View(vagasModel);
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Details(VagasModel vagasModel)
+        {
+           
+            List<Inscricoes> duplicate = _context.Inscricoes.ToList();
+
+            foreach (var item in duplicate)
+            {
+                // UMA DAS LINHAS DE CÓDIGO MAIS CRIMINOSAS JÁ ESCRITA PELO SER HUMANO
+                if(item.PessoaId.Equals(Global.CurrentUser.Id) && item.VagaId.Equals(vagasModel.Id)){
+                    return Problem("Você já está cadastrado nessa vaga!");
+                }
+            }
+
+            Inscricoes inscricao = new Inscricoes{
+                PessoaId = Global.CurrentUser.Id,
+                VagaId = vagasModel.Id
+            };
+
+            _context.Inscricoes.Add(inscricao);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index", "Vagas");
+        }
+
 
         // GET: Vagas/Create
         public IActionResult Create()
