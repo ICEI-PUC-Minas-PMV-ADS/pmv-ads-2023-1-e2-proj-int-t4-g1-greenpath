@@ -11,7 +11,7 @@ namespace GreenPath.Models
         public int Id { get; set; }
 
         [Column("vaga_empresa_id")]
-        [Display(Name = "Nome da empresa")]
+        [Display(Name = "Id da empresa")]
         public string? Empresa { get; set; }
 
 
@@ -53,6 +53,9 @@ namespace GreenPath.Models
 		[Display(Name = "Local")]
 		public string? Local { get; set; }
 
+		
+        [NotMapped]
+        public string? nomeEmpresa { get; set; }
 	}
 
 }

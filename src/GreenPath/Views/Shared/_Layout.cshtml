@@ -10,9 +10,11 @@
 
 	if(User.IsInRole("userPJ")){
 		Global.UserRole = "pj";
+		Global.CurrentUser = currentUser;
 	}
 	else if (User.IsInRole("userPF")){
 		Global.UserRole = "pf";
+		Global.CurrentUser = currentUser;
 	}
 	else{
 		Global.UserRole = "anonymous";
@@ -117,11 +119,24 @@
 						}
 					</ul>
 
-					@*Não consegui achar o erro aqui.. Mas quando logado o logout não aparece, e deveria aparecer..*@
+					@if(Global.UserRole == "pj"){
+						<style>
+							.btn-vaga{
+								font-size: 14px;
+								transition: all 200ms ease-in-out;
+							}
+
+							.btn-vaga:hover{
+								scale: 1.1;
+							}
+						</style>
+						<button class="btn btn-success mx-3 btn-vaga">Publicar vaga</button>
+					}
+
 					@if (SignInManager.IsSignedIn(User))
 					{
 						<div class="dropdown">
-							<span class="dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+							<span class="dropdown-toggle nav-item" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
 								aria-haspopup="true" aria-expanded="false">
 								Perfil
 							</span>

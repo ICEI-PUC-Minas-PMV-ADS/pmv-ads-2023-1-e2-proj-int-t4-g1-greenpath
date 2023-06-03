@@ -4,7 +4,7 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Vagas abertas</h1>
+<h1 class="text-center my-5">Vagas abertas</h1>
 
 <form asp-action="Index" method="get">
     <div class="form-group d-flex justify-content-center">
@@ -24,7 +24,7 @@
                 class="rounded-circle" />
             <div class="ms-3">
                 <p class="fw-bold mb-1">@Html.DisplayFor(modelItem => item.Cargo)</p>
-                <p class="text-muted mb-0">@Html.DisplayFor(modelItem => item.Empresa)</p>
+                <p class="text-muted mb-0">@Html.DisplayFor(modelItem => item.nomeEmpresa)</p>
                 <p class="text-muted mb-0">@Html.DisplayFor(modelItem => item.Local)</p>
                 <p class="text-muted mb-0">R$ @Html.DisplayFor(modelItem => item.Salario)</p>
             </div>

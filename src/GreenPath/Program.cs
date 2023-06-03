@@ -81,4 +81,6 @@ public static class Global
             _userRole = value;
         }
     }
+
+    public static AppUser? CurrentUser { get; set;}
 };

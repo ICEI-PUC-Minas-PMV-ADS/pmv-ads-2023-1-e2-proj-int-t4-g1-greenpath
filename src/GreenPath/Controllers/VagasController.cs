@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using GreenPath.Models;
 using GreenPath.Data;
+using Microsoft.Data.SqlClient;
 
 namespace App_Web_GreenPath_BKED.Controllers
 {
@@ -14,6 +15,26 @@ namespace App_Web_GreenPath_BKED.Controllers
             _context = context;
         }
 
+         private string getEmpNome(string EmpId)
+        {
+            string EmpRazao; 
+
+            using (SqlConnection con = new SqlConnection("Server=greenpath.database.windows.net;Initial Catalog=greenpath;Integrated Security=False;User Id=caminhoverde;Password=c6jmeNsmQyzgtLG"))
+            {
+                string query = "SELECT Pessoa_Juri.pessoa_juri_razao FROM Pessoa_Juri JOIN Vaga ON Vaga.vaga_empresa_id = @EmpId";
+                using (SqlCommand cmd = new SqlCommand(query))
+                {
+                    cmd.Connection = con;
+                    cmd.Parameters.AddWithValue("@EmpId", EmpId);
+                    con.Open();
+                    EmpRazao = (string)cmd.ExecuteScalar(); 
+                    con.Close();
+                }
+            }
+
+            return EmpRazao;
+        }
+
         // GET: Vagas
         public async Task<IActionResult> Index(string BuscaString)
         {
@@ -23,6 +44,12 @@ namespace App_Web_GreenPath_BKED.Controllers
             if (!String.IsNullOrEmpty(BuscaString))
             {
                 vagas = vagas.Where(vaga => (vaga.Cargo.Contains(BuscaString) || vaga.Area.Contains(BuscaString) || vaga.Local.Contains(BuscaString) || vaga.Empresa.Contains(BuscaString)));
+            }
+
+            foreach (var item in vagas)
+            {
+                item.nomeEmpresa = getEmpNome(item.Empresa);
+                Console.WriteLine($"------->" + item.nomeEmpresa);
             }
 
             return await Task.FromResult(View(vagas));
@@ -59,6 +86,8 @@ namespace App_Web_GreenPath_BKED.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Empresa,Cargo,Salario,Horas,Area,Inscricoes,Inicio,Fim")] VagasModel vagasModel)
         {
+            vagasModel.Empresa = Global.CurrentUser.Id;
+
             if (ModelState.IsValid)
             {
                 _context.Add(vagasModel);
