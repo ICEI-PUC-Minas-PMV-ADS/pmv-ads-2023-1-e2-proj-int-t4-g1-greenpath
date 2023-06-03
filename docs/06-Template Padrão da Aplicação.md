@@ -16,6 +16,7 @@ Layout padrão da aplicação que será utilizado em todas as páginas com a def
 
 ![Inicio](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/23be1ab6ecd20007654bfe8ca12011963d945bbf/docs/img/Template_Home_01.png)
 ![Inicio](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/23be1ab6ecd20007654bfe8ca12011963d945bbf/docs/img/Template_Home_02.png)
+![Inicio](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/9b3ea7895060c9174ba9f8ee3d06503bfb43811b/docs/img/Template_Home_3.png)
 
 ### Página de Vagas
 
