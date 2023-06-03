@@ -2,7 +2,7 @@
 
 Layout padrão da aplicação que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
 
-### Página de Cadastro
+### Página de Cadastro de Usuário
 
 ![Cadastro](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/31d71ef4e69c223986a500dc824f142d06743462/docs/img/Template_Register_New_01.png)
 
@@ -32,7 +32,8 @@ Layout padrão da aplicação que será utilizado em todas as páginas com a def
 
 ### Página de Perfil de Empresa
 
-![Perfil Empresa]()
+![Perfil Empresa](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/3dd151f76a072009591f2056c6211e3567b78848/docs/img/Template_Empresas_Detalhe_01.png)
+![Perfil Empresa](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/3dd151f76a072009591f2056c6211e3567b78848/docs/img/Template_Empresas_Detalhe_02.png)
 
 ### Página de Pesquisar Candidato
 
@@ -40,7 +41,7 @@ Layout padrão da aplicação que será utilizado em todas as páginas com a def
 
 ### Página de Pesquisar Empresa
 
-![Pesquisar Empresas]()
+![Pesquisar Empresas](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/3dd151f76a072009591f2056c6211e3567b78848/docs/img/Template_Empresas_01.png)
 
 
 
