@@ -14,31 +14,32 @@ Layout padrão da aplicação que será utilizado em todas as páginas com a def
 
 ### Página Inicial
 
-![Inicio](https://user-images.githubusercontent.com/83622295/230793355-3da8250e-5e27-40c8-a13d-e3a8518f1338.png)
+![Inicio](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/23be1ab6ecd20007654bfe8ca12011963d945bbf/docs/img/Template_Home_01.png)
+![Inicio](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/23be1ab6ecd20007654bfe8ca12011963d945bbf/docs/img/Template_Home_02.png)
 
 ### Página de Vagas
 
-![Vagas](https://user-images.githubusercontent.com/83622295/230793416-fced7bb0-2b24-48cf-be02-7c4773cf6b22.png)
+![Vagas](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/23be1ab6ecd20007654bfe8ca12011963d945bbf/docs/img/Template_Vagas_01.png)
 
 ### Página de Informações da Vaga
 
-![Página de Informações da Vaga](https://user-images.githubusercontent.com/83622295/230793510-72c2e35e-292d-48ec-b896-bdb9d8682c8d.png)
+![Página de Informações da Vaga](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/23be1ab6ecd20007654bfe8ca12011963d945bbf/docs/img/Template_Vagas_Detail_01.png)
 
 ### Página de Perfil de Candidato
 
-![Perfil Candidato](https://user-images.githubusercontent.com/83622295/230793514-c7618560-e882-402e-b6a3-e91b4499c83a.png)
+![Perfil Candidato]()
 
 ### Página de Perfil de Empresa
 
-![Perfil Empresa](https://user-images.githubusercontent.com/83622295/230793657-809630ed-4c03-4072-a36f-6e947da80681.png)
+![Perfil Empresa]()
 
 ### Página de Pesquisar Candidato
 
-![Pesquisar Candidatos](https://user-images.githubusercontent.com/83622295/230793664-ad363c8b-7279-470c-9bc5-94c153bbe503.png)
+![Pesquisar Candidatos]()
 
 ### Página de Pesquisar Empresa
 
-![Pesquisar Empresas](https://user-images.githubusercontent.com/83622295/230793678-1cbbc143-940e-4246-84fd-90f6e3a0ba93.png)
+![Pesquisar Empresas]()
 
 
 
