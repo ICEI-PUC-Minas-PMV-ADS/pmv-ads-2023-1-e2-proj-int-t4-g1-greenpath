@@ -8,6 +8,8 @@ namespace GreenPath.Data
 
         public const string Admin = "admin";
 		public const string User = "user";
+		public const string UserPF = "userPF";
+       		public const string UserPJ = "userPJ";
 	}
 }
 
