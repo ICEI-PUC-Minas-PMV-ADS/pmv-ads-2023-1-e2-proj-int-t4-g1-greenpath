@@ -6,6 +6,7 @@ Layout padrão da aplicação que será utilizado em todas as páginas com a def
 
 ![Cadastro](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/31d71ef4e69c223986a500dc824f142d06743462/docs/img/Template_Register_New_01.png)
 
+![Cadastro](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/7d3da397072e5e1294c477becb5923ee084ae616/docs/img/Template_Register_New_02.png)
 
 ### Página de Login
 
