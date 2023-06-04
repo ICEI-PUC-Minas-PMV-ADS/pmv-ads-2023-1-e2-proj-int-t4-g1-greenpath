@@ -190,7 +190,13 @@ namespace GreenPath.Controllers
                                         Area = dataViewModel.Profession,
                                         Pais = dataViewModel.Country,
                                         Estado = dataViewModel.State,
-                                        Cidade = dataViewModel.City
+                                        Cidade = dataViewModel.City,
+                                        Telefone = dataViewModel.Phone,
+                                        Email = dataViewModel.Email,
+                                        Github = dataViewModel.Github,
+                                        Instagram = dataViewModel.Instagram,
+                                        Facebook = dataViewModel.Facebook,
+                                        Pinterest = dataViewModel.Pinterest
                                     };
                                     
                                     await _userManager.AddToRoleAsync(newUser, "userPF");
@@ -210,7 +216,9 @@ namespace GreenPath.Controllers
                                         Area = dataViewModel.Area,
                                         Pais = dataViewModel.Country,
                                         Estado = dataViewModel.State,
-                                        Cidade = dataViewModel.City
+                                        Cidade = dataViewModel.City,
+                                        Telefone = dataViewModel.Phone,
+                                        Email = dataViewModel.Email
                                     };
 
                                     await _userManager.AddToRoleAsync(newUser, "userPJ");

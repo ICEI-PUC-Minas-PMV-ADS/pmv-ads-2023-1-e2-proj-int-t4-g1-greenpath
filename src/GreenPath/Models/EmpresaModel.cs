@@ -41,5 +41,11 @@ namespace GreenPath.Models
 
         [Column("pessoa_juri_cidade")]
         public string? Cidade { get; set; }
+
+        [Column("pessoa_juri_email")]
+        public string? Email { get; set; }
+
+        [Column("pessoa_juri_telefone")]
+        public string? Telefone { get; set; }
 	}
 }

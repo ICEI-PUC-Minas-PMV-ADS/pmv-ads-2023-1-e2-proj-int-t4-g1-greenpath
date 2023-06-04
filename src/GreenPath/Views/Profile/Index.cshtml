@@ -34,11 +34,10 @@
 
 @if(Global.UserRole == "pf"){
 <div class="profile-background p-3 ">
-    <div>@Model.PessoaFisicaData.Nome</div>
-    <label class="btn btn-primary mb-3" style="top: 0;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    @* <label class="btn btn-primary mb-3" style="top: 0;" data-bs-toggle="modal" data-bs-target="#exampleModal">
         <i class="fa-solid fa-pen-to-square" style="bottom: 5px; right: 5px"></i>
         Editar Dados
-    </label>
+    </label> *@
     <div class="row">
         <div class="col-lg-4">
             <div class="card mb-4">
@@ -46,14 +45,14 @@
                     <input style="display: none;" type="file" id="input-picture">
                     <label id="input-pic-label" for="input-picture"
                         style="cursor: pointer; position: relative; transition: 0.3s ease-out;">
-                        <img src="https://media.licdn.com/dms/image/D4D03AQGB-jUfsKFe9w/profile-displayphoto-shrink_200_200/0/1671222381839?e=1687996800&v=beta&t=2JYuf4pFXYu2ZT1bII_-1TiJZJdpVfeDpHR5t42vq7Q"
+                        <img src="~/images/default.png"
                             alt="avatar" class= "img-fluid"
-                            style="width: 150px; border: 1px solid #9c9c9c; aspect-ratio: 1/1; ">
+                            style="width: 150px; aspect-ratio: 1/1; ">
                         <i class="fa-solid fa-pen-to-square position-absolute" style="bottom: 5px; right: 5px"></i>
                     </label>
-                    <h5 class="my-3">@Model.PessoaFisicaData.Nome ??</h5>
+                    <h5 class="my-3">@(Model.PessoaFisicaData.Nome)</h5>
                     <p class="text-muted mb-1">@Model.PessoaFisicaData.Area</p>
-                    <p class="text-muted mb-4">Belo Horizonte, Minas Gerais</p>
+                    <p class="text-muted mb-4">@Model.PessoaFisicaData.Estado - @Model.PessoaFisicaData.Pais</p>
                     <div class="d-flex justify-content-center mb-2">
                     </div>
                 </div>
@@ -64,19 +63,19 @@
                     <ul class="list-group list-group-flush rounded-3">
                         <li class="list-group-item d-flex justify-content-evenly align-items-center p-3">
                             <i class="fa-brands fa-instagram" style="color: rgb(255, 25, 0);"></i>
-                            <a href="#" class="mb-0 social-media-link">Instagram</a>
+                            <a href="https://@Model.PessoaFisicaData.Instagram" class="mb-0 social-media-link">Instagram</a>
                         </li>
                         <li class="list-group-item d-flex justify-content-evenly align-items-center p-3">
                             <i class="fa-brands fa-facebook " style="color: #488dff;"></i>
-                            <a href="#" class="mb-0 social-media-link">Facebook</a>
+                            <a href="https://@Model.PessoaFisicaData.Facebook" class="mb-0 social-media-link" class="mb-0 social-media-link">Facebook</a>
                         </li>
                         <li class="list-group-item d-flex justify-content-evenly align-items-center p-3">
                             <i class="fa-brands fa-github"></i>
-                            <a href="#" class="mb-0 social-media-link">Github</a>
+                            <a href="https://@Model.PessoaFisicaData.Github" class="mb-0 social-media-link" class="mb-0 social-media-link">Github</a>
                         </li>
                         <li class="list-group-item d-flex justify-content-evenly align-items-center p-3">
                             <i class="fa-brands fa-pinterest" style="color: #ff0202;"></i>
-                            <a href="#" class="mb-0 social-media-link">Pinterest</a>
+                            <a href="https://@Model.PessoaFisicaData.Pinterest" class="mb-0 social-media-link" class="mb-0 social-media-link">Pinterest</a>
                         </li>
                     </ul>
                 </div>
@@ -92,7 +91,7 @@
                         </div>
                         <div class="col-sm-9">
                             <p class="text-muted mb-0">
-                                @Model.PessoaFisicaData.Nome
+                                @(Model.PessoaFisicaData.Nome)
                             </p>
                         </div>
                     </div>
@@ -102,7 +101,7 @@
                             <p class="mb-0">Email</p>
                         </div>
                         <div class="col-sm-9">
-                            <p class="text-muted mb-0">vitor@gmail.com</p>
+                            <p class="text-muted mb-0">@Model.PessoaFisicaData.Email</p>
                         </div>
                     </div>
                     <hr>
@@ -111,7 +110,7 @@
                             <p class="mb-0">Celular</p>
                         </div>
                         <div class="col-sm-9">
-                            <p class="text-muted mb-0">(31) 98575-4257</p>
+                            <p class="text-muted mb-0">@Model.PessoaFisicaData.Telefone</p>
                         </div>
                     </div>
                     <hr>
@@ -120,14 +119,14 @@
                             <p class="mb-0">Endereço</p>
                         </div>
                         <div class="col-sm-9">
-                            <p class="text-muted mb-0">Belo Horizonte, Minas Gerais</p>
+                            <p class="text-muted mb-0">@Model.PessoaFisicaData.Cidade, @Model.PessoaFisicaData.Estado - @Model.PessoaFisicaData.Pais</p>
                         </div>
                     </div>
                     <hr>
-                    <div class="row d-flex align-items-center justify-content-center">
+                    @* <div class="row d-flex align-items-center justify-content-center">
                         <div class="col-sm-3">
                             <p class="mb-0 p-1">
-                                "Currículo"
+                                Currículo
                             </p>
                         </div>
                         <div class="col-sm-9">
@@ -141,11 +140,11 @@
                                 <span class="p-1">Currículo</span>
                             </label>
                         </div>
-                    </div>
+                    </div> *@
                 </div>
             </div>
 
-            <div class="row">
+            @* <div class="row">
                 <div class="col-md-6">
                     <div class="card mb-4 mb-md-0">
                         <div class="card-body">
@@ -213,7 +212,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> *@
         </div>
     </div>
 

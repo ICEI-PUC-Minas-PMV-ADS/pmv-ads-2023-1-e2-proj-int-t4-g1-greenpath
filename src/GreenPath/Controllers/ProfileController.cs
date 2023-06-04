@@ -17,6 +17,7 @@ public class ProfileController : Controller
     {
         string id = (string)RouteData.Values["id"];
 
+        var user = await _context.Users.FindAsync(id);
         PessoaFisicaModel userData = await _context.PessoaFisica.FindAsync(id);
         EmpresaModel companyData = await _context.Empresas.FindAsync(id);
 
