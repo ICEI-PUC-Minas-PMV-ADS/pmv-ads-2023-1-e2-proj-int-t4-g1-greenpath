@@ -116,9 +116,10 @@ namespace App_Web_GreenPath_BKED.Controllers
         [Authorize(Roles = "userPJ")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Empresa,Cargo,Salario,Horas,Area,Inscricoes,Inicio,Fim")] VagasModel vagasModel)
+        public async Task<IActionResult> Create([Bind("Empresa,Cargo,Salario,Horas,Area,Fim,Descricao,Local")] VagasModel vagasModel)
         {
             vagasModel.Empresa = Global.CurrentUser.Id;
+            vagasModel.Inicio = DateTime.Today;
 
             if (ModelState.IsValid)
             {

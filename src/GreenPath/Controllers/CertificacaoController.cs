@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using GreenPath.Data;
 using GreenPath.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace GreenPath.Controllers
 {
@@ -48,6 +49,7 @@ namespace GreenPath.Controllers
         }
 
         // GET: Certificacao/Create
+        [Authorize(Roles = "userPJ")]
         public IActionResult Create()
         {
             return View();
@@ -56,6 +58,7 @@ namespace GreenPath.Controllers
         // POST: Certificacao/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize(Roles = "userPJ")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("id,nome,titulo,desc")] CertificacaoModel certificacaoModel)
@@ -70,6 +73,7 @@ namespace GreenPath.Controllers
         }
 
         // GET: Certificacao/Edit/5
+        [Authorize(Roles = "userPJ")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Certificacoes == null)
@@ -88,6 +92,7 @@ namespace GreenPath.Controllers
         // POST: Certificacao/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize(Roles = "userPJ")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int? id, [Bind("id,nome,titulo,desc")] CertificacaoModel certificacaoModel)
@@ -121,6 +126,7 @@ namespace GreenPath.Controllers
         }
 
         // GET: Certificacao/Delete/5
+        [Authorize(Roles = "userPJ")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Certificacoes == null)
@@ -139,6 +145,7 @@ namespace GreenPath.Controllers
         }
 
         // POST: Certificacao/Delete/5
+        [Authorize(Roles = "userPJ")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int? id)

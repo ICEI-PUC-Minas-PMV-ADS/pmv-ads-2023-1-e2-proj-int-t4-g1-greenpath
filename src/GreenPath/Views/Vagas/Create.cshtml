@@ -3,20 +3,26 @@
 @{
     ViewData["Title"] = "Create";
 }
+<style>
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
 
-<h1>Create</h1>
+    #btn-vaga{
+        margin-top: 25px;
+    }
+</style>
 
-<h4>VagasModel</h4>
+<h1>Publicar nova vaga</h1>
+
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Empresa" class="control-label"></label>
-                <input asp-for="Empresa" class="form-control" />
-                <span asp-validation-for="Empresa" class="text-danger"></span>
-            </div>
+          
             <div class="form-group">
                 <label asp-for="Cargo" class="control-label"></label>
                 <input asp-for="Cargo" class="form-control" />
@@ -27,9 +33,10 @@
                 <input asp-for="Salario" class="form-control" />
                 <span asp-validation-for="Salario" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="Horas" class="control-label"></label>
-                <input asp-for="Horas" class="form-control" />
+                <input asp-for="Horas" class="form-control" placeholder="horas semanais"/>
                 <span asp-validation-for="Horas" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -37,30 +44,30 @@
                 <input asp-for="Area" class="form-control" />
                 <span asp-validation-for="Area" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="Inscricoes" class="control-label"></label>
-                <input asp-for="Inscricoes" class="form-control" />
-                <span asp-validation-for="Inscricoes" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Inicio" class="control-label"></label>
-                <input asp-for="Inicio" class="form-control" />
-                <span asp-validation-for="Inicio" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Fim" class="control-label"></label>
+                <label asp-for="Fim" class="control-label">Fechamento da vaga</label>
                 <input asp-for="Fim" class="form-control" />
                 <span asp-validation-for="Fim" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <label asp-for="Descricao" class="control-label"></label>
+                <textarea asp-for="Descricao" class="form-control"></textarea>
+                <span asp-validation-for="Descricao" class="text-danger"></span>
             </div>
+
+            <div class="form-group">
+                <label asp-for="Local" class="control-label"></label>
+                <input asp-for="Local" class="form-control" />
+                <span asp-validation-for="Local" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Publicar vaga" class="btn btn-success" id="btn-vaga" />
+            </div>
+
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {
