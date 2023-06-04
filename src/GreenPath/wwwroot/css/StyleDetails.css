@@ -1,0 +1,233 @@
+
+p {
+    margin-bottom: 0 !important;
+    font-size: 20px;
+    font-family: Arial, sans-serif; 
+}
+
+h4 {
+    margin-bottom: 0;
+    font-family: Arial, sans-serif; 
+}
+
+.titulo {
+    margin-top: 3%;
+    text-align: center; 
+    font-family: Arial, serif; 
+    font-size: 40px;
+}
+
+.info-grid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+    .info-grid > div {
+        padding: 10px; 
+        border: 1px solid #ccc; 
+        border-radius: 5px; 
+    }
+
+.animation-fade-in {
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.animation-slide-in-right {
+    animation-name: slide-in-right;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.animation-slide-in-left {
+    animation-name: slide-in-left;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.animation-scale-up {
+    animation-name: scale-up;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.animation-rotate {
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.animation-bounce {
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.animation-zoom-out {
+    animation-name: zoom-out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.animation-flip {
+    animation-name: flip;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.animation-shake {
+    animation-name: shake;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.animation-slide-down {
+    animation-name: slide-down;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.btn-candidatar:hover {
+    transform: scale(1.1);
+    
+}
+
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slide-in-right {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slide-in-left {
+        0% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes scale-up {
+        0% {
+            transform: scale(0);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    @keyframes zoom-out {
+        0% {
+            transform: scale(1);
+        }
+
+        100% {
+            transform: scale(0);
+        }
+    }
+
+    @keyframes flip {
+        0% {
+            transform: perspective(400px) rotateY(0);
+        }
+
+        100% {
+            transform: perspective(400px) rotateY(180deg);
+        }
+    }
+
+    @keyframes shake {
+        0% {
+            transform: translateX(0);
+        }
+
+        10% {
+            transform: translateX(-10px);
+        }
+
+        20% {
+            transform: translateX(10px);
+        }
+
+        30% {
+            transform: translateX(-10px);
+        }
+
+        40% {
+            transform: translateX(10px);
+        }
+
+        50% {
+            transform: translateX(-10px);
+        }
+
+        60% {
+            transform: translateX(10px);
+        }
+
+        70% {
+            transform: translateX(-10px);
+        }
+
+        80% {
+            transform: translateX(10px);
+        }
+
+        90% {
+            transform: translateX(-10px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slide-down {
+        0% {
+            transform: translateY(-100%);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
