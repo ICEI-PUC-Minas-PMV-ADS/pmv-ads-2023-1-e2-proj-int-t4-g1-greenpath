@@ -1,95 +1,66 @@
-﻿@model GreenPath.Models.VagasModel
+@model GreenPath.Models.VagasModel
 
 @{
     ViewData["Title"] = "Details";
 }
 
-<style>
-    p {
-        margin-bottom: 0 !important;
-        font-size: 20px;
-    }
+<link rel="stylesheet" href="~/css/StyleDetails.css"? />
 
-    h4{
-        margin-bottom: 0;
-    }
+<h1 class="titulo animation-bounce">@Html.DisplayFor(model => model.Cargo)</h1>
 
-    .titulo{
-        margin-top: 3%;
-    }
-
-    .info-grid {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 5%;
-    }
-
-    .btn-candidatar{
-        font-size: 18px;
-        transition: all 200ms ease-in-out;
-    }
-
-    .btn-candidatar:hover{
-        scale: 1.1;
-    }
-
-</style>
-
-<h1 class="titulo">@Html.DisplayFor(model => model.Cargo)</h1>
-
-<div>
+<div class="animation-slide-in-right">
     <div class="d-flex align-items-center gap-2">
         <i class="fa-solid fa-building"></i>
-        <h4>@Html.DisplayFor(model => model.nomeEmpresa)</h4>
+        <h4> @Html.DisplayFor(model => model.nomeEmpresa)</h4>
     </div>
-    <hr />
-    <div class="info-grid">
-
-        <div class="d-flex flex-column gap-3">
-            <div class="d-flex gap-2 align-items-center">
-                <i class="fa-solid fa-money-bill"></i>
-                <p>Salário:</p>
-                <p>R$ @Html.DisplayFor(model => model.Salario)</p>
-            </div>
-            <div class="d-flex gap-2 align-items-center">
-                <i class="fa-solid fa-clock"></i>
-                <p>Carga horária:</p>
-                <p>@Html.DisplayFor(model => model.Horas) horas semanais</p>
-            </div>
-            <div class="d-flex gap-2 align-items-center">
-                <i class="fa-solid fa-suitcase"></i>
-                <p>Área:</p>
-                <p>@Html.DisplayFor(model => model.Area)</p>
-            </div>
+</div>
+<hr class="animation-slide-in-left" />
+<div class="info-grid animation-scale-up">
+    <div class="d-flex flex-column gap-3 animation-bounce">
+        <div class="d-flex gap-2 align-items-center">
+            <i class="fa-solid fa-money-bill"></i>
+            <p>Salário:</p>
+            <p>R$ <span class="text-success">@Html.DisplayFor(model => model.Salario)</p>
         </div>
-
-        <div class="d-flex flex-column gap-3">
-            <div class="d-flex gap-2 align-items-center">
-                <i class="fa-regular fa-calendar-plus"></i>
-                <p>Data Publicação:</p>
-                <p>@Html.DisplayFor(model => model.Inicio)</p>
-            </div>
-            <div class="d-flex gap-2 align-items-center">
-                <i class="fa-regular fa-calendar-xmark"></i>
-                <p>Disponível até:</p>
-                <p>@Html.DisplayFor(model => model.Fim)</p>
-            </div>
-            <div class="d-flex gap-2 align-items-center">
-                <i class="fa-solid fa-map-location-dot"></i>
-                <p>Local:</p>
-                <p>@Html.DisplayFor(model => model.Local)</p>
-            </div>
+        <div class="d-flex gap-2 align-items-center">
+            <i class="fa-solid fa-clock"></i>
+            <p>Carga horária:</p>
+            <p>@Html.DisplayFor(model => model.Horas) horas semanais</p>
+        </div>
+        <div class="d-flex gap-2 align-items-center">
+            <i class="fa-solid fa-suitcase"></i>
+            <p>Área:</p>
+            <p>@Html.DisplayFor(model => model.Area)</p>
+        </div>
+        <div class="d-flex gap-2 align-items-center">
+            <i class="fa-regular fa-calendar-plus"></i>
+            <p>Data Publicação:</p>
+            <p>@Html.DisplayFor(model => model.Inicio)</p>
+        </div>
+        <div class="d-flex gap-2 align-items-center">
+            <i class="fa-regular fa-calendar-xmark"></i>
+            <p>Disponível até:</p>
+            <p>@Html.DisplayFor(model => model.Fim)</p>
+        </div>
+        <div class="d-flex gap-2 align-items-center">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <p>Local:</p>
+            <p>@Html.DisplayFor(model => model.Local)</p>
         </div>
     </div>
+</div>
 
-    @if(Model.Descricao != null){
-        <div>
-            <h4>Descrição</h4>
-            <p>@Html.DisplayFor(model => model.Descricao)</p>
-        </div>
-    }
+@if(Model.Descricao != null){
+    <div class="animation-zoom-out">
+        <h4 class="animation-slide-down">Descrição</h4>
+        <p class="animation-shake">@Html.DisplayFor(model => model.Descricao)</p>
+    </div>
+}
 
-<form asp-action="Details" >
-    <input type="submit" value="Candidatar-se" class="btn btn-success btn-candidatar d-block mx-auto"/>
+<form asp-action="Details">
+    <input type="submit" value="Candidatar-se" class="btn btn-success btn-candidatar d-block mx-auto" />
 </form>
+
+
+
 
