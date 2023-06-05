@@ -1,58 +1,82 @@
 @using GreenPath.ViewModels
 @model WelcomeViewModel
 
-<h3>Registro realizado com sucesso.</h3>
-<p></p>
+
+    <style>
+        .z-index-1 {
+            z-index: 1;
+        }
+        .nav-item {
+            background-image: linear-gradient(to right, green, green 50%, #000 50%);
+            background-size: 200% 100%;
+            background-position: -100%;
+            display: inline-block;
+            position: relative;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all 0.3s ease-in-out;
+            text-decoration: none;
+        }
+
+        .navAccount {
+            text-decoration: underline;
+            text-decoration-color: green;
+        }
+
+        .nav-item:before {
+            content: '';
+            background: green;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0px;
+            height: 3px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .nav-item:hover {
+            background-position: 0;
+        }
+
+            .nav-item:hover::before {
+                width: 100%;
+            }
+        .sobre {
+            max-width: 50vw;
+        }
+    </style>
 
 
-<h5>Siga os próximos passo para criar seu perfíl.</h5>
+    
 
-<p> </p>
-<p> </p>
-<h5>READ ME</h5>
-<h6>Aqui continua a criar o Dashboard do cliente (usuário ou empresa) ou Pular para começar a usar a aplicação.</h6>
+    <div class="container sobre d-block mx-auto">
+        <img src="~/images/logo.png" class="d-block mx-auto mb-3" width="150" height="150" alt="Logo" />
 
-<h6>No modelo que eu pensei aqui anexaria a foto do perfil.</h6>
-<h6>Mas, como vocês já colocaram no passo anteior a área pra anexar a foto, este código deve ser excluído.</h6>
-<h6>Acho que para uma melhor Experiência do Usuário aqui poderia ter a opção de continuar a completar o perfíl, ou Pular e terminar depois, e já começar a navegar no site em vagas/se for cadastro PF ou empresas/se for cadastro PJ</h6>
+        <h5>Registro realizado com sucesso.</h5>
+        <p></p>
+        <p></p>
+        <p></p>
 
-<p> </p>
-<p> </p>
-<p> </p>
-<section>
-
-        <div class="container">
-            <form class="row justify-content-around">
-
-                <div class="col col-lg-9 tab-content">
-                    <div id="first">
-                        <div class="row align-items-center mb-5">
-                            <div class="col-12 col-md-7">
-                                <h6 class="title-decorative">Passo 01</h6>
-                                <h3 class="h1">Curriculum Vitae</h3>
-                                <span class="lead">Faça o Upload do seu Curriculum Vitae.</span>
-                            </div>
-
-                            <div class="media flex-wrap mb-0 align-items-center">
-                                @*<img alt="Image" src="@imageU" class="avatar avatar-lg mb-3 mb-md-0" />*@
-                                <div class="media-body">
-                                    <form asp-action="EditProfile" enctype="multipart/form-data">
-                                        <label asp-for="Image" class="custom-file mb-2" for="file2">
-                                            <input asp-for="Image" type="file" id="file2" class="custom-file-input height-0" oninput="submitProfileImage();" />
-                                            <span class="btn btn-primary"><i class="icon-upload-to-cloud">&nbsp;</i>Upload</span>
-                                            <span asp-validation-for="Image" class="text-danger"></span>
-                                            <button id="submit-image-button" type="submit" hidden></button>
-                                        </label>
-                                        <div>
-                                            <small>Descrição dos formatos e características do arquivo anexado.</small>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </form>
+        <p>Bem Vindo ao GreenPath.</p>
+        <p> </p>
+        <p> </p>
+        <p>Comece a sua nova jornada.</p>
+        <p> </p>
+        <div>
+            <li class="nav-item">
+                <a asp-area="" asp-controller="Empresa" asp-action="Index">  Buscar Empresas  </a>
+            </li>
+        </div>
+        <div>
+            <li class="nav-item">
+                <a asp-area="" asp-controller="Vagas" asp-action="Index">  Buscar Vagas Abertas  </a>
+            </li>
+        </div>
+        <div>
+            <div class="nav-item">
+                <a asp-area="" asp-controller="Home" asp-action="Privacy">  A nossa Política de Privacidade  </a>
             </div>
-        </section>
+        </div>
+        <p> </p>
+    </div>
