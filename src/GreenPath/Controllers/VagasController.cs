@@ -22,7 +22,7 @@ namespace App_Web_GreenPath_BKED.Controllers
 
             using (SqlConnection con = new SqlConnection("Server=greenpath.database.windows.net;Initial Catalog=greenpath;Integrated Security=False;User Id=caminhoverde;Password=c6jmeNsmQyzgtLG"))
             {
-                string query = "SELECT Pessoa_Juri.pessoa_juri_razao FROM Pessoa_Juri JOIN Vaga ON Vaga.vaga_empresa_id = @EmpId";
+                string query = "SELECT Pessoa_Juri.pessoa_juri_razao FROM Pessoa_Juri WHERE Pessoa_Juri.pessoa_juri_id = @EmpId";
                 using (SqlCommand cmd = new SqlCommand(query))
                 {
                     cmd.Connection = con;
@@ -73,24 +73,28 @@ namespace App_Web_GreenPath_BKED.Controllers
 
             vagasModel.nomeEmpresa = getEmpNome(vagasModel.Empresa);
 
-            return View(vagasModel);
+            var candidatos = from inscricoes in _context.Inscricoes where inscricoes.VagaId == id join pessoa in _context.PessoaFisica on inscricoes.PessoaId equals pessoa.Id select pessoa;
+
+            var inscrito = await _context.Inscricoes.FirstOrDefaultAsync(m => m.PessoaId == Global.CurrentUser.Id && m.VagaId == id) != null ? true : false;
+
+            VagasViewModel vagasViewModel = new VagasViewModel{
+                Vaga = vagasModel,
+                Candidatos = candidatos,
+                Inscrito = inscrito
+            };   
+            
+            return View(vagasViewModel);
         }
 
-        [Authorize(Roles = "userPF,userPJ")]
+        [Authorize(Roles = "userPF")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Details(VagasModel vagasModel)
         {
-           
-            List<Inscricoes> duplicate = _context.Inscricoes.ToList();
+            var inscrito = await _context.Inscricoes.FirstOrDefaultAsync(m => m.PessoaId == Global.CurrentUser.Id && m.VagaId == vagasModel.Id) != null ? true : false;
 
-            foreach (var item in duplicate)
-            {
-                // UMA DAS LINHAS DE CÓDIGO MAIS CRIMINOSAS JÁ ESCRITA PELO SER HUMANO
-                if(item.PessoaId.Equals(Global.CurrentUser.Id) && item.VagaId.Equals(vagasModel.Id)){
-                    return Problem("Você já está cadastrado nessa vaga!");
-                }
-            }
+            // UMA DAS LINHAS DE CÓDIGO MAIS CRIMINOSAS JÁ ESCRITA PELO SER HUMANO
+            if(inscrito) return Problem("Você já está cadastrado nessa vaga!");
 
             Inscricoes inscricao = new Inscricoes{
                 PessoaId = Global.CurrentUser.Id,
@@ -99,7 +103,7 @@ namespace App_Web_GreenPath_BKED.Controllers
 
             _context.Inscricoes.Add(inscricao);
             await _context.SaveChangesAsync();
-            return RedirectToAction("Index", "Vagas");
+            return RedirectToAction("Index", "Processo");
         }
 
 

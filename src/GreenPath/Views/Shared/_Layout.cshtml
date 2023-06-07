@@ -87,6 +87,15 @@
 	.nav-item:hover::before {
 		width: 100%;
 	}
+
+	.btn-vaga{
+		font-size: 14px;
+		transition: all 200ms ease-in-out;
+	}
+
+	.btn-vaga:hover{
+		scale: 1.1;
+	}
 </style>
 
 <body>
@@ -112,17 +121,11 @@
 					</ul>
 
 					@if(Global.UserRole == "pj"){
-						<style>
-							.btn-vaga{
-								font-size: 14px;
-								transition: all 200ms ease-in-out;
-							}
-
-							.btn-vaga:hover{
-								scale: 1.1;
-							}
-						</style>
 						<a asp-controller="Vagas" asp-action="Create" class="btn btn-success mx-3 btn-vaga">Publicar vaga</a>
+					}
+
+					@if(Global.UserRole == "pf"){
+						<a asp-controller="Processo" asp-action="Index" class="btn btn-success mx-3 btn-vaga">Meus Processos</a>
 					}
 
 					@if (SignInManager.IsSignedIn(User))

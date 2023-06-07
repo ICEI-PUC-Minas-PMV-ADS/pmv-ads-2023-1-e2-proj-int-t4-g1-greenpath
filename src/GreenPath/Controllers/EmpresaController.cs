@@ -42,11 +42,13 @@ namespace GreenPath.Controllers
 
 			var certs = from cert in _context.CertificacoesJuri where cert.Emp_Id == id join certDetails in _context.Certificacoes on cert.Cert_Id equals certDetails.id orderby certDetails.titulo select certDetails;
 
-			
+			 var vagas = from vaga in _context.Vagas where vaga.Empresa == id select vaga;
+
 			var viewModel = new EmpresaDetailsViewModel
 			{
 				EmpresaData = companyData,
-				Certificates = certs
+				Certificates = certs,
+				Vagas = vagas
 			};
 
 			return View(viewModel);

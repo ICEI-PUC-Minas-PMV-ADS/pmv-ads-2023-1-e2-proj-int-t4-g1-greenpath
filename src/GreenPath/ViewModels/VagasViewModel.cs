@@ -2,6 +2,7 @@ using GreenPath.Models;
 
 public class VagasViewModel
 {
-    public IQueryable<VagasModel>? Vaga { get; set; }
-    public EmpresaModel? EmpresaData { get; set; }
+    public VagasModel? Vaga { get; set; }
+    public IQueryable<PessoaFisicaModel>? Candidatos { get; set; }
+    public bool Inscrito { get; set; } 
 }

@@ -1,4 +1,4 @@
-@model GreenPath.Models.VagasModel
+@model VagasViewModel;
 
 @{
     ViewData["Title"] = "Details";
@@ -6,12 +6,12 @@
 
 <link rel="stylesheet" href="~/css/StyleDetails.css"? />
 
-<h1 class="titulo animation-bounce">@Html.DisplayFor(model => model.Cargo)</h1>
+<h1 class="titulo animation-bounce">@Html.DisplayFor(model => model.Vaga.Cargo)</h1>
 
 <div class="animation-slide-in-right">
     <div class="d-flex align-items-center gap-2">
         <i class="fa-solid fa-building"></i>
-        <h4> @Html.DisplayFor(model => model.nomeEmpresa)</h4>
+        <h4> @Html.DisplayFor(model => model.Vaga.nomeEmpresa)</h4>
     </div>
 </div>
 <hr class="animation-slide-in-left" />
@@ -20,47 +20,68 @@
         <div class="d-flex gap-2 align-items-center">
             <i class="fa-solid fa-money-bill"></i>
             <p>Salário:</p>
-            <p>R$ <span class="text-success">@Html.DisplayFor(model => model.Salario)</p>
+            <p>R$ <span class="text-success">@Html.DisplayFor(model => model.Vaga.Salario)</p>
         </div>
         <div class="d-flex gap-2 align-items-center">
             <i class="fa-solid fa-clock"></i>
             <p>Carga horária:</p>
-            <p>@Html.DisplayFor(model => model.Horas) horas semanais</p>
+            <p>@Html.DisplayFor(model => model.Vaga.Horas) horas semanais</p>
         </div>
         <div class="d-flex gap-2 align-items-center">
             <i class="fa-solid fa-suitcase"></i>
             <p>Área:</p>
-            <p>@Html.DisplayFor(model => model.Area)</p>
+            <p>@Html.DisplayFor(model => model.Vaga.Area)</p>
         </div>
         <div class="d-flex gap-2 align-items-center">
             <i class="fa-regular fa-calendar-plus"></i>
             <p>Data Publicação:</p>
-            <p>@Html.DisplayFor(model => model.Inicio)</p>
+            <p>@Html.DisplayFor(model => model.Vaga.Inicio)</p>
         </div>
         <div class="d-flex gap-2 align-items-center">
             <i class="fa-regular fa-calendar-xmark"></i>
             <p>Disponível até:</p>
-            <p>@Html.DisplayFor(model => model.Fim)</p>
+            <p>@Html.DisplayFor(model => model.Vaga.Fim)</p>
         </div>
         <div class="d-flex gap-2 align-items-center">
             <i class="fa-solid fa-map-location-dot"></i>
             <p>Local:</p>
-            <p>@Html.DisplayFor(model => model.Local)</p>
+            <p>@Html.DisplayFor(model => model.Vaga.Local)</p>
         </div>
     </div>
 </div>
 
-@if(Model.Descricao != null){
+@if(Model.Vaga.Descricao != null){
     <div class="animation-zoom-out">
         <h4 class="animation-slide-down">Descrição</h4>
-        <p class="animation-shake">@Html.DisplayFor(model => model.Descricao)</p>
+        <p class="animation-shake">@Html.DisplayFor(model => model.Vaga.Descricao)</p>
     </div>
 }
 
-<form asp-action="Details">
-    <input type="submit" value="Candidatar-se" class="btn btn-success btn-candidatar d-block mx-auto" />
-</form>
-
-
-
-
+@if(Global.UserRole == "pj"){
+    <h4 class="text-center">Candidatos</h4>
+    <ul class="list-group list-group-light d-flex justify-content-center align-items-center">
+        @foreach (var item in Model.Candidatos)
+        {
+            <li data-aos="fade-right"
+                class="list-group-item d-flex justify-content-between align-items-center m-2 w-50">
+                <div class="d-flex align-items-center">
+                    <img src="~/images/default.png" alt="avatar" style="width: 45px; height: 45px"
+                        class="rounded-circle" />
+                    <div class="ms-3">
+                        <p class="fw-bold mb-1">@item.Nome @item.Sobrenome</p>
+                        <p class="text-muted mb-0">@item.Area</p>
+                    </div>
+                </div>
+                <div>
+                    <a asp-controller="Candidato" asp-action="Index" asp-route-id="@item.Id"
+                        class="btn btn-outline-success btn-rounded btn-sm">Ver mais+</a>
+                </div>
+            </li>
+        }
+    </ul>
+}
+else if(!Model.Inscrito){
+    <form asp-action="Details">
+        <input type="submit" value="Candidatar-se" class="btn btn-success btn-candidatar d-block mx-auto" />
+    </form>
+}

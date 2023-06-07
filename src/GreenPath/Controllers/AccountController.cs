@@ -232,25 +232,6 @@ namespace GreenPath.Controllers
                                     foreach (var item in selectedCertificates)
                                     {
                                         InsertCerts(pessoaJuri.Id, (int)item.id);
-                                        
-                                    //    var existingEntity = _context.CertificacoesJuri.FirstOrDefault(c => c.Emp_Id == pessoaJuri.Id);
-
-                                    //     if (existingEntity != null)
-                                    //     {
-                                    //         // Se necessário, atualize as propriedades existentes
-                                    //         existingEntity.Cert_Id = item.id;
-                                    //     }
-                                    //     else
-                                    //     {
-                                    //         var certificacoes = new JuriCertsModel
-                                    //         {
-                                    //             Emp_Id = pessoaJuri.Id,
-                                    //             Cert_Id = item.id
-                                    //         };
-
-                                    //         _context.CertificacoesJuri.Add(certificacoes);
-                                    //     }
-                                    //     await _context.SaveChangesAsync();
                                     }
                                }
                             }

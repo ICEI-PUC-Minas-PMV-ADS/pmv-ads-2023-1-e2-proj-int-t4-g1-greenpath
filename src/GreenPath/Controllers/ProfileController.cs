@@ -17,20 +17,23 @@ public class ProfileController : Controller
     {
         string id = (string)RouteData.Values["id"];
 
-        var user = await _context.Users.FindAsync(id);
         PessoaFisicaModel userData = await _context.PessoaFisica.FindAsync(id);
         EmpresaModel companyData = await _context.Empresas.FindAsync(id);
 
-        var certs = from cert in _context.CertificacoesJuri where cert.Emp_Id == id join certDetails in _context.Certificacoes on cert.Cert_Id equals certDetails.id orderby certDetails.titulo select certDetails;
 
         if (userData == null && companyData == null) return NotFound("Usuário não encontrado");
         else if (userData == null)
         {
+            var certs = from cert in _context.CertificacoesJuri where cert.Emp_Id == id join certDetails in _context.Certificacoes on cert.Cert_Id equals certDetails.id orderby certDetails.titulo select certDetails;
+
+            var vagas = from vaga in _context.Vagas where vaga.Empresa == id select vaga;
+
             var viewModel = new UserProfileViewModel
             {
                 EmpresaData = companyData,
                 PessoaFisicaData = null,
-                Certificates = certs
+                Certificates = certs,
+                Vagas = vagas
             };
             return View(viewModel);
         }
@@ -40,7 +43,8 @@ public class ProfileController : Controller
             {
                 EmpresaData = null,
                 PessoaFisicaData = userData,
-                Certificates = null
+                Certificates = null,
+                Vagas = null
             };
             return View(viewModel);
         }

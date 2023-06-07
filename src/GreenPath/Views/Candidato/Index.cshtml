@@ -1,0 +1,190 @@
+@using GreenPath.ViewModels
+@model CandidatoViewModel
+
+@{
+    ViewData["Title"] = "Candidatos";
+}
+
+
+<style>
+    .text-xxl {
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .cert-card-group {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 20px
+    }
+
+    .cert-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 20px;
+        box-shadow: 0px 0px 12px #a8a8a8,
+            -5px -5px 12px #ffffff;
+    }
+
+    .cert-card-text {
+        font-weight: bold;
+    }
+
+    .slider {
+        width: 100%;
+    }
+
+    .vaga-card{
+        border: 1px solid rgba(0,0,0,.125) !important;
+         border-radius: 10px !important;
+        box-shadow:  0px 0px 12px #dbdbdb,
+                    -5px -5px 12px #ffffff;
+    }
+</style>
+
+<div class="profile-background p-3 ">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                        <img src="~/images/default.png" alt="avatar" class="img-fluid"
+                            style="width: 150px; aspect-ratio: 1/1; ">
+                    <h5 class="my-3">@(Model.Candidato.Nome)</h5>
+                    <p class="text-muted mb-1">@Model.Candidato.Area</p>
+                    <p class="text-muted mb-4">@Model.Candidato.Estado - @Model.Candidato.Pais</p>
+                    <div class="d-flex justify-content-center mb-2">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4 mb-lg-0">
+                <div class="card-body p-0">
+                    <ul class="list-group list-group-flush rounded-3">
+                        <li class="list-group-item d-flex justify-content-evenly align-items-center p-3">
+                            <i class="fa-brands fa-instagram" style="color: rgb(255, 25, 0);"></i>
+                            <a href="https://@Model.Candidato.Instagram"
+                                class="mb-0 social-media-link">Instagram</a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-evenly align-items-center p-3">
+                            <i class="fa-brands fa-facebook " style="color: #488dff;"></i>
+                            <a href="https://@Model.Candidato.Facebook" class="mb-0 social-media-link"
+                                class="mb-0 social-media-link">Facebook</a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-evenly align-items-center p-3">
+                            <i class="fa-brands fa-github"></i>
+                            <a href="https://@Model.Candidato.Github" class="mb-0 social-media-link"
+                                class="mb-0 social-media-link">Github</a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-evenly align-items-center p-3">
+                            <i class="fa-brands fa-pinterest" style="color: #ff0202;"></i>
+                            <a href="https://@Model.Candidato.Pinterest" class="mb-0 social-media-link"
+                                class="mb-0 social-media-link">Pinterest</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-8">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <p class="mb-0">Nome</p>
+                        </div>
+                        <div class="col-sm-9">
+                            <p class="text-muted mb-0">
+                                @(Model.Candidato.Nome)
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <p class="mb-0">Email</p>
+                        </div>
+                        <div class="col-sm-9">
+                            <p class="text-muted mb-0">@Model.Candidato.Email</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <p class="mb-0">Celular</p>
+                        </div>
+                        <div class="col-sm-9">
+                            <p class="text-muted mb-0">@Model.Candidato.Telefone</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <p class="mb-0">Endereço</p>
+                        </div>
+                        <div class="col-sm-9">
+                            <p class="text-muted mb-0">@Model.Candidato.Cidade, @Model.Candidato.Estado -
+                                @Model.Candidato.Pais</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-4 mb-md-0">
+                        <div class="card-body">
+                            <p class="mb-4"><span class="text-primary font-italic me-1">habilidades</span> Pessoais
+                            </p>
+                            <p class="mb-1" style="font-size: .77rem;">Comunicação</p>
+                            <div class="progress rounded" style="height: 5px;">
+                                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                            </div>
+                            <p class="mt-4 mb-1" style="font-size: .77rem;">Organização</p>
+                            <div class="progress rounded" style="height: 5px;">
+                                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                            </div>
+                            <p class="mt-4 mb-1" style="font-size: .77rem;">Liderança</p>
+                            <div class="progress rounded" style="height: 5px;">
+                                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                            </div>
+                            <p class="mt-4 mb-1" style="font-size: .77rem;">Proatividade</p>
+                            <div class="progress rounded" style="height: 5px;">
+                                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card mb-4 mb-md-0">
+                        <div class="card-body">
+                            <p class="mb-4"><span class="text-primary font-italic me-1">habilidades</span> Técnicas
+                            </p>
+                            <p class="mb-1" style="font-size: .77rem;">Flexibilidade</p>
+                            <div class="progress rounded" style="height: 5px;">
+                                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                            </div>
+                            <p class="mt-4 mb-1" style="font-size: .77rem;">Trabalho em equipe</p>
+                            <div class="progress rounded" style="height: 5px;">
+                                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                            </div>
+                            <p class="mt-4 mb-1" style="font-size: .77rem;">Criatividade</p>
+                            <div class="progress rounded" style="height: 5px;">
+                                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                            </div>
+                            <p class="mt-4 mb-1" style="font-size: .77rem;">Agilidade</p>
+                            <div class="progress rounded" style="height: 5px;">
+                                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

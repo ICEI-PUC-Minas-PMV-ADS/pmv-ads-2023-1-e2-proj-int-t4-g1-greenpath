@@ -1,7 +1,7 @@
 ﻿@model EmpresaDetailsViewModel;
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Empresa";
 }
 
 <style>
@@ -30,6 +30,13 @@
 
     .cert-card-text{
         font-weight: bold;
+    }
+    
+    .vaga-card{
+        border: 1px solid rgba(0,0,0,.125) !important;
+         border-radius: 10px !important;
+        box-shadow:  0px 0px 12px #dbdbdb,
+                    -5px -5px 12px #ffffff;
     }
 </style>
 
@@ -113,19 +120,26 @@
         <div class="card-body">
             <h4 class="card-title text-center ">Vagas</h4>
             <div class="dflex row justify-content-center">
-
-                <img style="width: 200px; height: 200px;" class="card-img-top  mx-2"
-                    src="https://via.placeholder.com/200" alt="Imagem 1">
-
-                <img style="width: 200px; height: 200px;" class="card-img-top  mx-2"
-                    src="https://via.placeholder.com/200" alt="Imagem 2">
-
-                <img style="width: 200px; height: 200px;" class="card-img-top  mx-2"
-                    src="https://via.placeholder.com/200" alt="Imagem 3">
-
-                <div class="card-body text-center pb-3">
-                    <button type="button" class="btn btn-primary">Ver mais</button>
-                </div>
+                <ul class=" d-flex justify-content-center align-items-center mt-5">
+                    @foreach (var item in Model.Vagas) {
+                    <li class="vaga-card list-group-item d-flex justify-content-between align-items-center m-2 flex-column w-25">
+                        <div class="d-flex align-items-center">
+                            <div class="text-center">
+                                <p class="fw-bold mb-3 text-capitalize">@Html.DisplayFor(modelItem => item.Cargo)
+                                </p>
+                                <p class="text-muted mb-0">@Html.DisplayFor(modelItem => item.nomeEmpresa)</p>
+                                <p class="text-muted mb-0">@Html.DisplayFor(modelItem => item.Local)</p>
+                                <p class="text-muted mb-3">R$ @Html.DisplayFor(modelItem => item.Salario)</p>
+                            </div>
+                        </div>
+                        <div>
+                            <a asp-action="Details" asp-route-id="@item.Id"
+                                class="btn btn-outline-success btn-rounded btn-sm">Ver
+                                mais+</a>
+                        </div>
+                    </li>
+                    }
+                </ul>
             </div>
         </div>
     </div>
