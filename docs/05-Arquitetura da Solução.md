@@ -4,7 +4,8 @@
 
 O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
 
-![diagramaDeClasses](https://user-images.githubusercontent.com/13721147/229556010-3a209f60-26d9-40a3-9c7f-6af158cebc4f.png)
+![1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/assets/69819769/4d0d9e04-8651-4b88-9f3d-b420b920dd4d)
+
 
 ## Modelo ER (Projeto Conceitual)
 
