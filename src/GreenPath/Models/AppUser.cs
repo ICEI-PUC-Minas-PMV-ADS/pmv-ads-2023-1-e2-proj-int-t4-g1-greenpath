@@ -9,6 +9,7 @@ namespace GreenPath.Models
 		[ForeignKey("Address")]
 		public int? AdressId { get; set; }
 		public Address? Address { get; set; }
+		public string? ProfileImageUrl { get; set; }
 	}
 }
 
