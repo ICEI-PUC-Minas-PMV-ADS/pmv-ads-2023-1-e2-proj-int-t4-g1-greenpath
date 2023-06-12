@@ -8,6 +8,7 @@ Os requisitos para realização dos testes de software são:
 
 ## Testes de Navegabilidade
 Automatizado:
+
 Tem por objetivo verificar se todos os links são navegáveis, estão corretos e levam o usuário a uma outra tela existente na aplicação.
 
 Foram feitos testes automatizados e testes manuais, como seguem os resultados abaixo.
