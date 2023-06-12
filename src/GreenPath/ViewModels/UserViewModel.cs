@@ -7,6 +7,7 @@ namespace GreenPath.ViewModels
         public string UserName { get; set; }
         public string? City { get; set; }
         public string? State { get; set; }
+        public string? ProfileImageUrl { get; set; }
 
         public string Location => (City, State) switch
         {
