@@ -63,22 +63,22 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
  
 | Caso de Teste      | CT-02 -      Registro de Novo Usuario - Candidato (Usuário Pessoa Física)                                                                                                                                                 |
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Requisitos Associados  | RF-01 -  O site deve permitir que o usuário crie o seu perfil para novos usuarios.                                    |
-| Objetivo do Teste      | Verificar se o login de usuarios/empresa ja cadastrados e se o cadastramento de novos usuarios/empresas estão funcionando corretamente.                                                                                  |
-| Passos                 | 1) Acessar o site  <br>2) Fazer o cadastro (Novo Usuario/Empresa) e Realizar o Login se ja houver o cadastro existente.  <br>3) Verificar a validação das informações <br>4) Permitir o acesso e realizar o Logout.    |
-| Critérios de Êxito     |    Acesso ao painel de Usuario/Empresa <br> Comunicação correta entre o Banco de Dados e aplicação.  |
+| Requisitos Associados  | RF-01 -  O site deve permitir que o usuário crie o seu perfil.                                    |
+| Objetivo do Teste      | Verificar se os campos de entrada de dados do Perfíl de usuarios Candidatos estão funcionando corretamente e alimentando o Banco de Dados. |
+| Passos                 | 1) Acessar o site  <br>2) Fazer o cadastro (Novo Usuario) e Cadastrar as demais informações do Perfíl de usuário Pessoa Física (CPF).  <br>3) Verificar a validação das informações <br>4) Permitir o acesso e verificar dados no Banco de Dados.    |
+| Critérios de Êxito     |    Acesso ao painel de Perfil de Usuario - Candidato (Usuário Pessoa Física) <br> Comunicação correta entre o Banco de Dados e aplicação.  |
 | Dados de entrada   |                                                                                                                                                                                                             | 
 | Resultado Obtido   |                                                                                                                                                                                                           |  
 
 
 | Caso de Teste      | CT-03 -      Registro de Novo Usuario - Empresa (Usuário Pessoa Jurídica)                                                                                                                                                 |
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Requisitos Associados  |  RF-01 -  O site deve permitir que o usuário crie o seu perfil para novos usuarios.                                    |
-| Objetivo do Teste      | Verificar se o login de usuarios/empresa ja cadastrados e se o cadastramento de novos usuarios/empresas estão funcionando corretamente.                                                                                  |
-| Passos                 | 1) Acessar o site  <br>2) Fazer o cadastro (Novo Usuario/Empresa) e Realizar o Login se ja houver o cadastro existente.  <br>3) Verificar a validação das informações <br>4) Permitir o acesso e realizar o Logout.    |
-| Critérios de Êxito     |    Acesso ao painel de Usuario/Empresa <br> Comunicação correta entre o Banco de Dados e aplicação.  |
+| Requisitos Associados  |  RF-06 -  O site deve permitir que o usuário Empresa crie o seu perfil.                                    |
+| Objetivo do Teste      | Verificar se os campos de entrada de dados do Perfíl de usuarios Empresas estão funcionando corretamente e alimentando o Banco de Dados.   |
+| Passos                 | 1) Acessar o site  <br>2) Fazer o cadastro (Novo Usuario) e Cadastrar as demais informações do Perfíl de usuário Pessoa Jurídica (CNPJ).  <br>3) Verificar a validação das informações <br>4) Permitir o acesso e verificar dados no Banco de Dados.    |
+| Critérios de Êxito     |    Acesso ao painel de Perfil de Usuario - Empresa (Usuário Pessoa Jurídica) <br> Comunicação correta entre o Banco de Dados e aplicação.  |
 | Dados de entrada   |                                                                                                                                                                                                             | 
-| Resultado Obtido   |                                                                                                                                                                                                           |  
+| Resultado Obtido   |                                                                                                                                                                                                           | 
  
 | Caso de Teste      | CT-04 – Teste de funcionalidade de pesquisa de Vagas                                                                                                                                    |
 |--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
