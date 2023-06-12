@@ -51,7 +51,7 @@ https://search.google.com/test/mobile-friendly/result?id=5Ok-5SsJAPACr_AADYfJ3w
 
 Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 
-| ###Caso de Teste      | ###CT-01 -      Teste de Login e Cadastramento de Usuarios/Empresa                                                                                                                                                 |
+| Caso de Teste      | CT-01 -      Teste de Login e Cadastramento de Usuarios/Empresa                                                                                                                                                 |
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisitos Associados  |  RF-01; RF-02; RF-03; RF-015 -  O site deve exercer a possibilidade de login e cadastro de novos usuarios.                                    |
 | Objetivo do Teste      | Verificar se o login de usuarios/empresa ja cadastrados e se o cadastramento de novos usuarios/empresas estão funcionando corretamente.                                                                                  |
@@ -61,7 +61,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 | Resultado Obtido   |                                                                                                                                                                                                           | 
  
  
-| ###Caso de Teste      | ###CT-02 – Teste de funcionalidade de pesquisa de Vagas                                                                                                                                    |
+| Caso de Teste      | CT-02 – Teste de funcionalidade de pesquisa de Vagas                                                                                                                                    |
 |--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisitos Associados  | RF-011 - Exibição de resultados: o site deve exibir os resultados de pesquisa de maneira clara e fácil de entender, fornecendo informações relevantes sobre os itens encontrados.   |
 | Objetivo do Teste      | Verificar se o aplicativo está dando o retorno esperado na barra de busca considerando as palavras chaves dos usuários.                                                                |
@@ -71,7 +71,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 | Resultado Obtido   |                                                                                                                                                                                                           |                             
 
 
-| ###Caso de Teste      | ###CT-03 – Teste de funcionalidade de candidatura em uma Vaga Disponível                                                                                                                                                                                                                                               |
+| Caso de Teste      | CT-03 – Teste de funcionalidade de candidatura em uma Vaga Disponível                                                                                                                                                                                                                                               |
 |--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisitos Associados  | RF-04; RF-05 - Facilidade de uso: o processo de candidatura deve ser fácil de usar e intuitivo, permitindo que os usuários enviem sua candidatura sem esforço e que permita que os usuários acompanhem o status de sua candidatura, fornecendo informações sobre o andamento do processo de seleção.    |
 | Objetivo do Teste      | Garantir que a candidatura do usuário seja fácil e intuitiva, permitindo que os usuários tenham pelo acesso ao status da sua candidatura e que se comuniquem e recebam feedbacks das empresas contratantes.                                                                                              |
