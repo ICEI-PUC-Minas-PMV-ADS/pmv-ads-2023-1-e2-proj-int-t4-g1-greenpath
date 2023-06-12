@@ -92,18 +92,18 @@ A tabela a seguir apresenta a lista de requisitos funcionais deste projeto, orde
 |------|-----------------------------------------|----|
 |RF-001| O Sistema permite que o usuário crie o seu perfil. | ALTA | 
 |RF-002| O Sistema Permite o login ao usuário.   | ALTA |
-|RF-003| O Sistema Permite que o usuário anexe arquivos pdf (cv e cartas de recomendação, intenção). | MÉDIA | 
+|RF-003| O Sistema Permite que o usuário anexe arquivos pdf (cv e cartas de recomendação, intenção). | BAIXA | 
 |RF-004| O Sistema permite que o usuário demonstre interesse por uma vaga de trabalho publicada.  | ALTA |
-|RF-005| O Sistema permite que o usuário demonstre interesse por uma empresa. | MÉDIA | 
+|RF-005| O Sistema permite que o usuário demonstre interesse por uma empresa. | BAIXA | 
 |RF-006| O Sistema permite que a empresa crie o seu perfil.   | ALTA |
 |RF-007| O Sistema permite o login da empresa. | ALTA | 
 |RF-008| O Sistema permite que a empresa possa publicar vagas de trabalho.   | ALTA |
-|RF-009| O Sistema permite comunicação entre empresa e usuário. | MÉDIA | 
-|RF-010| O Sistema permite que o usuários compartilhe informações sobre o andamento de um processo seletivo de uma vaga de trabalho publicada.   | MÉDIA |
+|RF-009| O Sistema permite comunicação entre empresa e usuário. | BAIXA | 
+|RF-010| O Sistema permite que o usuários compartilhe informações sobre o andamento de um processo seletivo de uma vaga de trabalho publicada.   | BAIXA |
 |RF-011| O Sistema exibe vagas de trabalho disponíveis. | ALTA | 
-|RF-012| O Sistema filtra as vagas disponíveis por segmento profissional, ranking, avaliação de usuário, senioridade de responsabilidade social/sustentabilidade.  | ALTA |
-|RF-013| O Sistema filtra empresas por segmento profissional, ranking, avaliação de usuário, senioridade de responsabilidade social/sustentabilidade. | ALTA | 
-|RF-014| O Sistema permite que o usuário faça a avaliação e ranking de uma empresa.   | ALTA |
+|RF-012| O Sistema filtra as vagas disponíveis por segmento profissional, ranking, avaliação de usuário, senioridade de responsabilidade social/sustentabilidade.  | BAIXA |
+|RF-013| O Sistema filtra empresas por segmento profissional, ranking, avaliação de usuário, senioridade de responsabilidade social/sustentabilidade. | BAIXA | 
+|RF-014| O Sistema permite que o usuário faça a avaliação e ranking de uma empresa.   | BAIXA |
 |RF-015| O Sistema conta com um mecanismo de selos, onde é possível a empresa ter selos em seu perfil representando quais comprovações de responsabilidade social, ambiental e/ou sustentabilidade, ela possui. | MÉDIA | 
 
 ### Requisitos não Funcionais
