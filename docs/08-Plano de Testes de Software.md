@@ -68,8 +68,18 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 | Critérios de Êxito     |    Acesso ao painel de Usuario/Empresa <br> Comunicação correta entre o Banco de Dados e aplicação.  |
 | Dados de entrada   |                                                                                                                                                                                                             | 
 | Resultado Obtido   |                                                                                                                                                                                                           |  
+
+
+| Caso de Teste      | CT-03 -      Registro de Novo Usuario - Empresa (Usuário Pessoa Jurídica)                                                                                                                                                 |
+|--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisitos Associados  |  RF-01 -  O site deve permitir que o usuário crie o seu perfil para novos usuarios.                                    |
+| Objetivo do Teste      | Verificar se o login de usuarios/empresa ja cadastrados e se o cadastramento de novos usuarios/empresas estão funcionando corretamente.                                                                                  |
+| Passos                 | 1) Acessar o site  <br>2) Fazer o cadastro (Novo Usuario/Empresa) e Realizar o Login se ja houver o cadastro existente.  <br>3) Verificar a validação das informações <br>4) Permitir o acesso e realizar o Logout.    |
+| Critérios de Êxito     |    Acesso ao painel de Usuario/Empresa <br> Comunicação correta entre o Banco de Dados e aplicação.  |
+| Dados de entrada   |                                                                                                                                                                                                             | 
+| Resultado Obtido   |                                                                                                                                                                                                           |  
  
-| Caso de Teste      | CT-02 – Teste de funcionalidade de pesquisa de Vagas                                                                                                                                    |
+| Caso de Teste      | CT-04 – Teste de funcionalidade de pesquisa de Vagas                                                                                                                                    |
 |--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisitos Associados  | RF-011 - Exibição de resultados: o site deve exibir os resultados de pesquisa de maneira clara e fácil de entender, fornecendo informações relevantes sobre os itens encontrados.   |
 | Objetivo do Teste      | Verificar se o aplicativo está dando o retorno esperado na barra de busca considerando as palavras chaves dos usuários.                                                                |
