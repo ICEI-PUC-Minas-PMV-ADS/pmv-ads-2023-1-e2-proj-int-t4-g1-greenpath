@@ -89,7 +89,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 | Resultado Obtido   |                                                                                                                                                                                                           |                             
 
 
-| Caso de Teste      | CT-03 – Teste de funcionalidade de candidatura em uma Vaga Disponível                                                                                                                                                                                                                                               |
+| Caso de Teste      | CT-05 – Teste de funcionalidade de candidatura em uma Vaga Disponível                                                                                                                                                                                                                                               |
 |--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisitos Associados  | RF-04; RF-05 - Facilidade de uso: o processo de candidatura deve ser fácil de usar e intuitivo, permitindo que os usuários enviem sua candidatura sem esforço e que permita que os usuários acompanhem o status de sua candidatura, fornecendo informações sobre o andamento do processo de seleção.    |
 | Objetivo do Teste      | Garantir que a candidatura do usuário seja fácil e intuitiva, permitindo que os usuários tenham pelo acesso ao status da sua candidatura e que se comuniquem e recebam feedbacks das empresas contratantes.                                                                                              |
@@ -99,7 +99,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 | Resultado Obtido   |                                                                                                                                                                                                           | 
 
 
-| Caso de Teste      | CT-04 – Teste de funcionalidade de geolocalização                                                                                                                                                                   |
+| Caso de Teste      | CT-06 – Teste de funcionalidade de geolocalização                                                                                                                                                                   |
 |--------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisitos Associados  |      RF-011; RF-012; RF-13 - Precisão da localização: é importante verificar se a aplicação está fornecendo informações precisas sobre a localização      do usuário e das vagas mais proximas.  |
 | Objetivo do Teste      | Verificar se a aplicação está respondendo corretamente a mudanças na localização do usuário..                                                                                                                               |
@@ -109,7 +109,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 | Resultado Obtido   |                                                                                                                                                                                                           | 
 
 
-| Caso de Teste      | CT-05 -   Teste de Segurança                                                                                                                                                     |
+| Caso de Teste      | CT-07 -   Teste de Segurança                                                                                                                                                     |
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisitos Associados  |  RF-01; RF-02; RF-03; RF-06; RF-015 - Criptografia: Garantir que as informações dos usuários, como senhas e dados pessoais, estejam criptografadas e protegidas de possíveis invasões.                                    |
 | Objetivo do Teste      |  Verificar todas as brechas de possiveis ataques contra o site visando roubar informações dos usuarios.                                                                                  |
