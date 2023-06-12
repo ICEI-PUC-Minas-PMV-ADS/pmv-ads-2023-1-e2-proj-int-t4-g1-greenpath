@@ -44,8 +44,7 @@
 | Dados de entrada   | 1) Acesso ao site https://greenpath.azurewebsites.net/ com sucesso, <br>2) Acesso ao campo "Cadastre-se" direciona com sucesso à área de Criar novo Cadastro <br>3)  Utilizando os dados de acesso UserName: testeEmpresa22@gmail.com Senha: Green3421#@!77 <br>4) Os dados foram cadastrados com sucesso no Banco de Dados. <br>5) Seleção "Empresa" feita com sucesso abre o ficheiro com os campos para usuário Empresa. <br>6) Dados foram inseridos nos campos: Razão Social; CNPJ; Área de Atuação; Seletor de Certificações; Email de Contato; Telefone; País; Estado; Cidade; Rua; e links para Instagram, Facebook, Github e Pinterest - todos inseridos com sucesso.                                  | 
 | Resultado Obtido   |   Foi garantido com sucesso a criação do novo usuário Empresa na tabela dbo.Pessoa_Juri do Banco de Dados e todos os campos preenchidos apresentados nesta tabela para o perfíl do usuário testeEmpresa22@gmail.com.         |         
 
-
-![Teste 3 Sucesso]()
+![Teste 3 Sucesso](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/209c54f68321c5b90bca01089a6c86d686f3b188/docs/img/Teste03_cadastro_PJ.gif)
 
 
 
