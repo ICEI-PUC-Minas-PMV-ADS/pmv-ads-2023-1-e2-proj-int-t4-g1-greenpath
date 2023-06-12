@@ -40,7 +40,7 @@ Os testes de responsividade foram automatizados por Google: Teste de compatibili
 https://search.google.com/test/mobile-friendly?hl=pt
 
 Link para os resultados:
-https://search.google.com/test/mobile-friendly/result?id=z2V-iNwESInPOrz9Okacew
+https://search.google.com/test/mobile-friendly/result?id=5Ok-5SsJAPACr_AADYfJ3w
 
 ![Google](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/855517a66609bf4424711da0607326660ae29d87/docs/img/Responsividade_Test.png)
 
