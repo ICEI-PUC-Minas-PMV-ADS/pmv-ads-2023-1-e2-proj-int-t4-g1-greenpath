@@ -3,7 +3,7 @@
 ## Login do usuário com sucesso 
 
 
-| ### Caso de Teste      | ### CT-01 -  Teste de Login de Usuarios (Candidato ou Empresa)                                                                                |
+| Caso de Teste      | CT-01 -  Teste de Login de Usuarios (Candidato ou Empresa)                                                                                |
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisitos Associados  |  RF-02; RF-07 -  O site deve permitir o login ao usuário e permitir o login da empresa.                                    |
 | Objetivo do Teste      | Verificar se o login de usuarios Candidatos e Empresa ja cadastrados no Banco de Dados é realizado com sucesso.            |
