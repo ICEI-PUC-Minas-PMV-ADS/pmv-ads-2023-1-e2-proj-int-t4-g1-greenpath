@@ -15,7 +15,7 @@
 
 ## Login do usuário com sucesso - Empresa (Pessoa Jurídica)
 
-![Teste 1 Sucesso](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/c612e6364b6ed9cddf4c64b82028bfa9243efd1b/docs/img/Teste01_login_empresa.gif)
+![Teste 1 Sucesso](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/523e4e64a4306075a4e045eabdba1839ca04667e/docs/img/Teste01_login_EmpresaPJ.gif)
 
 | Caso de Teste      | CT-02 - Registro de Novo Usuario - Candidato (Usuário Pessoa Física)                                                                                |
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
