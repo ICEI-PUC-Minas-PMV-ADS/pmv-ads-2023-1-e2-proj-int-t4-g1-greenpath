@@ -1,12 +1,18 @@
 # Registro de Testes de Software
 
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>, <a href="8-Plano de Testes de Software.md"> Plano de Testes de Software</a>
+## Caso de Teste CT-01 - Login do usuário com sucesso 
 
-Para cada caso de teste definido no Plano de Testes de Software, realize o registro das evidências dos testes feitos na aplicação pela equipe, que comprovem que o critério de êxito foi alcançado (ou não!!!). Para isso, utilize uma ferramenta de captura de tela que mostre cada um dos casos de teste definidos (obs.: cada caso de teste deverá possuir um vídeo do tipo _screencast_ para caracterizar uma evidência do referido caso).
 
-## Avaliação
+| Caso de Teste      | CT-01 -      Teste de Login e Cadastramento de Usuarios/Empresa                                                                                                                                                 |
+|--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisitos Associados  |  RF-02; RF-07 -  O site deve permitir o login ao usuário e permitir o login da empresa.                                    |
+| Objetivo do Teste      | Verificar se o login de usuarios Candidatos e Empresa ja cadastrados no Banco de Dados é realizado com sucesso.            |
+| Passos                 | 1) Acessar o site https://greenpath.azurewebsites.net/ <br>2) Realizar o Login se ja houver o cadastro existente.  <br>3) Verificar a validação das informações <br>4) Permitir o acesso e verificar dados no Banco de Dados.   |
+| Critérios de Êxito     | Acesso ao painel de Usuario <br> Comunicação correta entre o Banco de Dados e aplicação.  |
+| Dados de entrada   | Acesso ao site https://greenpath.azurewebsites.net/ com sucesso, Acesso ao campo "Entre" direciona com sucesso à área de Login <br2> Utilizando os dados de acesso já registrados UserName: teste111@yahoo.com.br <br3> Senha: Green3421#@!77                                 | 
+| Resultado Obtido   |   Foi garantido com sucesso o acesso ao perfíl do usuário teste111@yahoo.com.br         |         
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
 
-> **Links Úteis**:
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
+![Teste 1 Sucesso](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/d357336066a60178ebd055b5918b1380acf9e4e6/docs/img/Teste01_login.gif)
+
+
