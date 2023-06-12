@@ -1,12 +1,25 @@
 # Plano de Testes de Software
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>
+# Plano de Testes de Software
 
-Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
+Os requisitos para realização dos testes de software são:
+- Site publicado na Internet 
+- Navegador da Internet - Chrome, Firefox ou Edge 
+- Conectividade de Internet para acesso às plataformas (APISs) 
 
-Não deixe de enumerar os casos de teste de forma sequencial e de garantir que o(s) requisito(s) associado(s) a cada um deles está(ão) correto(s) - de acordo com o que foi definido na seção "2 - Especificação do Projeto". 
 
-Por exemplo:
+## Testes de Navegabilidade
+
+Tem por objetivo verificar se todos os links são navegáveis, estão corretos e levam o usuário a uma outra tela existente na aplicação.
+
+Foram feitos testes automatizados e testes manuais, como seguem os resultados abaixo.
+
+Os Testes automatizados foram realizados através de: https://datayze.com/site-navigability-analyzer
+
+Resultado:
+![Datayze](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/da54cc1be16a28f67cf67a9056415704e008486e/docs/img/Navigability_Test.png)
+
+
  
 | Caso de Teste      | CT-01 – Teste de funcionalidade de pesquisa                                                                                                                                    |
 |--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
