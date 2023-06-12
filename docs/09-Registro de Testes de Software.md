@@ -9,10 +9,13 @@
 | Dados de entrada   | 1) Acesso ao site https://greenpath.azurewebsites.net/ com sucesso, <br>2) Acesso ao campo "Entre" direciona com sucesso à área de Login <br>3)  Utilizando os dados de acesso já registrados UserName: teste111@yahoo.com.br Senha: Green3421#@!77 <br>4) Os dados foram verificados no sucesso pelo Banco de Dados.                                 | 
 | Resultado Obtido   |   Foi garantido com sucesso o acesso ao perfíl do usuário teste111@yahoo.com.br         |         
 
-## Login do usuário com sucesso 
+## Login do usuário com sucesso - Candidato (Pessoa Física)
 
 ![Teste 1 Sucesso](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/d357336066a60178ebd055b5918b1380acf9e4e6/docs/img/Teste01_login.gif)
 
+## Login do usuário com sucesso - Empresa (Pessoa Jurídica)
+
+![Teste 1 Sucesso](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/c612e6364b6ed9cddf4c64b82028bfa9243efd1b/docs/img/Teste01_login_empresa.gif)
 
 | Caso de Teste      | CT-02 - Registro de Novo Usuario - Candidato (Usuário Pessoa Física)                                                                                |
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
