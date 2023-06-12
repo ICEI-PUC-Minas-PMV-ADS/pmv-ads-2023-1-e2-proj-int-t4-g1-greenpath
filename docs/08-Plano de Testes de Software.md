@@ -54,7 +54,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 
 | Caso de Teste      | CT-01 -      Teste de Login de Usuarios (Candidato ou Empresa)                                                                                                                                                 |
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Requisitos Associados  |  RF-02; RF-07 -  O site deve permitir o login ao usuário e permitir o login da empresa.                                    |
+| Requisitos Associados  | RF-02; RF-07 -  O site deve permitir o login de usuário, candidatos ou empresas.                                    |
 | Objetivo do Teste      | Verificar se o login de usuarios Candidatos e Empresa ja cadastrados no Banco de Dados é realizado com sucesso.                                                                                   |
 | Passos                 | 1) Acessar o site  <br>2) Realizar o Login se ja houver o cadastro existente.  <br>3) Verificar a validação das informações <br>4) Permitir o acesso e verificar dados no Banco de Dados.    |
 | Critérios de Êxito     |    Acesso ao painel de Usuario <br> Comunicação correta entre o Banco de Dados e aplicação.  |
@@ -63,7 +63,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
  
 | Caso de Teste      | CT-02 -      Registro de Novo Usuario - Candidato (Usuário Pessoa Física)                                                                                                                                                 |
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Requisitos Associados  |  RF-01 -  O site deve permitir que o usuário crie o seu perfil para novos usuarios.                                    |
+| Requisitos Associados  | RF-01 -  O site deve permitir que o usuário crie o seu perfil para novos usuarios.                                    |
 | Objetivo do Teste      | Verificar se o login de usuarios/empresa ja cadastrados e se o cadastramento de novos usuarios/empresas estão funcionando corretamente.                                                                                  |
 | Passos                 | 1) Acessar o site  <br>2) Fazer o cadastro (Novo Usuario/Empresa) e Realizar o Login se ja houver o cadastro existente.  <br>3) Verificar a validação das informações <br>4) Permitir o acesso e realizar o Logout.    |
 | Critérios de Êxito     |    Acesso ao painel de Usuario/Empresa <br> Comunicação correta entre o Banco de Dados e aplicação.  |
