@@ -22,7 +22,7 @@ Também foi feito teste de forma manual navegando pela aplicação somente para 
 ## Testes de Navegabilidade
 Manual:
 
-## Tela Inicial / Homepage:
+### Tela Inicial / Homepage:
 Na tela de Inicio existem os seguintes links para outras telas desta aplicação
 
 - No cabeçalho, à esquerda, existem os links: "Logomarca" e “Inicio”, que ligam a página á homepage; “Empresas” que liga a aplicação à área de busca e resultados de busca de conteúdos de Empresas cadastradas na aplicação; “Vagas” que liga a aplicação à área de busca e resultados de busca de conteúdos de Vagas disponíveis cadastradas na aplicação;
