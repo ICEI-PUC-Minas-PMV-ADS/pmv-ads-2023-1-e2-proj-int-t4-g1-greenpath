@@ -17,6 +17,10 @@
 
 ![Teste 1 Sucesso](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/523e4e64a4306075a4e045eabdba1839ca04667e/docs/img/Teste01_login_EmpresaPJ.gif)
 
+## Login do usuário sem sucesso - dados incorretos
+
+![Teste 1 Sem Sucesso](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/c5393a46da86137d1545cca06370d95bdd030a93/docs/img/Teste01_login_incorreto.gif)
+
 | Caso de Teste      | CT-02 - Registro de Novo Usuario - Candidato (Usuário Pessoa Física)                                                                                |
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisitos Associados  |  RF-01 - O site deve permitir que o usuário crie o seu perfil.                                    |
