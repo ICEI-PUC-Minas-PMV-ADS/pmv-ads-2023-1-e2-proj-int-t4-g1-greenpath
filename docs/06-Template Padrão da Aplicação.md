@@ -5,7 +5,9 @@ Layout padrão da aplicação que será utilizado em todas as páginas com a def
 ### Página de Cadastro de Usuário
 ![Cadastro](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/f15d5cb055ac3b9d0b0ddb50ee24cc3494020867/docs/img/Template_Register_New.png)
 
-![Cadastro](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/7d3da397072e5e1294c477becb5923ee084ae616/docs/img/Template_Register_New_02.png)
+![Cadastro PF](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/7d3da397072e5e1294c477becb5923ee084ae616/docs/img/Template_Register_New_02.png)
+
+![Cadastro PJ](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/23a2e5ab5d09f38ff99e9985805773384ccee2ba/docs/img/Template_Register03_PJ.png)
 
 ### Página de Login
 ![Login](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/f15d5cb055ac3b9d0b0ddb50ee24cc3494020867/docs/img/Template_Log_in.png)
