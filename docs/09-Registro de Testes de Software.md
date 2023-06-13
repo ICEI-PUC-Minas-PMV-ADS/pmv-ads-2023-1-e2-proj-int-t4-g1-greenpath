@@ -67,21 +67,24 @@
 
 ![Teste 4 Sucesso](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/aff155bf660a2c966b605c81bd54f02ddc550f2a/docs/img/Teste04_vaga_PJ.gif)
 
-
-
 | Caso de Teste      | CT-05 – Teste de funcionalidade de Vagas - Candidato (Usuário Pessoa Física)                  |
 |--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisitos Associados  | RF-011 - O site deve exibir vagas de trabalho disponíveis & RF-004 - O site deve permitir que o usuário demonstre interesse por uma vaga de trabalho publicada e se candidate para a mesma.  |
 | Objetivo do Teste      | Verificar se o aplicativo está dando o retorno esperado na barra de busca considerando as palavras chaves dos usuários. Garantir que a candidatura do usuário seja fácil e intuitiva, permitindo que os usuários tenham pelo acesso ao status da sua candidatura                                                               |
 | Passos                 | 1) Acessar o site por um navegador. <br> 2) Fazer login de usuário Candidato. <br> 4) Acessar a área Vagas. <br> 5) Inserir palavras chaves na barra de pesquisa do site <br>6) Avaliar os resultados da pesquisa <br> 7) Acessar "Ver mais+" para acessar detalhes da vaga. <br> 7) Cadastrar-se na vaga. <br> 8) Verificar se a vaga em questão aparece na lista de "Meus Processos"do usuário logado.                           |
 | Critérios de Êxito     |   Deve apresentar resposta rápidas com uma flexibilidade ampla no sistema de pesquisa usando as palavras chaves de cada usuário.                                                       |                                      
+| Dados de entrada   | 1) Acesso ao site https://greenpath.azurewebsites.net/ com sucesso, <br>2) Login de Candidato garantido com sucesso utilizando os dados de acesso UserName: teste111@yahoo.com.br Senha: Green3421#@!77  <br>3) Acesso ao campo "Vagas" redireciona para o ficheiro de vagas e busca de vagas disponíveis para os Candidatos.  <br>4) Acessar "Ver mais+" para acessar detalhes da vaga com sucesso. <br>5) Foi verificado que para uma vaga que o candidato já esta cadastrado o botão "Cadastrar-se" não é apresentado. <br>6) Em detalhes de outra vaga que o Candidato não esta cadastrado foi possível cadastrar-se com sucesso. <br>7) Na lista "Meus Processos" foram verificadas ambas as vagas que o Candidato esta cadastrado.              | 
+| Resultado Obtido   |  Todo o processo desde o login com dados pré cadastrados de um Candidato, processo de busca de vagas, disponibilidade para cadastrar-se na vaga e indexação da vaga ao perfíl do Candidato foram verificadas com sucesso. Sendo ainda um processo simples e intuitivo.       |              
+![Teste 5 Sucesso](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/01719b3511fa48cdfaf541903cc1ddc4ed4bf6a8/docs/img/Teste05_vaga_PF.gif)
+
+| Caso de Teste      | CT-06 – Teste de funcionalidade de geolocalização   |
+|--------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisitos Associados  |      RF-011; RF-012; RF-13 - Precisão da localização: é importante verificar se a aplicação está fornecendo informações precisas sobre a localização      do usuário e das vagas mais proximas.  |
+| Objetivo do Teste      | Verificar se a aplicação está respondendo corretamente a mudanças na localização do usuário..                                                                                                                               |
+| Passos                     | 1) Acessar o site por um navegador  <br> 2) Entrar na barra de filtragem <br>  3) selecionar o estado e a cidade desejado                                                                                                    |
+| Critérios de Êxito     |   Exibição das vagas mais proximas da localização desejada do usuario.                                                                                                                                                      |
 | Dados de entrada   |                                                                                                                                                                                                             | 
-| Resultado Obtido   |                                                                                             |              
-
-
-
-
-
+| Resultado Obtido   |                                                                                                                                                                                                           | 
 
 | Caso de Teste      | CT-07 -   Teste de Segurança                                       |
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
