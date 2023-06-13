@@ -7,7 +7,6 @@ namespace GreenPath.Controllers
     public class HomeController : Controller
     {
         HomeModel home = new HomeModel();
-
         public IActionResult Index()
         {      
             return View();

@@ -24,7 +24,7 @@ namespace GreenPath.Controllers
 			var empresas = from emp in _context.Empresas select emp;
 			if (!String.IsNullOrEmpty(BuscaString))
 			{
-				empresas = empresas.Where(emp => (emp.Razao.Contains(BuscaString) || emp.Area.Contains(BuscaString)));
+				empresas = empresas.Where(emp => (emp.Razao.Contains(BuscaString) || emp.Area.Contains(BuscaString) || emp.Pais.Contains(BuscaString) || emp.Estado.Contains(BuscaString) || emp.Cidade.Contains(BuscaString)));
 			}
 
 			return await Task.FromResult(View(empresas));
