@@ -85,7 +85,7 @@
 | Passos                     | 1) Acessar o site por um navegador  <br> 2) Entrar na barra de filtragem <br>  3) selecionar o estado e a cidade desejado                                                                                                    |
 | Critérios de Êxito     |   Exibição das vagas mais proximas da localização desejada do usuario.                                                                                                                                                      |
 | Dados de entrada   |                                                                                                                                                                                                             | 
-| Resultado Obtido   |                                                                                                                                                                                                           | 
+| Resultado Obtido   |  Não foi possível realizar o teste, pois, os filtros dos sistemas de busca ainda estão em desenvolvimento.                                    | 
 
 | Caso de Teste      | CT-07 -   Teste de Segurança                                       |
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
