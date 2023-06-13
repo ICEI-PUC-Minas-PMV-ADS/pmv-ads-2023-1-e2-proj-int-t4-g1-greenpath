@@ -53,3 +53,41 @@
 ![Teste 3 sem Sucesso](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/5546c7acbb702314d9458d5723b2ad0acbedcf49/docs/img/Teste02_cadastro_sem_Sucesso_PK.gif)
 
 
+
+
+
+
+
+
+
+
+| Caso de Teste      | CT-07 -   Teste de Segurança                                       |
+|--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisitos Associados  |  RF-01; RF-02; RF-03; RF-06; RF-015 - Criptografia: Garantir que as informações dos usuários, como senhas e dados pessoais, estejam criptografadas e protegidas de possíveis invasões.                                    |
+| Objetivo do Teste      |  Verificar todas as brechas de possiveis ataques contra o site visando roubar informações dos usuarios.                                                                                  |
+| Passos                     | 1) Analisar o codigo fonte <br> 2) Verificar qual tipo de criptografia esta sendo utilizado no site <br> 3) Realizar testes de penetração <br> 4) Corrigir todas as brechas encontradas   |
+| Critérios de Êxito     |   Plena segurança dos dados pessoais dos usuarios.                  |
+| Dados de entrada   |   https://greenpath.azurewebsites.net/                                   | 
+| Resultado Obtido   | O Site obteve ótimos resultados de Segurança através de testes automatizados de renomadas empresas. Abaixo são demonstrados os resultados.     | 
+
+## Teste Automatizado de Segurança com Wormly
+O Web Server Tester by Wormly verifica mais de 65 métricas e fornece um status de cada uma, incluindo pontuações gerais. O relatório contém uma visão geral do certificado (CN, detalhes da expiração, cadeia de confiança), detalhes das Cifras de Criptografia, tamanho da chave pública, renegociação segura, protocolos como SSLv3 / v2, TLSv1 / 1.2. 
+
+https://www.wormly.com/test_ssl/h/greenpath.azurewebsites.net/i/20.206.176.4/p/443
+
+![Teste 7 Sucesso](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/351ef1ec6b584655965885c28df7599b3d7fe347/docs/img/Teste07_Seguranca.gif)
+
+## Teste Automatizado de Segurança com Mozilla Observatory
+O Observatory by Mozilla verifica várias métricas, como detalhes da cifra TLS, detalhes do certificado, cabeçalhos seguros recomendados pela OWASP e muito mais.
+
+Ele também tem uma opção para mostrar resultados de varredura de terceiros dos SSL Labs, ImmuniWeb, Pré-carregamento HSTS, Cabeçalhos seguros e CryptCheck.
+
+https://observatory.mozilla.org/analyze/greenpath.azurewebsites.net
+
+![Teste 7 Sucesso](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/351ef1ec6b584655965885c28df7599b3d7fe347/docs/img/Teste07_Mozila_Sguranca.png)
+
+## Teste Automatizado de Segurança com Sucuri SiteCheker
+
+https://sitecheck.sucuri.net/results/https/greenpath.azurewebsites.net
+
+![Teste 7 Sucesso](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/351ef1ec6b584655965885c28df7599b3d7fe347/docs/img/Teste07_Sukuri_Seguranca.png)
