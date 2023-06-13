@@ -10,9 +10,13 @@ namespace GreenPath.ViewModels
         // public bool Candidate { get; set; } //true == candidate; false = company
 
         //Dados de Pessoa
+        [Required(ErrorMessage = "O campo de nome é obrigatório")]
+        [StringLength(255, MinimumLength = 3, ErrorMessage = "O nome deve ter no mínimo 3 caracteres.")]
         [Display(Name = "Name")]
         public string? Name { get; set; }
         
+        [Required(ErrorMessage = "O campo de Sobrenome é obrigatório")]
+        [StringLength(255, MinimumLength = 3, ErrorMessage = "O Sobrenome deve ter no mínimo 3 caracteres.")]
         [Display(Name = "Sobrenome")]
         public string? Surname { get; set; }
 
@@ -27,8 +31,12 @@ namespace GreenPath.ViewModels
         public string? CompanyName { get; set; }
         
         [Display(Name = "CPF")]
+        [Required(ErrorMessage = "O campo de CPF é obrigatório")]
+        [StringLength(11, MinimumLength = 11, ErrorMessage = "O CPF deve ter 11 caracteres.")]
         public string? CPF { get; set; }
 
+        [Required(ErrorMessage = "O campo de CNPJ é obrigatório")]
+        [StringLength(14, MinimumLength = 14, ErrorMessage = "O CNPJ deve ter 11 caracteres.")]
         [Display(Name = "CNPJ")]
         public string? CNPJ { get; set; }
         
@@ -44,7 +52,6 @@ namespace GreenPath.ViewModels
         [Required(ErrorMessage = "O campo de é Email obrigatório")]
         [EmailAddress(ErrorMessage = "Por favor, insira um endereço de e-mail válido.")]
         [StringLength(50, MinimumLength = 6, ErrorMessage = "O endereço de email deve ter entre 6 e 50 caracteres.")]
-        
         public string? Email { get; set; }
         
         [Display(Name = "Telefone")]
