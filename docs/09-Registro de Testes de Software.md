@@ -48,6 +48,8 @@
 
 ![Teste 3 Sucesso](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/209c54f68321c5b90bca01089a6c86d686f3b188/docs/img/Teste03_cadastro_PJ.gif)
 
+## Registro de Novo Usuario sem Sucesso - PK Chave Primária já cadastrada no BD 
 
+![Teste 3 sem Sucesso](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath/blob/5546c7acbb702314d9458d5723b2ad0acbedcf49/docs/img/Teste02_cadastro_sem_Sucesso_PK.gif)
 
 
