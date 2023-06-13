@@ -100,15 +100,15 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 | Resultado Obtido   |                                                                                             |              
 
 
-
-| Caso de Teste      | CT-06 – Teste de funcionalidade de publicação de uma Vaga para usuário Empresa  |
-|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Requisitos Associados  | RF-08 - Permitir que a empresa possa publicar vagas de trabalho.     |
-| Objetivo do Teste      | Garantir que a candidatura do usuário seja fácil e intuitiva, permitindo que os usuários tenham pelo acesso ao status da sua candidatura e que se comuniquem e recebam feedbacks das empresas contratantes.                                                                                              |
-| Passos                     | 1)Acessar o site por um navegador <br> 2)Navegar pelo site <br>  3)Ir na opção de cadastramento e inserir todas as informações pessoais <br> 4)Aplicar para as vagas disponíveis                                                                                                                           |
-| Critérios de Êxito     |   O site deve apresentar um sistema de cadastramento fácil dando espaço para conter todas as informações pessoais e até anexo e ter uma facilidade de comunicação entre candidato e empresa.                                                                                 |
+| Caso de Teste      | CT-06 – Teste de funcionalidade de geolocalização   |
+|--------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisitos Associados  |      RF-011; RF-012; RF-13 - Precisão da localização: é importante verificar se a aplicação está fornecendo informações precisas sobre a localização      do usuário e das vagas mais proximas.  |
+| Objetivo do Teste      | Verificar se a aplicação está respondendo corretamente a mudanças na localização do usuário..                                                                                                                               |
+| Passos                     | 1) Acessar o site por um navegador  <br> 2) Entrar na barra de filtragem <br>  3) selecionar o estado e a cidade desejado                                                                                                    |
+| Critérios de Êxito     |   Exibição das vagas mais proximas da localização desejada do usuario.                                                                                                                                                      |
 | Dados de entrada   |                                                                                                                                                                                                             | 
-| Resultado Obtido   |                                                                                         | 
+| Resultado Obtido   |                                                                                                                                                                                                           | 
+
 
 
 
@@ -121,15 +121,6 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 | Dados de entrada   |                                                                                                                                                                                                             | 
 | Resultado Obtido   |                                                                                                  | 
 
-
-| Caso de Teste      | CT-08 – Teste de funcionalidade de geolocalização   |
-|--------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Requisitos Associados  |      RF-011; RF-012; RF-13 - Precisão da localização: é importante verificar se a aplicação está fornecendo informações precisas sobre a localização      do usuário e das vagas mais proximas.  |
-| Objetivo do Teste      | Verificar se a aplicação está respondendo corretamente a mudanças na localização do usuário..                                                                                                                               |
-| Passos                     | 1) Acessar o site por um navegador  <br> 2) Entrar na barra de filtragem <br>  3) selecionar o estado e a cidade desejado                                                                                                    |
-| Critérios de Êxito     |   Exibição das vagas mais proximas da localização desejada do usuario.                                                                                                                                                      |
-| Dados de entrada   |                                                                                                                                                                                                             | 
-| Resultado Obtido   |                                                                                                                                                                                                           | 
 
 
 
