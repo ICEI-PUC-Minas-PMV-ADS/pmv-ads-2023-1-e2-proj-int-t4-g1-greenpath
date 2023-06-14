@@ -51,9 +51,9 @@
 </div>
 
 @if(Model.Vaga.Descricao != null){
-    <div class="animation-zoom-out">
-        <h4 class="animation-slide-down">Descrição</h4>
-        <p class="animation-shake">@Html.DisplayFor(model => model.Vaga.Descricao)</p>
+    <div class="animation-slide-down mb-5">
+        <h4 class="animation-slide-down mb-2">Descrição</h4>
+        <p>@Html.Raw(Model.Vaga.Descricao)</p>
     </div>
 }
 
