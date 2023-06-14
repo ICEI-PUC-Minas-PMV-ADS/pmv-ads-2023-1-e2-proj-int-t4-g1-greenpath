@@ -13,6 +13,7 @@ Criação de um ambiente de internet, gerenciador de vagas de trabalho, específ
 * Álvaro Emanuel Gonçalves Soares
 * Breno Morais Gonçalves
 * Carlos Eduardo Reinis
+* Florisvaldo Alves Moreira Neto
 * Vitor Silva Oliveira
 
 ## Orientador
