@@ -1,29 +1,26 @@
 message: Please cite this software using these metadata.
-title:
+title: 
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
+  - family-names: Soares
+    given-names:  Álvaro
+  - family-names: Reinis
+    given-names: Carlos Eduardo
+  - family-names: Alves Moreira Neto
+    given-names: Florisvaldo
+  - family-names: Morais Gonçalves
+    given-names: Breno
+  - family-names: Silva Oliveira
+    given-names: Vitor
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
-  - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Marques Pietrobon
+    given-names: Carlos Alberto
 keywords:
-  - 
-  - 
-repository-code: 
+  - ESG
+  - Gestão de Vagas de Trabalho
+  - Responsabilidade Social
+  - Sustentabilidade
+  - Empregos
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t4-g1-greenpath.git
 version: 1.0.0
-date-released: 2023-10-31
+date-released: 2022–07-22
